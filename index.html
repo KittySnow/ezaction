@@ -7,25 +7,99 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Cache-Control" content="max-age=0" />
-    <title>宅快修</title>
-    <script src="assets/lib/device.js"></script>
-
+    <title>EZaction</title>
     <link rel="stylesheet" href="assets/css/base.css"/>
-    <link rel="stylesheet" href="assets/font/iconfont.css"/>
-    <link rel="stylesheet" href="assets/css/app.css"/>
-    <link rel="stylesheet" href="assets/css/bxslider.css"/>
-    <link rel="stylesheet" href="assets/css/mobiscroll_002.css"/>
-    <link rel="stylesheet" href="assets/css/feifei.css"/>
-    <link rel="stylesheet" href="assets/lib/jquery.confirm-1.1.css">
-    <style>
-        html,body,.ng-views{height:100%;width:100%;max-width:750px;margin:0 auto;overflow-x:hidden;}
-    </style>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
 </head>
-<body>
-<!--后台页面架子-->
-<div ng-view class="ng-views view-slide-in">
+<body style="min-width:600px;">
+    <!--导航条-->
+    <div class="navbar cl">
+         <a href="#" class="logo"></a>
+         <div class="navbar-fr">
+             <a class="exit-icon"  title="退出" href=""></a>
+             <div class="username">XX公司</div>
+         </div>
+    </div>
 
-</div>
+    <div class="main-container">
+        <div class="container-box">
+            <div class="container-menu-box">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="">
+                            <i class="menu-icon menu-icon1"></i>
+                            <span class="nav-name">首页</span>
+                        </a>
+                        <ul class="second-menu">
+                            <li class="dec-line1"></li>
+                            <li class="dec-line"></li>
+                            <li class="active">
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">密码修改</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="menu-icon menu-icon2"></i>
+                            <span class="nav-name">剧本</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="menu-icon menu-icon3"></i>
+                            <span class="nav-name">建组</span>
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="">
+                            <i class="menu-icon menu-icon4"></i>
+                            <span class="nav-name">统筹</span>
+                        </a>
+                        <ul class="second-menu">
+                            <li class="dec-line1"></li>
+                            <li class="dec-line"></li>
+                            <li class="active">
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">排程管理</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">统筹确认</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav-menu-bottom">
+                    <li>
+                        <a href="">顺场景表</a>
+                    </li>
+                    <li>
+                        <a href="">查看剧本</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--后台页面架子-->
+            <div ng-view class="ng-views view-slide-in">
+
+            </div>
+        </div>
+        <div class="container-foot">
+            东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
+        </div>
+
+    </div>
 <script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-resource.min.js"></script>

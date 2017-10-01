@@ -14,7 +14,7 @@
             service: { /* $resource actions */ },
             eachpath: function (list, ext) { angular.forEach(list, function (path) { this.push(defaults.extpath(path, ext)) }, list = []); return list },
             extpath: function (path, ext) {
-                var filedir = defaults.rootPath + 'qiyue/app/' + (ext === 'html' ? 'views' : ext) + '/' + defaults.app.dir,
+                var filedir = defaults.rootPath + 'ezaction/app/' + (ext === 'html' ? 'views' : ext) + '/' + defaults.app.dir,
                     fileext = '.' + ext,
                     nofirst = !/(^http:\/\/)|(^https:\/\/)|(^\/)/.test(path),
                     noparam = !new RegExp('\\.' + ext + '\\?', 'i').test(path),
