@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=0" />
+    <title>EZaction</title>
+    <link rel="stylesheet" href="assets/css/base.css"/>
+    <link rel="stylesheet" href="assets/font/iconfont.css"/>
+    <link rel="stylesheet" href="assets/css/app.css"/>
+    <link rel="stylesheet" href="assets/css/bxslider.css"/>
+    <link rel="stylesheet" href="assets/css/mobiscroll_002.css"/>
+    <link rel="stylesheet" href="assets/css/feifei.css"/>
+    <link rel="stylesheet" href="assets/lib/jquery.confirm-1.1.css">
+    <style>
+        html,body,.ng-views{height:100%;width:100%;max-width:750px;margin:0 auto;overflow-x:hidden;}
+    </style>
+</head>
+<body>
+<!--后台页面架子-->
+<div ng-view class="ng-views view-slide-in">
+
+</div>
+<script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-resource.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-route.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-sanitize.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
+<script src="config/config.js"></script>
+<script src="config/app.js"></script>
+<script src="assets/lib/mobiscrollDate.js"></script>
+<script src="assets/lib/mobiscroll.js"></script>
+<script src="assets/lib/jquery.confirm-1.1.js"></script>
+<script src="assets/lib/jquery.bxslider.min.js"></script>
+<script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $(function(){
+
+
+
+
+        /* $.alert({
+             title: '确认删除该银行卡!',
+             content: '嘿嘿'
+         });*/
+/*        $.confirm({
+            title: '确认退出!',
+            content: '退出登录将无法接单',
+            buttons: {
+                ok: {
+                text: '确定',
+                action: function () {alert("确定按钮回调函数被执行");}
+                },
+                close: {
+                text: '关闭',
+                action: function () {
+                    alert("关闭按钮回调函数被执行");
+                }
+            }}
+        });
+
+        $.confirm({
+            title: '确认删除该银行卡!',
+            content: '',
+            buttons: {
+                ok: {
+                    text: '确定',
+                    action: function () {alert("确定按钮回调函数被执行");}
+                },
+                close: {
+                    text: '关闭',
+                    action: function () {
+                        alert("关闭按钮回调函数被执行");
+                    }
+                }}
+        });*/
+    })
+</script>
+</body>
+</html>
