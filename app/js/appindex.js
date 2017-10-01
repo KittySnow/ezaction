@@ -2,8 +2,9 @@
 
 (function (app) {
 
-    app.controller( 'appindex', ['$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($routeParams, $timeout, $http,$scope,$rootScope,tips) {
-
+    app.controller( 'appindex', ['$route','$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($route ,$routeParams, $timeout, $http,$scope,$rootScope,tips) {
+        console.log($route);
+        $rootScope.navMenu = '#'+ $route.current.originalPath;
     }]);
 
 })(angular.module('appindex', []));

@@ -24,14 +24,8 @@ var daBai ={};
 
     daBai.Config.map = [
         { path: '/', view: 'index.html', viewUrl: 'index.html', styles: null, scripts: 'appindex', modules: 'appindex' },
-        { path: '/user/userAppInfo', view: 'user/userAppInfo.html', viewUrl: 'user/userAppInfo.html', styles: null, scripts:'user/userAppInfo', modules:'userAppInfo'},
-        { path: '/user/userInfo', view: 'user/userInfo.html', viewUrl: 'user/userInfo.html', styles: null, scripts:'user/userInfo', modules:'userInfo'},
-        { path: '/user/mine', view: 'user/mine.html', viewUrl: 'user/mine.html', styles: null, scripts:'user/mine', modules:'mine'},
-        { path: '/user/aboutus', view: 'user/aboutus.html', viewUrl: 'user/aboutus.html', styles: null, scripts:'user/userInfo', modules:'userInfo'},
-        { path: '/user/userCenter', view: 'user/userCenter.html', viewUrl: 'user/userCenter.html', styles: null, scripts:'user/userCenter', modules:'userCenter'},
-        { path: '/user/userCard', view: 'user/userCard.html', viewUrl: 'user/userCard.html', styles: null, scripts:'user/userCard', modules:'userCard'},
-        { path: '/user/userSet', view: 'user/userSet.html', viewUrl: 'user/userSet.html', styles: null, scripts:'user/userSet', modules:'userSet'}
-        
+        { path: '/index/resetPassword', view: 'index/resetPassword.html', viewUrl: 'index/resetPassword.html', styles: null, scripts: 'index/resetPassword', modules: 'resetPassword' }
+
     ];
 
 }());

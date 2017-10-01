@@ -25,17 +25,17 @@
         <div class="container-box">
             <div class="container-menu-box">
                 <ul class="nav-menu">
-                    <li>
-                        <a href="">
+                    <li ng-class="{true:'active',false:''}[navMenu == '#/'||  navMenu == '#/index' || navMenu == '#/index/resetPassword' ]">
+                        <a href="#/index">
                             <i class="menu-icon menu-icon1"></i>
                             <span class="nav-name">首页</span>
                         </a>
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li class="active">
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/index/resetPassword']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/index/resetPassword">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">密码修改</span>
                                 </a>
@@ -47,14 +47,78 @@
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
                         </a>
+                        <ul class="second-menu">
+                            <li class="dec-line1"></li>
+                            <li class="dec-line"></li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">剧本转义</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">剧本管理</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">角色定义</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">剧本审批</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
                         </a>
+                        <ul class="second-menu">
+                            <li class="dec-line1"></li>
+                            <li class="dec-line"></li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">拍摄地点</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">演员管理</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">职员管理</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">团队管理</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li  class="active">
+                    <li>
                         <a href="">
                             <i class="menu-icon menu-icon4"></i>
                             <span class="nav-name">统筹</span>
@@ -62,7 +126,7 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li class="active">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="">
                                     <i class="menu-small-icon"></i>
@@ -74,6 +138,20 @@
                                 <a href="">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">统筹确认</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">通告安排</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dec-line2"></div>
+                                <a href="">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">通告审核</span>
                                 </a>
                             </li>
                         </ul>
@@ -109,52 +187,19 @@
 <script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
 <script src="config/config.js"></script>
 <script src="config/app.js"></script>
-<script src="assets/lib/mobiscrollDate.js"></script>
-<script src="assets/lib/mobiscroll.js"></script>
-<script src="assets/lib/jquery.confirm-1.1.js"></script>
-<script src="assets/lib/jquery.bxslider.min.js"></script>
-<script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
 <script>
     $(function(){
 
-
-
-
-        /* $.alert({
-             title: '确认删除该银行卡!',
-             content: '嘿嘿'
-         });*/
-/*        $.confirm({
-            title: '确认退出!',
-            content: '退出登录将无法接单',
-            buttons: {
-                ok: {
-                text: '确定',
-                action: function () {alert("确定按钮回调函数被执行");}
-                },
-                close: {
-                text: '关闭',
-                action: function () {
-                    alert("关闭按钮回调函数被执行");
-                }
-            }}
+        var navMenu;
+        $(".nav-menu li[class!='active']:not('.second-menu li')").hover(function(){
+            navMenu  = $('.nav-menu li.active');
+            $('.second-menu').hide();
+            $(this).find('.second-menu').slideDown(100);
+        },function(){
+            $('.second-menu').hide();
+            navMenu.find('.second-menu').slideDown(100);
         });
 
-        $.confirm({
-            title: '确认删除该银行卡!',
-            content: '',
-            buttons: {
-                ok: {
-                    text: '确定',
-                    action: function () {alert("确定按钮回调函数被执行");}
-                },
-                close: {
-                    text: '关闭',
-                    action: function () {
-                        alert("关闭按钮回调函数被执行");
-                    }
-                }}
-        });*/
     })
 </script>
 </body>
