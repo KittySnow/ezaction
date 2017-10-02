@@ -70,8 +70,67 @@ body{padding-left:20px;padding-right:20px}
     text-align: center;
     font-size: 18px;
     position: absolute;
-    top: 50%;
+    top: 154px;
     left: 50%;
-    right: 0;
-    margin-top: -100px;
+    margin-left: -160px;
 }
+.center-password-box table.center-password{
+    width: 320px;
+    height: 330px;
+    font-size: 16px;
+}
+.password-sub-box{
+    text-align: center;
+}
+.red-star{
+    color:red;
+    font-size: 23px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    vertical-align: -6px;
+    font-weight: 800;
+}
+.eza-input{border:0;border-bottom:1px solid #333;line-height:33px;height:33px;width:188px;padding-left:10px;padding-right:10px;font-family: microsoft yahei;font-size:14px;background:transparent}
+.ezc-btn-orange{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid transparent;
+    color: #ff5710;background:transparent;text-align: center;
+    color: #ff5710 !important;
+}
+.ezc-btn-orange:hover{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid #ff5710;
+    color: #58595a;background:#fff6f3;text-align: center;
+    color: #58595a !important;
+}
+.ezc-btn,.ezc-btn-blue{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid transparent;
+    color: #298ee5;background:transparent;text-align: center;
+    color: #298ee5 !important;
+}
+.ezc-btn:hover,.ezc-btn-blue:hover{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid #298ee5;
+    color: #58595a;background:#f3faff;text-align: center;
+    color: #58595a !important;
+}
+.ezc-btn-red{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid transparent;
+    color: #ff0000;background:transparent;text-align: center;
+    color: #ff0000 !important;
+}
+.ezc-btn-red:hover{
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid #ff0000;
+    color: #58595a;background:#fff2f2;text-align: center;
+    color: #58595a !important;
+}
+.mr10{margin-right:10px;}
