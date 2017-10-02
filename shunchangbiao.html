@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="max-age=0" />
+    <title>EZaction</title>
+    <link rel="stylesheet" href="assets/css/base.css"/>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
+    <link rel="stylesheet" href="assets/css/wenwen.css"/>
+</head>
+<body style="min-width:600px;">
+    <!--导航条-->
+    <div class="navbar cl">
+         <a href="#" class="logo"></a>
+         <div class="navbar-fr">
+             <a class="exit-icon"  title="退出" href=""></a>
+             <div class="username">XX公司</div>
+         </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container-box">
+            <div class="" style="margin-left:-251px;">
+                顺场表
+            </div>
+        </div>
+        <div class="container-foot">
+            东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
+        </div>
+
+    </div>
+<script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-resource.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-route.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-sanitize.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
+<script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
+<script src="config/config.js"></script>
+<script src="config/app.js"></script>
+<script>
+    $(function(){
+
+        var navMenu;
+        $(".nav-menu li[class!='active']:not('.second-menu li')").hover(function(){
+            navMenu  = $('.nav-menu li.active');
+            $('.second-menu').hide();
+            $(this).find('.second-menu').slideDown(100);
+        },function(){
+            $('.second-menu').hide();
+            navMenu.find('.second-menu').slideDown(100);
+        });
+
+    })
+</script>
+</body>
+</html>
