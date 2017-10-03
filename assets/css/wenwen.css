@@ -1,0 +1,50 @@
+/*login*/
+html,body,.wrap{width:100%;height:100%;overflow:hidden;}
+.wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;}
+.wrap .content{width:100%;height:200px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top:-100px;min-width:1366px;}
+.content .content-header{width:260px;height:56px;margin:0px auto;margin-top:40px;position:relative;}
+.content-header img{position:absolute;}
+.content-header .img-l{width:66px;height:56px;left:0px;top:0px;}
+.content-header .img-c{width:52px;height:39px;left:70px;top:6px;}
+.content-header .img-r{width:130px;height:35px;left:124px;top:10px;}
+.content-main{width:780px;height:40px;margin:10px auto;position:relative;}
+.content-main #login-all p{position:absolute;width:240px;height:35px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;}
+.content-main #login-all i{position:absolute;z-index:2;color:#FF5600;line-height:35px;}
+.content-main #login-all .iconfont1{left:15px}
+.content-main #login-all .iconfont2{left:270px}
+.content-main #login-all .iconfont3{left:530px}
+.content-foot i{position:absolute;}
+.content-foot .iconfont4{color:#fff;left:80px;top:-3px;cursor:pointer;}
+.content-foot .iconfont5{color:#00CF75;left:110px;top:-3px;cursor:pointer;}
+.content-main #login-all input{width:88%;height:35px;position:absolute;left:12%;top:0px;outline:none;border-radius:3px;}
+.content-main #login-all .firstLine{left:15px;}
+.content-main #login-all .firstLine1{left:270px;}
+.content-main #login-all .firstLine2{left:525px;}
+.content-main #login-all .img-ro{position:absolute;width:80px;height:35px;right:14px;top:1px;}
+.content-foot{width:200px;height:36px;position:relative;left:70%;}
+.content-foot .forgetBtn{width:60px;height:21px;border:1px solid #005D8A;background-color: transparent;color:#fff;position:absolute;left:10px;top:0px;text-align:center;line-height:21px;font-size:10px;}
+@font-face {font-family: 'iconfont';src: url('../font/iconfont.eot');src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
+.iconfont{font-family:"iconfont" !important;font-size:24px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+.iconfont1{color:#FF7641;}
+.wrap .content1{height:350px;width:100%;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top:-175px;min-width:1366px;display:none;}
+.content1 .content-header{width:260px;height:56px;margin:0px auto;margin-top:30px;position:relative;}
+.content-main1{width:240px;height:240px;margin:15px auto;}
+.content-main1 #login-alls .lineL p{width:240px;height:35px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;position:relative;}
+.content-main1 #login-alls .lineL p:not(.firstLine){margin-top:10px;}
+.content-main1 #login-alls .lineL p input{width:88%;height:35px;outline:none;border-radius:3px;position:absolute;left:12%;}
+.content-main1 #login-alls .lineL .iconfont2{position:absolute;z-index:2;color:#FF5600;line-height:35px;}
+.content-main1 #login-alls .lineL p .img-ro{position:absolute;width:86px;height:35px;right:0px;}
+.content-main1 #login-alls .lineL p .showN{display:inline-block;position:absolute;width:86px;height:35px;line-height:35px;text-align:center;right:0px;background-color:#FF4800;color:#ffffff;}
+.content-foot1{width:200px;height:36px;position:relative;left:70%;top:-33px;}
+.content-foot1 i{position:absolute;}
+.content-foot1 .iconfont4{color:#fff;left:80px;top:0px;cursor:pointer;}
+.content-foot1 .iconfont5{color:#00CF75;left:110px;top:0px;cursor:pointer;}
+/*login end*/
+/*script upload*/
+.sc-set{position:absolute;left:260px;right:0px;top:15px;bottom:20px;border:1px solid red;}
+.sc-set .set-play{position:relative;}
+.sc-set .set-play span{position:absolute;display:inline-block;}
+.sc-set .set-play .font-p{width:70px;height:32px;line-height:39px;font-size:14px;top:0px;left:0px;}
+.sc-set .set-play .p-line{width:150px;height:30px;border-bottom:1px solid #000000;left:72px;}
+.set-play .img-search{width:24px;height:24px;left:195px;top:6px;}
+.set-play .new-play{color:#32b268;left:240px;top:9px;font-size:14px;}

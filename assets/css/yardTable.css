@@ -1,0 +1,125 @@
+.yardTable-wrap{
+    position: absolute;
+    padding: 20px 0px;
+    top: 0;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    background: url(../image/admin_body.jpg) no-repeat center center;
+}
+#yardTable{
+    margin: 0px auto;
+    width: 98%;
+}
+#yardTable tr th,#yardTable tbody tr td{
+    text-align:center;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+#yardTable tr th p{
+    width: 14px;
+    margin: 0px auto;
+    color: #080808;
+}
+.actor{
+    width: 18px;
+    padding: 5px 0px 35px 0px;
+}
+.actor span{
+    color: orangered;
+    display: block;
+    width: 20px;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* Internet Explorer 9*/
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari å’Œ Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    letter-spacing: 1px;
+}
+#yardTable tbody tr td:last-child{
+    border-right: 0;
+}
+#yardTable{
+    border-bottom: 1px solid gray ;
+}
+#yardTable tbody tr td span{
+    color: orangered;
+}
+.yardTable-wrap p{
+    text-align: right;
+    color: #ff5710;
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.yardTable-wrap h1{
+    text-align: center;
+}
+.yardTable-wrap h1 span{
+    font-size: 14px;
+    color: gray;
+}
+#yardTable tbody tr td:first-child{
+    /*text-align: left;*/
+    /*padding-left: 20px;*/
+}
+.inquiry-wrap-section{
+    position: absolute;
+    padding: 0px;
+    top: 0;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    background: url(../image/admin_body.jpg) no-repeat center center;
+}
+.inquiry-wrap{
+    padding: 20px 20px;
+    width: 698px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+#bookName,#bookNum,#actorName{
+    border-bottom: 1px solid #000000;
+    padding: 0px 20px;
+    box-shadow: none;
+    outline: none;
+    text-align: left;
+}
+#bookName{
+    width: 250px;
+}
+.bookNum{
+    width: 60px;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    padding-left: 10px;
+}
+#actorName{
+    width: 200px;
+}
+.chaxun{
+    position: relative;
+}
+#btnInquiry{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.result{
+    margin: 20px auto;
+}
+.result>p{
+    float: left;
+    margin-left: 59px;
+}
+.result>div{
+    clear: both;
+    text-align: center;
+}
+.result>div>p{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
