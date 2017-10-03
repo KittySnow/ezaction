@@ -26,7 +26,7 @@
         <div class="container-box">
             <div class="container-menu-box">
                 <ul class="nav-menu">
-                    <li ng-class="{true:'active',false:''}[navMenu == '#/'||  navMenu == '#/index' || navMenu == '#/index/resetPassword' ]">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/'||  navMenu == '#/index' || navMenu == '#/index/resetPassword' ]">
                         <a href="#/index">
                             <i class="menu-icon menu-icon1"></i>
                             <span class="nav-name">首页</span>
@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="nav-menu-li">
                         <a href="">
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
@@ -81,7 +81,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="nav-menu-li">
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
@@ -119,7 +119,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/overallPlanning/progressAdmin'||
+                     navMenu == '#/overallPlanning/confirm' || navMenu == '#/overallPlanning/arrangementNotice' || navMenu == '#/overallPlanning/announcementAudit']">
                         <a href="">
                             <i class="menu-icon menu-icon4"></i>
                             <span class="nav-name">统筹</span>
@@ -127,30 +128,30 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/progressAdmin']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/overallPlanning/progressAdmin">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">排程管理</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/confirm']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/overallPlanning/confirm">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">统筹确认</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/arrangementNotice']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/overallPlanning/arrangementNotice">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">通告安排</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">通告审核</span>
                                 </a>
@@ -191,14 +192,20 @@
 <script>
     $(function(){
 
-        var navMenu;
-        $(".nav-menu li[class!='active']:not('.second-menu li')").hover(function(){
-            navMenu  = $('.nav-menu li.active');
-            $('.second-menu').hide();
-            $(this).find('.second-menu').slideDown(100);
-        },function(){
-            $('.second-menu').hide();
-            navMenu.find('.second-menu').slideDown(100);
+        var navMenu =  $('.nav-menu li.active');
+        $(".nav-menu .nav-menu-li").mouseenter(function(){
+            var $this  = $(this);
+            if($this[0].className.indexOf('active')==-1){
+                navMenu  = $('.nav-menu li.active');
+                $('.second-menu').hide();
+                $this.find('.second-menu').slideDown(100);
+            }
+        }).mouseleave(function(){
+            var $this  = $(this);
+            if($this[0].className.indexOf('active')==-1) {
+                $('.second-menu').hide();
+                navMenu.find('.second-menu').slideDown(100);
+            }
         });
 
     })
