@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-menu-li">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/index'||  navMenu == '#/play/index1']">
                         <a href="">
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
@@ -51,16 +51,16 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/index']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/play/index">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本转义</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/index1']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/play/index1">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本管理</span>
                                 </a>

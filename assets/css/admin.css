@@ -20,7 +20,7 @@ body{padding-left:20px;padding-right:20px}
     font-weight: 800;
 }
 .eza-input{border:0;border-bottom:1px solid #333;line-height:33px;height:33px;width:188px;padding-left:10px;padding-right:10px;font-family: microsoft yahei;font-size:14px;background:transparent}
-.ezc-btn-orange{
+.ezc-btn-orange,.ezc-font-orange{
     cursor: pointer;
     font-family: microsoft yahei;
     padding:7px 28px;
@@ -35,7 +35,7 @@ body{padding-left:20px;padding-right:20px}
     color: #58595a;background:#fff6f3;text-align: center;
     color: #58595a !important;
 }
-.ezc-btn,.ezc-btn-blue{
+.ezc-btn,.ezc-btn-blue,.ezc-font-blue{
     cursor: pointer;
     font-family: microsoft yahei;
     padding:7px 28px;
@@ -51,7 +51,7 @@ body{padding-left:20px;padding-right:20px}
     color: #58595a;background:#f3faff;text-align: center;
     color: #58595a !important;
 }
-.ezc-btn-red{
+.ezc-btn-red,.ezc-font-red{
     cursor: pointer;
     font-family: microsoft yahei;
     padding:7px 28px;
@@ -66,7 +66,7 @@ body{padding-left:20px;padding-right:20px}
     color: #58595a;background:#fff2f2;text-align: center;
     color: #58595a !important;
 }
-.ezc-btn-green{
+.ezc-btn-green,.ezc-font-green{
 
     cursor: pointer;
     font-family: microsoft yahei;
@@ -195,10 +195,37 @@ body{padding-left:20px;padding-right:20px}
 .bootstrap-table .table {
     margin-bottom: 0 !important;
     border-bottom: 1px solid #dddddd;
-    border-collapse: collapse !important;
+
     border-radius: 1px;
-    width: 100%;
+
 }
 .bootstrap-table .table:not(.table-condensed), .bootstrap-table .table:not(.table-condensed) > tbody > tr > th, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > th, .bootstrap-table .table:not(.table-condensed) > thead > tr > td, .bootstrap-table .table:not(.table-condensed) > tbody > tr > td, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > td {
     padding: 8px;
+}
+.eza-table{
+    border-collapse: collapse !important;
+    width: 100%;
+    table-layout: fixed;
+}
+.eza-table-fixed-header{
+    border-collapse: collapse !important;
+    width: 100%;
+    table-layout: fixed;
+    border-bottom: 1px solid #000;
+}
+.eza-table-fixed-header th{
+    font-weight:800;
+    font-size:14px;
+    padding:12px 0;
+    text-align: center;
+}
+.eza-table tr{
+    padding:12px 0;
+    border-bottom: 1px dashed #ccc;
+    height: 36px;
+}
+.eza-table td{
+
+    font-size:14px;
+    text-align: center;
 }
