@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/base.css"/>
     <link rel="stylesheet" href="assets/css/admin.css"/>
     <link rel="stylesheet" href="assets/css/wenwen.css"/>
+    <link rel="stylesheet" href="assets/css/artdialog.css"/>
 </head>
 <body style="min-width:600px;">
     <!--导航条-->
@@ -43,7 +44,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/index'||  navMenu == '#/play/index1']">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/uploadIndex'||  navMenu == '#/play/index1' || navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' || navMenu == '#/play/uploadAdd' ]">
                         <a href="">
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
@@ -51,9 +52,9 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/index']">
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/uploadIndex' || navMenu == '#/play/uploadAdd']">
                                 <div class="dec-line2"></div>
-                                <a href="#/play/index">
+                                <a href="#/play/uploadIndex">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本转义</span>
                                 </a>
@@ -72,9 +73,9 @@
                                     <span class="second-menu-name">角色定义</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' ]">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/play/playApproval">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本审批</span>
                                 </a>
@@ -187,6 +188,7 @@
 <script src="assets/lib/angularjs/1.4.4/angular-sanitize.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
+<script src="assets/lib/artDialog/artDialog.js"></script>
 <script src="config/config.js"></script>
 <script src="config/app.js"></script>
 <script>

@@ -30,7 +30,13 @@ var daBai ={};
         { path: '/overallPlanning/confirm', view: 'overallPlanning/confirm.html', viewUrl: 'overallPlanning/confirm.html', styles: null, scripts: 'overallPlanning/confirm', modules: 'overallPlanningConfirm' },
         { path: '/overallPlanning/progressAdmin', view: 'overallPlanning/progressAdmin.html', viewUrl: 'overallPlanning/progressAdmin.html', styles: null, scripts: 'overallPlanning/progressAdmin', modules: 'progressAdmin' },
         { path: '/play/index', view: 'play/index.html', viewUrl: 'play/index.html', styles: null, scripts: 'play/index', modules: 'playIndex' },
-        { path: '/play/index1', view: 'play/index1.html', viewUrl: 'play/index1.html', styles: null, scripts: 'play/index1', modules: 'playIndex1' }
+        { path: '/play/playApproval', view: 'play/playApproval.html', viewUrl: 'play/playApproval.html', styles: null, scripts: 'play/playApproval', modules: 'playApproval' },
+        
+        { path: '/play/playApprovalDetail', view: 'play/playApprovalDetail.html', viewUrl: 'play/playApprovalDetail.html', styles: null, scripts: 'play/playApprovalDetail', modules: 'playApprovalDetail' },
+        { path: '/play/index1', view: 'play/index1.html', viewUrl: 'play/index1.html', styles: null, scripts: 'play/index1', modules: 'playIndex1' },
+        { path: '/play/uploadIndex', view: 'play/uploadIndex.html', viewUrl: 'play/uploadIndex.html', styles: null, scripts: 'play/uploadIndex', modules: 'playUploadIndex' },
+        { path: '/play/uploadAdd', view: 'play/uploadAdd.html', viewUrl: 'play/uploadAdd.html', styles: null, scripts: 'play/uploadAdd', modules: 'playUploadAdd' }
+    
 
     ];
 
