@@ -211,7 +211,7 @@ body{padding-left:20px;padding-right:20px}
 .select-down-box{width: 203px;position: absolute;top: 37px;z-index: 3;left: 0;display:none}
 .select-down-box li{padding-left:12px;line-height:40px;background: #ffffff;border-bottom:1px solid #333;color: #555;height: 40px;}
 .search-bar-add{height: 36px;line-height: 36px;font-size: 16px;}
-.search-bar-tips{height: 36px;line-height: 36px;font-size:14px;}
+.search-bar-tips{height: 36px;line-height: 36px;font-size:14px;cursor: default;}
 .icon-black-down,.icon-black-up,.icon-white-down,.icon-white-up,.icon-black-find{
     display: inline-block;
     font-size: 12px;
@@ -341,4 +341,29 @@ body{padding-left:20px;padding-right:20px}
 .search-bar-li.uploadAdd-right-btn-box{
     margin-right: 0;
     float: right;
+}
+.eza-input-file-box{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.eza-input-file40{position: absolute;
+    top: 0;
+    left: 23px;
+    z-index: 1;
+    width: 102px;
+    opacity: 0;
+    cursor: pointer;}
+
+.trans-dialog-loading{
+    width: 48px;
+    height: 48px;
+    margin: 30px auto;
+    display: block;
+    background: url(../image/loading.gif);
+}
+.trans-dialog-tips{
+    margin-bottom:30px;
+    text-align: center;
+    font-size: 14px;
 }

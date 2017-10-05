@@ -1,4 +1,3 @@
-<meta charset="utf-8">
 <div ng-controller="playUploadAdd">
 
 
@@ -36,7 +35,7 @@
                 </li>
 
                 <li class="search-bar-li uploadAdd-right-btn-box">
-                    <button type="submit" class="ezc-btn-green mr10 ft16">开始转译</button>
+                    <button type="button" class="ezc-btn-green mr10 ft16" id="transfer">开始转译</button>
                     <a href="#/index" class="ezc-btn-red  ft16">取消</a>
                 </li>
             </ul>
@@ -74,7 +73,13 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td><a class="ezc-font-blue" href="#/play/playApprovalDetail">上传剧本</a></td>
+                    <td>
+                        <div class="eza-input-file-box">
+                            <input type="file" name="" class="eza-input-file40"/>
+                            <span class="ezc-font-blue" href="#/play/playApprovalDetail">上传剧本</span>
+                        </div>
+
+                    </td>
                     <td class="playIndex-btn-box">
                         <a class="ezc-font-red js-ajax-delete">删除</a>
                     </td>
@@ -96,55 +101,23 @@
     //所有的删除操作，删除数据后刷新页面
 
     $(function(){
+           $('#transfer').click(function(){
 
-        $('.js-ajax-delete').on('click', function (e) {
-            e.preventDefault();
-            var $_this = this,
-                    $this = $($_this),
-                    href = $this.data('href'),
-                    msg = $this.data('msg');
-            href = href?href:$this.attr('href');
-            art.dialog({
-                title: false,
-                icon: 'question',
-                content:msg?msg: '确定要删除吗？',
-                follow: $_this,
-                close: function () {
-                    $_this.focus();; //关闭时让触发弹窗的元素获取焦点
-                    return true;
-                },
-                okVal:"确定",
-                padding:"8px 0 0 0",
-                ok: function () {
+               var dialog = new QAQ.Dialog({
+                   title:'提示',
+                   content:'<div class="trans-dialog-loading"></div><div class="trans-dialog-tips">正在转译中，请稍后...</div> ',
+                   buttons:[{
+                       name:'确定',
+                       cls:'.btn-primary',//可选 自定义按钮css类
+                       click:function(){
+                           var dialog = this;
 
-                    $.getJSON(href).done(function (data) {
-                        if (data.state === 'success') {
-                            if (data.referer) {
-                                location.href = data.referer;
-                            } else {
-                                reloadPage(window);
-                            }
-                        } else if (data.state === 'fail') {
-                            //art.dialog.alert(data.info);
-                            //alert(data.info);//暂时处理方案
-                            art.dialog({
-                                content: data.info,
-                                icon: 'warning',
-                                ok: function () {
-                                    this.title(data.info);
-                                    return true;
-                                }
-                            });
-                        }
-                    });
-                },
-                cancelVal: '关闭',
-                cancel: true
-            });
-        });
-
-
-
+                           //do something
+                           dialog.close();
+                       }
+                   }]
+               });
+           })
 
     });
 
