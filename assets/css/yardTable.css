@@ -23,7 +23,7 @@
 }
 .actor{
     width: 18px;
-    padding: 5px 0px 35px 0px;
+   padding: 5px 0px 35px 0px;
 }
 .actor span{
     color: orangered;
@@ -32,7 +32,7 @@
     transform:rotate(90deg);
     -ms-transform:rotate(90deg); /* Internet Explorer 9*/
     -moz-transform:rotate(90deg); /* Firefox */
-    -webkit-transform:rotate(90deg); /* Safari å’Œ Chrome */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
     -o-transform:rotate(90deg); /* Opera */
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
     letter-spacing: 1px;
@@ -48,10 +48,7 @@
 }
 .yardTable-wrap p{
     text-align: right;
-    color: #ff5710;
-    font-weight: 800;
-    font-size: 14px;
-    margin-right: 20px;
+    color: orangered;
 }
 .yardTable-wrap h1{
     text-align: center;
@@ -97,6 +94,7 @@
 }
 #actorName{
     width: 200px;
+    padding-bottom: 1px;
 }
 .chaxun{
     position: relative;
@@ -122,4 +120,35 @@
 .result>div>p{
     text-align: center;
     padding: 20px 0px 0px 0px;
+}
+/*dramaLook*/
+.dramaLook-title span{
+   position: relative;
+    left: 50%;
+}
+.dramaLook-title1{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: -90px;
+}
+.dramaLook-chaxun{
+    margin: 20px 0px 5px 0px;
+    text-align: center;
+}
+
+.dramaLook-result{
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.dramaLook-result>p{
+    float: left;
+    margin-left: 59px;
+}
+.dramaLook-btn{
+    margin-left: -25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.dramaLook-text{
+    padding: 20px;
 }

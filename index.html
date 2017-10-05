@@ -44,7 +44,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/uploadIndex'||  navMenu == '#/play/index1' || navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' || navMenu == '#/play/uploadAdd' ]">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/uploadIndex'||  navMenu == '#/play/index1' || navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' || navMenu == '#/play/uploadAdd' || navMenu == '#/play/playDefine']">
                         <a href="">
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
@@ -66,9 +66,9 @@
                                     <span class="second-menu-name">剧本管理</span>
                                 </a>
                             </li>
-                            <li>
+                            <li  ng-class="{true:'checked',false:''}[navMenu == '#/play/playDefine']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/play/playDefine">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">角色定义</span>
                                 </a>
