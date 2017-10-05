@@ -1,4 +1,222 @@
 <meta charset="utf-8">
 <div ng-controller="playDefine">
-aaaaaa
+    <div class="drama-init">
+        <div class="drama-init-left">
+            <p class="drama-init-title">角色场占比</p>
+            <div class="drama-init-search">
+                <span>剧本名称：</span><input type="text" placeholder="电视剧"/>
+                <i class="iconfont icon-sousuo drama-init-btn"></i>
+                <br/><br/>
+                <span style="margin-left: 29px">场号：</span>
+                <select name="">
+                    <option value="" selected = "selected">1</option>
+                    <option value="">2</option>
+                    <option value="">303</option>
+                </select>
+                <input class="drama-init-work" type="text" placeholder="关键字"/>
+                <i class="iconfont icon-sousuo drama-init-btn"></i>
+            </div>
+            <div class="pageBody">
+                <table class="eza-table-fixed-header" id="roledeTable">
+                    <thead>
+                    <col width="20%"><col width="40%"><col width="20%"><col width="20%">
+                    <tr>
+                        <th>场号</th>
+                        <th>场景</th>
+                        <th>气氛</th>
+                        <th>对比</th>
+                    </tr>
+                    </thead>
+                </table>
+                <div class="table-body-box">
+                    <table class="eza-table">
+                        <col width="20%"><col width="40%"><col width="20%"><col width="20%">
+                        <tr>
+                            <td>20-20</td>
+                            <td>外婆家</td>
+                            <td>日/夜</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <td>20-20</td>
+                            <td>外婆家</td>
+                            <td>日/夜</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #040000;">
+                            <td>20-20</td>
+                            <td>外婆家</td>
+                            <td>日/夜</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <td>20-20</td>
+                            <td>外婆家</td>
+                            <td>日/夜</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8D8D8D;">
+                            <td class="fontWeight">4</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td class="fontWeight">8%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="drama-init-right">
+            <p class="drama-init-title">剧本内容</p>
+            <div class="drama-init-text">首先明确一点，剧本区别于任何一种文体形式，我经常看到有的朋友把剧本写成了小说或人物传记，这是不对的，至少是不专业的。剧本有自己专署的格式，写剧本从某种程度上说是个技术活。
+            </div>
+            <div class="drama-init-text">  写剧本也不是什么很崇高的艺术创作，这只是一个普通的工种，剧作家和清洁工人没什么区别，都是很普通的工作而已，所以每个人都可以写剧本，每个人都可以当导演。当然，既然是一个工种，就有自己的规范。这些规范也许不会让你迅速变成一个专家，但至少能使你看上去像一个专家。或者，不至于让你糟糕的格式成为审稿人枪毙你稿子的理由。因为一个审稿人每天要看三到四篇稿子，如果你的剧本格式看上去不怎么专业的话，他完全有理由翻上几页就把你的剧本扔在角落里凉快。
+            </div>
+            <div class="drama-init-text">Ⅰ:把剧本写成小说</div>
+            <p class="drama-init-add">角色定义 <span id="drama-init-add">添加一个新角色</span></p>
+            <table class="eza-table-fixed-header">
+                <thead>
+                <col width="20%"><col width="15%"><col width="15%">
+                <col width="15%"><col width="15%"><col width="20%">
+                <tr>
+                    <th>角色</th>
+                    <th>角色定位</th>
+                    <th>参演场数</th>
+                    <th>参演集数</th>
+                    <th>演员</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+            </table>
+            <div class="table-body-box">
+                <table class="eza-table">
+                    <col width="20%"><col width="15%"><col width="15%">
+                    <col width="15%"><col width="15%"><col width="20%">
+                    <tr>
+                        <td class="drama-init-actor">二狗的爷爷</td>
+                        <td>主演</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>迪丽热巴</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="drama-init-actor">二狗</td>
+                        <td>配角</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>刘德华</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="drama-init-actor">二狗</td>
+                        <td>配角</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>刘德华</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="drama-init-actor">二狗</td>
+                        <td>配角</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>刘德华</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="drama-init-actor">二狗</td>
+                        <td>配角</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>刘德华</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="drama-init-actor">二狗</td>
+                        <td>配角</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>刘德华</td>
+                        <td>
+                            <a class="drama-init-edit">编辑</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>
+<script>
+    $(function(){
+        $('#drama-init-add').click(function(){
+            var dialog = new QAQ.Dialog({
+                title:'添加',
+                content:'<div class="drama-init-addText"><label>角色名字：</label><input type="text"/><br/><label class="search-bar-label-drama">角色定位：</label><select name="" id="" class="eza-input-select1"><option value="1">主角</option><option value="1">女一</option> <option value="1">女二</option><option value="1">男一</option><option value="1">男二</option><option value="1">群众</option></select><p><label>演员名称：</label><input type="text"/></p></div>',
+                buttons:[{
+                    name:'确定',
+                    cls:'.drama-init-true',//可选 自定义按钮css类
+                    click:function(){
+                        var dialog = this;
+                        //do something
+                        dialog.close();
+                    }
+                },
+                    {
+                        name:'取消',
+                        cls:'.drama-init-false',//可选 自定义按钮css类
+                        click:function(){
+                            var dialog = this;
+                            //do something
+                            dialog.close();
+                        }
+                    }]
+            });
+        })
+
+        $('.drama-init-edit').click(function(){
+            var that = $(this);
+            $('.drama-init-edit').removeClass("drama-init-edit-click");
+            $(this).addClass("drama-init-edit-click");
+            var dialog = new QAQ.Dialog({
+                title:'编辑',
+                content:'<div class="drama-init-addText"><label>角色名字：</label><span class="drama-name"></span><br/><label class="search-bar-label-drama">角色定位：</label><select name="" id="" class="eza-input-select1"><option value="1">主角</option><option value="1">女一</option> <option value="1">女二</option><option value="1">男一</option><option value="1">男二</option><option value="1">群众</option></select><p><label>演员名称：</label><input type="text"/></p></div>',
+                buttons:[{
+                    name:'确定',
+                    cls:'.drama-init-true',//可选 自定义按钮css类
+                    click:function(){
+                        var dialog = this;
+                        //do something
+                        $('.drama-init-edit').removeClass("drama-init-edit-click");
+                        dialog.close();
+                    }
+                },
+                    {
+                        name:'取消',
+                        cls:'.drama-init-false',//可选 自定义按钮css类
+                        click:function(){
+                            var dialog = this;
+                            //do something
+                            $('.drama-init-edit').removeClass("drama-init-edit-click");
+                            dialog.close();
+                        }
+                    }],
+                success:function(){
+                    var actorName = that.parents().find(".drama-init-actor").html();
+                    console.log( actorName )
+                    $(".drama-name").html( actorName )
+                }
+            });
+        })
+    });
+</script>

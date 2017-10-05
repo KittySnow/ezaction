@@ -36,8 +36,10 @@ var daBai ={};
         { path: '/play/index1', view: 'play/index1.html', viewUrl: 'play/index1.html', styles: null, scripts: 'play/index1', modules: 'playIndex1' },
         { path: '/play/uploadIndex', view: 'play/uploadIndex.html', viewUrl: 'play/uploadIndex.html', styles: null, scripts: 'play/uploadIndex', modules: 'playUploadIndex' },
         { path: '/play/uploadAdd', view: 'play/uploadAdd.html', viewUrl: 'play/uploadAdd.html', styles: null, scripts: 'play/uploadAdd', modules: 'playUploadAdd' },
-        { path: '/play/playDefine', view: 'play/playDefine.html', viewUrl: 'play/playDefine.html', styles: null, scripts: 'play/playDefine', modules: 'playDefine' }
-    
+        { path: '/play/playDefine', view: 'play/playDefine.html', viewUrl: 'play/playDefine.html', styles: null, scripts: 'play/playDefine', modules: 'playDefine' },
+        { path: '/play/playSearch', view: 'play/playSearch.html', viewUrl: 'play/playSearch.html', styles: null, scripts: 'play/playSearch', modules: 'playSearch' },
+        { path: '/play/playEditor', view: 'play/playEditor.html', viewUrl: 'play/playEditor.html', styles: null, scripts: 'play/playEditor', modules: 'playEditor' }
+
 
     ];
 

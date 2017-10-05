@@ -16,15 +16,15 @@
         </div>
         <div class="content-main">
             <form id="login-all" method="post">
-                <i class="iconfont iconfont1">&#xe633;</i><p class="firstLine"><input type="text" id="userName" placeholder="&nbsp;&nbsp;请输入手机号" required="required" required></p>
-                <i class="iconfont iconfont2">&#xe60d;</i><p class="firstLine1"><input type="text" id="passWord" placeholder="&nbsp;&nbsp;请输入登陆密码" required="required"></p>
-                <i class="iconfont iconfont3">&#xe60b;</i><p class="firstLine2"><input type="text" id="yzm" placeholder="&nbsp;&nbsp;请输入验证码" required="required"></p><img src="assets/image/login/img-yz.png" class="img-ro">
+                <i class="iconfont1"><img src="assets/image/login/login_icon_user.png" class="img-icon"></i><p class="firstLine"><input type="text" id="userName" placeholder="请输入手机号" required="required"></p>
+                <i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="img-icon"></i><p class="firstLine1"><input type="text" id="passWord" placeholder="请输入登陆密码" required="required"></p>
+                <i class="iconfont3"><img src="assets/image/login/login_icon_vld.png" class="img-icon"></i><p class="firstLine2"><input type="text" id="yzm" placeholder="请输入验证码" required="required"></p><img src="assets/image/login/img-yz.png" class="img-ro">
             </form>
         </div>
         <div class="content-foot">
             <button class="forgetBtn">忘记密码</button>
-            <i class="iconfont iconfont4" id="saveBtn">&#xe645;</i>
-            <i class="iconfont iconfont5" id="saveBtn1">&#xe645;</i>
+            <i class="iconfont4" id="saveBtn"><img src="assets/image/login/img-right.png" class="saveImg"></i>
+            <i class="iconfont5" id="saveBtn1"><img src="assets/image/login/right-green.png" class="saveImg"></i>
         </div>
     </div>
 
@@ -37,13 +37,13 @@
         </div>
         <div class="content-main1">
             <form id="login-alls" method="post">
-                <div class="lineL"> <i class="iconfont iconfont2">&#xe633;</i><p class="firstLine"><input type="text" id="phoneNumber" placeholder="&nbsp;&nbsp;请输入用户名" required="required" required></p></div>
-                <div class="lineL"><i class="iconfont iconfont2">&#xe60b;</i><p class="firstLine2"><input type="text" id="number" placeholder="&nbsp;&nbsp;请输入验证码" required="required"><img class="img-ro" src="assets/image/login/img-yz.png"></p></div>
-                <div class="lineL"><i class="iconfont iconfont2">&#xe6d5;</i><p class="firstLine2"><input type="text" id="sendNumber" placeholder="&nbsp;&nbsp;请输入验证码" required="required"><span class="showN">获取手机验证码</span></p></div>
-                <div class="lineL"><i class="iconfont iconfont2">&#xe60d;</i><p class="firstLine1"><input type="text" id="newPass" placeholder="&nbsp;&nbsp;请输入新密码" required="required"></p></div>
-                <div class="lineL"><i class="iconfont iconfont2">&#xe60d;</i><p class="firstLine1"><input type="text" id="againPass" placeholder="&nbsp;&nbsp;请再次输入新密码" required="required"></p>
-                    <div class="content-foot1"><i class="iconfont iconfont4" id="saveBtno">&#xe645;</i>
-                        <i class="iconfont iconfont5" id="saveBtnk">&#xe645;</i>  </div></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_user.png" class="forgetIcon"></i><p class="firstLine"><input type="text" id="phoneNumber" placeholder="请输入用户名" required="required"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_vld.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="number" placeholder="请输入验证码" required="required"><img class="img-ro" src="assets/image/login/img-yz.png"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/icon-message.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="sendNumber" placeholder="请输入验证码" required="required"><span class="showN" id="messageSend">获取手机验证码</span></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="newPass" placeholder="请输入新密码" required="required"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="againPass" placeholder="请再次输入新密码" required="required"></p>
+                    <div class="content-foot1"><i class="iconfont4" id="saveBtno"><img src="assets/image/login/img-right.png" class="saveImg"></i>
+                        <i class="iconfont5" id="saveBtnk"><img src="assets/image/login/right-green.png" class="saveImg"></i>  </div></div>
             </form>
         </div>
 
@@ -55,7 +55,7 @@
 
 </div>
 <script src="assets/lib/jquery-1.8.3.min.js"></script>
-<script src="assets/lib/plugin/html5validate.js"></script>
+<script src="assets/lib/jquery-html5Validate.js"></script>
 <script>
     $(function(){
         $("#saveBtn1").click(function(){
