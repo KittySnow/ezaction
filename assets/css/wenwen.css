@@ -1,28 +1,29 @@
 /*login*/
 /*html,body,.wrap{width:100%;height:100%;overflow:hidden;}*/
 .wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
-.wrap .content{width:100%;height:200px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top:-100px;min-width:1366px;}
+.wrap .content{width:100%;height: 350px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top: -175px;min-width:1366px;}
 .content .content-header{width:260px;height:56px;margin:0px auto;margin-top:40px;position:relative;}
 .content-header img{position:absolute;}
 .content-header .img-l{width:66px;height:56px;left:0px;top:0px;}
 .content-header .img-c{width:52px;height:39px;left:70px;top:6px;}
 .content-header .img-r{width:130px;height:35px;left:124px;top:10px;}
-.content-main{width:780px;height:40px;margin:10px auto;position:relative;}
-.content-main #login-all p{position:absolute;width:240px;height:35px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;}
+.content-main{width: 1105px;height: 60px;margin: 25px auto;position:relative;}
+.content-main #login-all p{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;padding-left: 10px;}
 .content-main #login-all i{position:absolute;z-index:2;color:#FF5600;line-height:35px;}
-.content-main #login-all i .img-icon{width:24px;height:24px;}
-.content-main #login-all .iconfont1{left:17px;width:25px;height:25px;top:5px;}
-.content-main #login-all .iconfont2{left:272px;width:25px;height:25px;top:5px;}
-.content-main #login-all .iconfont3{left:527px;width:25px;height:25px;top:5px;}
+.content-main #login-all i .img-icon{width: 41px;height: 45px;}
+.content-main #login-all .iconfont1{left: 22px;/* width:25px; *//* height:25px; */top:5px;}
+.content-main #login-all .iconfont2{left: 370px;width:25px;height:25px;top:5px;}
+.content-main #login-all .iconfont3{left: 722px;width:25px;height:25px;top:5px;}
 .content-foot i{position:absolute;}
 .content-foot i .saveImg{width:21px;height:21px;}
 .content-foot .iconfont4{color:#fff;left:88px;top:0px;cursor:pointer;width:21px;height:21px;}
 .content-foot .iconfont5{color:#00CF75;left:120px;top:0px;cursor:pointer;width:21px;height:21px;}
-.content-main #login-all input{width:88%;height:35px;position:absolute;left:12%;top:0px;outline:none;border-radius:3px;}
+.content-main #login-all input{width: 252px;height:35px;position:absolute;left: 53px;top: 10px;outline:none;border-radius:3px;line-height: 36px;font-size: 18px;vertical-align: middle;}
+#yzm{width:116px;}
 .content-main #login-all .firstLine{left:15px;}
-.content-main #login-all .firstLine1{left:270px;}
-.content-main #login-all .firstLine2{left:525px;}
-.content-main #login-all .img-ro{position:absolute;width:80px;height:35px;right:14px;top:1px;}
+.content-main #login-all .firstLine1{left: 364px;}
+.content-main #login-all .firstLine2{left: 714px;}
+.content-main #login-all .img-ro{position:absolute;right: 61px;}
 .content-foot{width:200px;height:36px;position:relative;left:70%;}
 .content-foot .forgetBtn{width:60px;height:21px;border:1px solid #005D8A;background-color: transparent;color:#DAD8D4;position:absolute;left:10px;top:0px;text-align:center;line-height:17px;font-size:8px;}
 @font-face {font-family: 'iconfont';src: url('../font/iconfont.eot');src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
@@ -187,7 +188,7 @@
     background-color: rgba(0, 0, 255, 0.09);
 }
 .fontWeight{font-weight:600;}
-/*剧本管理-- 编辑*/
+/*å‰§æœ¬ç®¡ç†-- ç¼–è¾‘*/
 .pageBody-left1{float:left;width:60%}
 .pageBody-right1{float:right;width:36%}
 .search-bar-labeled{float: left;font-size: 15px;line-height: 52px;}
@@ -242,7 +243,7 @@
     outline:0;font-size: 14px;vertical-align:0;border:1px solid #298ee5;
     color: #58595a;background:#f3faff;text-align: center;
     color: #58595a !important;}
-/*剧本编辑添加以及编辑*/
+/*å‰§æœ¬ç¼–è¾‘æ·»åŠ ä»¥åŠç¼–è¾‘*/
 .drama-edit-title{
     margin: 0px 0px 20px 0px;
     font-size: 16px;
