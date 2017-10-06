@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/admin.css"/>
     <link rel="stylesheet" href="assets/css/wenwen.css"/>
     <link rel="stylesheet" href="assets/css/qaqDialog.css"/>
+    <link rel="stylesheet" href="assets/css/swiper.css"/>
     <link rel="stylesheet" href="assets/font/iconfont.css"/>
 </head>
 <body style="min-width:600px;">
@@ -83,7 +84,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-menu-li">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail']">
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
@@ -91,9 +92,9 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/location' || navMenu == '#/shooting/locationDetail' ]">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/shooting/location">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">拍摄地点</span>
                                 </a>
@@ -180,7 +181,6 @@
         <div class="container-foot">
             东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
         </div>
-
     </div>
 <script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular.min.js"></script>
@@ -190,6 +190,8 @@
 <script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
 <script src="assets/lib/qaqDialog/qaqDialog.js"></script>
+<script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Z1hMF38Ss03mdYL6tFMLvAPi"></script>
 <script src="config/config.js"></script>
 <script src="config/app.js"></script>
 <script>

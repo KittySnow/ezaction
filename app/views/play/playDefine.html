@@ -3,19 +3,31 @@
     <div class="drama-init">
         <div class="drama-init-left">
             <p class="drama-init-title">角色场占比</p>
-            <div class="drama-init-search">
-                <span>剧本名称：</span><input type="text" placeholder="电视剧"/>
-                <i class="iconfont icon-sousuo drama-init-btn"></i>
-                <br/><br/>
-                <span style="margin-left: 29px">场号：</span>
-                <select name="">
-                    <option value="" selected = "selected">1</option>
-                    <option value="">2</option>
-                    <option value="">303</option>
-                </select>
-                <input class="drama-init-work" type="text" placeholder="关键字"/>
-                <i class="iconfont icon-sousuo drama-init-btn"></i>
-            </div>
+            <ul class="search-bar-ul cl">
+                <li class="search-bar-li wrap-all">
+                    <label class="search-bar-label">剧本名称：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left" id="txt" placeholder="电视剧">
+                            <div class="icon-black-find" id="searchPlay"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="search-bar-li">
+                    <label class="search-bar-label">　　场景：</label>
+                    <select name="" id="" class="eza-input-select12 mr10">
+                        <option value="1">电视剧</option>
+                        <option value="1">网络剧</option>
+                    </select>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left" id="key" placeholder="关键字">
+                            <div class="icon-black-find"></div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
             <div class="pageBody">
                 <table class="eza-table-fixed-header" id="roledeTable">
                     <thead>
