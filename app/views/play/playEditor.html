@@ -2,24 +2,24 @@
 <div ng-controller="playEditor">
 
     <div class="pageTitle">
-        <p class="page-title">剧本编辑</p>
+        <p class="page-title editor-title">剧本编辑</p>
     </div>
 
 
     <div class="pageBody cl">
 
         <div class="pageBody-left1">
-            <div class="eza-table-caption">
+            <div class="eza-table-caption1">
                 <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
-                <form action="" method="post" style="display:inline-block;">
-                    <label class="search-bar-label">版本：</label>
-                    <select name="" id="roleEditor" class="eza-input-select mr10">
+                <form action="" method="post" id="postB">
+                    <label class="search-bar-label1">版本：</label>
+                    <select name="" id="roleEditor" class="eza-input-selected">
                         <option value="1">1</option>
                         <option value="1">2</option>
                     </select>
                     </form>
-                <span class="tips-title">总集数：100集</span>
-                <span class="tips-title">总场数：100场</span>
+                <span class="tips-title mainCount">总集数：100集</span>
+                <span class="tips-title mainSource">总场数：100场</span>
             </div>
             <div class="search-bar">
                 <ul class="search-bar-ul cl">
@@ -42,7 +42,7 @@
             </div>
             <table class="eza-table-fixed-header">
                 <thead>
-                <col width="10%"><col width="40%"><col width="15%"><col width="15%"><col width="15%"><col width="15%">
+                <col width="10%"><col width="40%"><col width="15%"><col width="15%"><col width="10%"><col width="10%">
                 <tr>
                     <th>场号</th>
                     <th>场景</th>
@@ -60,49 +60,62 @@
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="" href="" style="border:1px solid #ff0000;">编辑</a></td>
-                        <td><a class="" href="" style="border:1px solid #ff0000">添加</a></td>
+                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a></td>
+                        <td><a class="green-fonts" href="#/play/editorAdd">添加</a></td>
                     </tr>
                     <tr>
-                        <td>1-1</td>
+                        <td>1-2</td>
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="ezc-font-blue mr10" href="">编辑</a></td>
-                        <td><a class="ezc-font-blue mr10" href="">添加</a></td>
+                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a></td>
+                        <td><a class="green-fonts" href="#/play/editorAdd">添加</a></td>
                     </tr>
                     <tr>
-                        <td>1-1</td>
+                        <td>1-3</td>
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="ezc-font-blue mr10" href="">编辑</a></td>
-                        <td><a class="ezc-font-blue mr10" href="">添加</a></td>
+                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a></td>
+                        <td><a class="green-fonts" href="#/play/editorAdd">添加</a></td>
+                    </tr>
+                    <tr>
+                        <td>1-4</td>
+                        <td>外婆家</td>
+                        <td>日/外</td>
+                        <td>3.75%</td>
+                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a></td>
+                        <td><a class="green-fonts" href="#/play/editorAdd">添加</a></td>
+                    </tr>
+                    <tr>
+                        <td class="fontWeight">1-5</td>
+                        <td>- -</td>
+                        <td>- -</td>
+                        <td class="fontWeight">15%</td>
+                        <td>- -</td>
+                        <td>- -</td>
                     </tr>
                 </table>
             </div>
-
-            <div class="pagination">
-                <a href="javascript:void(0)">首页</a>
-                <span class="prev disable"></span>
-                <span class="current">1</span>
-                <a href="#">2</a>
-                <span>...</span>
-                <a href="#">6</a>
-                <a href="#" class="next"></a>
-            </div>
+<!--分页插件-->
+            <!--<div class="pagination">-->
+                <!--<a href="javascript:void(0)">首页</a>-->
+                <!--<span class="prev disable"></span>-->
+                <!--<span class="current">1</span>-->
+                <!--<a href="#">2</a>-->
+                <!--<span>...</span>-->
+                <!--<a href="#">6</a>-->
+                <!--<a href="#" class="next"></a>-->
+            <!--</div>-->
 
         </div>
 
 
 
         <div class="pageBody-right1">
-            <div class="playApprovalDetail-btns-box">
-                <button type="button" class="ezc-btn-blue mr20">打印</button>
-                <button type="button" class="ezc-btn-green mr20">通过</button>
-                <button type="button" class="ezc-btn-red">驳回</button>
+            <div class="playEditor-top">
+                <button type="button" class="blue-fonts">提交审核</button>
             </div>
-
             <div class="ez-content-box">
                 <pre style="font-size:14px;line-height:36px;">
     首先明确一点，剧本区别于任何一种文体形式，我经常看到有的朋友把剧本写成了小说或人物传记，这是不对的，至少是不专业的。剧本有自己专署的格式，写剧本从某种程度上说是个技术活。
@@ -118,10 +131,10 @@
 <script>
     $(function(){
         $('.table-body-box').height($(window).height()-400);
-        $('.ez-content-box').height($(window).height()-350);
+        $('.ez-content-box').height($(window).height()-210);
         $(window).resize(function(){
             $('.table-body-box').height($(window).height()-400);
-            $('.ez-content-box').height($(window).height()-350);
+            $('.ez-content-box').height($(window).height()-210);
         })
     })
 </script>

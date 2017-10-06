@@ -191,3 +191,156 @@
 .pageBody-left1{float:left;width:60%}
 .pageBody-right1{float:right;width:36%}
 .search-bar-labeled{float: left;font-size: 15px;line-height: 52px;}
+.eza-table .blue-fonts{color:#298ee5}
+.eza-table .green-fonts{color:#32b268;}
+.eza-table-caption1{margin-bottom:21px;position:relative;height:36px;}
+.eza-table-caption1 span{position:absolute;}
+.eza-table-caption1 span.big-title{font-size:20px;font-weight:600;color:#333;left:0px;height:32px;top:2px;}
+.eza-table-caption1 span.sub-title{font-size:14px;color:#333;left:130px;height:22px;top:7px;display:inline-block;line-height:22px;}
+.eza-table-caption1 span.tips-title{font-size:15px;color:#333;}
+.eza-table-caption1 #postB{position:absolute;height:32px;top:2px;left:180px;}
+.eza-table-caption1 .mainCount{left:350px;display:inline-block;height:22px;top:7px;}
+.eza-table-caption1 .mainSource{left:480px;display:inline-block;height:22px;top:7px;}
+.search-bar-label1{float: left;font-size: 15px;line-height: 30px;}
+.eza-input-selected{
+    font-family: microsoft yahei;
+    width: 114px;
+    height: 30px;
+    font-size:14px;
+    line-height: 32px;
+    vertical-align:0px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius:1px;
+    color: #afafaf;
+    padding: 0px 35px 0px 40px;
+    padding:5px 4px 5px 10px \0;
+    padding:5px 10px 5px 10px \9;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background: url(../image/select_bg_down.png) 95% 50% no-repeat transparent;
+    background-image:none \0;
+    background-image:none \9;
+    outline:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-transition:border-color ease-in-out .15s;
+    -o-transition:border-color ease-in-out .15s;
+    transition:border-color ease-in-out .15s;
+    float: left;
+}
+.playEditor-top{text-align:right;margin-top:-24px;margin-bottom:21px;}
+.playEditor-top .blue-fonts{ cursor: pointer;
+    font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid transparent;
+    color: #298ee5;background:transparent;text-align:right;
+    color: #298ee5 !important;}
+.playEditor-top .blue-fonts:hover{ font-family: microsoft yahei;
+    padding:7px 28px;
+    outline:0;font-size: 14px;vertical-align:0;border:1px solid #298ee5;
+    color: #58595a;background:#f3faff;text-align: center;
+    color: #58595a !important;}
+/*剧本编辑添加以及编辑*/
+.drama-edit-title{
+    margin: 0px 0px 20px 0px;
+    font-size: 16px;
+}
+.drama-edit-text{
+    margin: 10px auto;
+    font-size: 14px;
+}
+.drama-edit-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.drama-edit-name1{
+    font-size: 12px;
+}
+.drama-edit-yard{
+    width: 90%;
+    border: 1px solid #040000;
+    min-height: 50px;
+    clear: both;
+    margin: 10px auto;
+}
+.drama-edit-select1{
+    font-family: microsoft yahei;
+    width: 100px;
+    height: 37px;
+    font-size:14px;
+    line-height: 35px;
+    vertical-align:0px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius:1px;
+    color: #afafaf;
+    padding: 0px 35px 0px 30px;
+    padding:5px 4px 5px 10px \0;
+    padding:5px 10px 5px 10px \9;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background: url(../image/select_bg_down.png) 95% 50% no-repeat transparent;
+    background-image:none \0;
+    background-image:none \9;
+    outline:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-transition:border-color ease-in-out .15s;
+    -o-transition:border-color ease-in-out .15s;
+    transition:border-color ease-in-out .15s;
+    float: left;
+}
+.drama-edit-select2{
+    margin-left: 15px;
+    font-family: microsoft yahei;
+    width: 100px;
+    height: 37px;
+    font-size:14px;
+    line-height: 35px;
+    vertical-align:0px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius:1px;
+    color: #afafaf;
+    padding: 0px 35px 0px 30px;
+    padding:5px 4px 5px 10px \0;
+    padding:5px 10px 5px 10px \9;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background: url(../image/select_bg_down.png) 95% 50% no-repeat transparent;
+    background-image:none \0;
+    background-image:none \9;
+    outline:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-transition:border-color ease-in-out .15s;
+    -o-transition:border-color ease-in-out .15s;
+    transition:border-color ease-in-out .15s;
+    float: left;
+}
+.drama-edit-content{
+    border: 1px solid #000;
+    width:calc(90% - 30px);
+    min-height: 265px;
+    max-height: 300px;
+    overflow: auto;
+    margin: 30px auto;
+    padding: 10px 10px 10px 20px;
+}
+.drama-edit-label1{float: left;line-height: 43px;font-size:15px;}
+.drama-edit-label3{float: left;line-height: 46px;font-size:15px;}
+.drama-edit-label2{
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    font-size:15px;
+}
+.drama-edit-label4{
+    float: left;
+    line-height: 41px;
+    font-size:15px;
+}

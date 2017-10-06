@@ -95,7 +95,7 @@ body{padding-left:20px;padding-right:20px}
 .mt40{margin-top:40px;}
 .ft16{font-size:16px;font-size: 16px !important;}
 .table-body-box{overflow:auto}
-
+.table-body-boxed{overflow:auto}
 .nav-menu li.nav-menu-li{margin-bottom: 20px;position: relative;}
 .nav-menu li.nav-menu-li span.nav-name{font-size: 18px;color:#000;vertical-align: baseline;line-height: 32px;}
 .nav-menu li.nav-menu-li span.nav-name:hover,.nav-menu li.nav-menu-li .second-menu li .second-menu-name:hover{color:#298ee5}
@@ -186,7 +186,7 @@ body{padding-left:20px;padding-right:20px}
     border-bottom: 1px solid #000;
     border-radius:1px;
     color: #afafaf;
-    padding: 0px 35px 0px 20px;
+    padding: 0px 35px 0px 40px;
     padding:5px 4px 5px 10px \0;
     padding:5px 10px 5px 10px \9;
     -webkit-appearance:none;
@@ -276,7 +276,8 @@ body{padding-left:20px;padding-right:20px}
     margin-top:15px;
     padding:0 20px;
 }
-.page-title{font-size:18px;color:#333;margin-bottom:29px}
+.page-title{font-size:18px;color:#333;margin-bottom:29px;}
+.editor-title{width:300px;}
 .pageHeader,.pageBody{
     padding:0 20px;
 }
