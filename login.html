@@ -10,9 +10,9 @@
 <div class="wrap">
     <div class="content">
         <div class="content-header">
-            <img src="assets/image/login/eyeLogo.png" alt="" title="" class="img-l">
-            <img src="assets/image/login/EZ.png" alt="" title="" class="img-c">
-            <img src="assets/image/login/action.png" alt="" title="" class="img-r">
+            <img src="assets/image/login/eyeLogo.png" alt="" title="" class="img-left">
+            <img src="assets/image/login/EZ.png" alt="" title="" class="img-center">
+            <img src="assets/image/login/action.png" alt="" title="" class="img-right">
         </div>
         <div class="content-main">
             <form id="login-all" method="post">
@@ -22,37 +22,11 @@
             </form>
         </div>
         <div class="content-foot">
-            <button class="forgetBtn">忘记密码</button>
-            <i class="iconfont4" id="saveBtn"><img src="assets/image/login/img-right.png" class="saveImg"></i>
-            <i class="iconfont5" id="saveBtn1"><img src="assets/image/login/right-green.png" class="saveImg"></i>
+            <button class="forgetBtned" style="">忘记密码</button>
+            <i class="iconfont4" id="saveBtn"><img src="assets/image/login/img-right.png" class="saveImgb"></i>
+            <i class="iconfont5" id="saveBtn1"><img src="assets/image/login/right-green.png" class="saveImgb"></i>
         </div>
     </div>
-
-    <!--begin-->
-    <div class="content1">
-        <div class="content-header">
-            <img src="assets/image/login/eyeLogo.png" alt="" title="" class="img-l">
-            <img src="assets/image/login/EZ.png" alt="" title="" class="img-c">
-            <img src="assets/image/login/action.png" alt="" title="" class="img-r">
-        </div>
-        <div class="content-main1">
-            <form id="login-alls" method="post">
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_user.png" class="forgetIcon"></i><p class="firstLine"><input type="text" id="phoneNumber" placeholder="请输入用户名" required="required"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_vld.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="number" placeholder="请输入验证码" required="required"><img class="img-ro" src="assets/image/login/img-yz.png"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/icon-message.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="sendNumber" placeholder="请输入验证码" required="required"><span class="showN" id="messageSend">获取手机验证码</span></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="newPass" placeholder="请输入新密码" required="required"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="againPass" placeholder="请再次输入新密码" required="required"></p>
-                    <div class="content-foot1"><i class="iconfont4" id="saveBtno"><img src="assets/image/login/img-right.png" class="saveImg"></i>
-                        <i class="iconfont5" id="saveBtnk"><img src="assets/image/login/right-green.png" class="saveImg"></i>  </div></div>
-            </form>
-        </div>
-
-
-
-
-    </div>
-    <!--end-->
-
 </div>
 <script src="assets/lib/jquery-1.8.3.min.js"></script>
 <script src="assets/lib/jquery-html5Validate.js"></script>
@@ -63,16 +37,8 @@
                 window.location.href="index.html";
             }
         })
-        $(".forgetBtn").click(function(){
-            $(".content").hide();
-            $(".content1").show();
-        })
-        $("#saveBtnk").click(function(){
-            if ($.html5Validate.isAllpass($("#login-alls"))) {
-                alert("success")
-                $(".content").show();
-                $(".content1").hide();
-            }
+        $(".forgetBtned").click(function(){
+            window.location.href="forgetPass.html";
         })
 
     })

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>忘记密码</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/wenwen.css">
+</head>
+<body>
+<div class="wrap">
+    <!--begin-->
+    <div class="content1">
+        <p class="reverseTo"><a href="login.html">返回</a></p>
+        <div class="content-header" style="width:380px;">
+            <img src="assets/image/login/eyeLogo.png" alt="" title="" class="img-l" style="top:-6px;">
+            <img src="assets/image/login/EZ.png" alt="" title="" class="img-c" style="top:10px;width:60px;">
+            <img src="assets/image/login/action.png" alt="" title="" class="img-r" style="left:135px;width:142px;top:13px;">
+        </div>
+        <div class="content-main1">
+            <form id="login-alls" method="post">
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_user.png" class="forgetIcon"></i><p class="firstLine"><input type="text" id="phoneNumber" placeholder="请输入用户名" required="required"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_vld.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="number" placeholder="请输入验证码" required="required"><img class="img-ro" src="assets/image/login/img-yz.png"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/icon-message.png" class="forgetIcon1"></i><p class="firstLine2"><input type="text" id="sendNumber" placeholder="请输入验证码" required="required"><span class="showN" id="messageSend">获取手机验证码</span></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="newPass" placeholder="请输入新密码" required="required"></p></div>
+                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="againPass" placeholder="请再次输入新密码" required="required"></p>
+                    <div class="content-foot1"><i class="iconfont4" id="saveBtno"><a href="login.html"> <img src="assets/image/login/img-right.png" class="saveImg"></a></i>
+                        <i class="iconfont5" id="saveBtnk"><a href="#"><img src="assets/image/login/right-green.png" class="saveImg"></a> </i>  </div></div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <!--end-->
+</div>
+<script src="assets/lib/jquery-1.8.3.min.js"></script>
+<script src="assets/lib/jquery-html5Validate.js"></script>
+<script>
+    $(function(){
+        $("#saveBtnk").click(function(){
+            if ($.html5Validate.isAllpass($("#login-alls"))) {
+                alert("success");
+                window.location.href="login.html";
+            }
+        })
+    })
+</script>
+</body>
+</html>

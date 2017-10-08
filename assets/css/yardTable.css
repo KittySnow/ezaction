@@ -132,12 +132,12 @@
     margin-left: -90px;
 }
 .dramaLook-chaxun{
-    margin: 20px 0px 5px 0px;
+    margin: 26px 0px 5px 0px;
     text-align: center;
 }
 
 .dramaLook-result{
-    margin: 0px auto;
+    margin: 12px auto;
     margin-bottom: 20px;
 }
 .dramaLook-result>p{
@@ -150,5 +150,14 @@
     cursor: pointer;
 }
 .dramaLook-text{
-    padding: 20px;
+      padding: 20px;
+  }
+.dramaLook-text1{
+    padding:0px  20px;
 }
+.locHeight{height:25px;}
+.strongL{font-weight:600;text-decoration:underline;}
+.leftSpace{display:inline-block;margin-left:120px;}
+.leftSpace1{display:inline-block;margin-left:50px;}
+.leftSpace2{display:inline-block;margin-left:35px;}
+.container-footed{height:36px;line-height:36px;text-align:center;margin-top:6px;}
