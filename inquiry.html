@@ -27,28 +27,34 @@
 <div class="main-container">
     <section class="inquiry-wrap-section">
        <div class="inquiry-wrap">
-           <p class="chaxun">
-               <span>剧本名称：</span>
-               <select  name="" id="bookName">
-                   <option value="" selected = "selected">剧本名称</option>
-               </select>
-               <span>场号：</span>
-               <select name="" class="bookNum">
-                   <option value="" selected = "selected">1</option>
-                   <option value="">2</option>
-                   <option value="">303</option>
-               </select>
-               <input type="text" placeholder="白马" id="actorName"/>
-               <i class="iconfont icon-sousuo" id="btnInquiry"></i>
-           </p>
+           <ul class="search-bar-ul cl">
+               <li class="search-bar-li">
+                   <label class="search-bar-label">剧本名称：</label>
+                   <select name="" id="" class="eza-input-select12 mr10 w203 inquiry-select-name">
+                       <option value="1">电视剧</option>
+                       <option value="1">网络剧</option>
+                   </select>
+                   <label class="search-bar-label">场号：</label>
+                   <select name="" id="" class="eza-input-select12 mr10 inquiry-select-scene">
+                       <option value="">2</option>
+                       <option value="">303</option>
+                   </select>
+                   <div class="select-down-wrapper">
+                       <div class="select-down-showitem">
+                           <input type="text" class="select-down-left" id="key" placeholder="关键字">
+                           <div class="icon-black-find"></div>
+                       </div>
+                   </div>
+               </li>
+           </ul>
            <div class="result">
                <p>总集数：<span>40集</span></p>
                <p>总场数：<span>100</span></p>
                <p>总剧占比：<span>10%</span></p>
                <p>集数占比：<span>10%</span></p>
-               <div><p>《让子弹飞飞一会》</p><span>电影剧本</span></div>
+               <div><p class="fw ft16">《让子弹飞飞一会》</p><span class="ft14">电影剧本</span></div>
            </div>
-           <div id="text">
+           <div id="inquiry-wrap-text">
                北洋年间 南部中国<br>
                青石岭 日外<br>
                青山百石<br>

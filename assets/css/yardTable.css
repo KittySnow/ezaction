@@ -23,7 +23,7 @@
 }
 .actor{
     width: 18px;
-   padding: 5px 0px 35px 0px;
+    padding: 5px 0px 35px 0px;
 }
 .actor span{
     color: orangered;
@@ -61,6 +61,12 @@
     /*text-align: left;*/
     /*padding-left: 20px;*/
 }
+.inquiry-select-name{
+    width: 203px;
+}
+.inquiry-select-scene{
+    width: 103px;
+}
 .inquiry-wrap-section{
     position: absolute;
     padding: 0px;
@@ -68,6 +74,7 @@
     bottom: 30px;
     left: 20px;
     right: 20px;
+    font-size:14px;
     background: url(../image/admin_body.jpg) no-repeat center center;
 }
 .inquiry-wrap{
@@ -75,6 +82,10 @@
     width: 698px;
     margin: 0px auto;
     font-size: 16px;
+}
+#inquiry-wrap-text{
+    font-size:14px;
+    line-height: 1.4;
 }
 #bookName,#bookNum,#actorName{
     border-bottom: 1px solid #000000;
@@ -107,7 +118,7 @@
     cursor: pointer;
 }
 .result{
-    margin: 20px auto;
+    margin: 18px auto 20px;
 }
 .result>p{
     float: left;
@@ -123,7 +134,7 @@
 }
 /*dramaLook*/
 .dramaLook-title span{
-   position: relative;
+    position: relative;
     left: 50%;
 }
 .dramaLook-title1{
@@ -150,8 +161,8 @@
     cursor: pointer;
 }
 .dramaLook-text{
-      padding: 20px;
-  }
+    padding: 20px;
+}
 .dramaLook-text1{
     padding:0px  20px;
 }
