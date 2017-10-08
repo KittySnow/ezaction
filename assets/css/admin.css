@@ -91,12 +91,13 @@ body{padding-left:20px;padding-right:20px}
 
 .ezc-font-blue.small,.ezc-font-orange.small,.ezc-font-red.small,.ezc-font-green.small{padding:7px 10px;}
 
-
+.fw{font-weight:600}
 .ml10{margin-left:10px;}
 .mr10{margin-right:10px;}
 .mr20{margin-right:20px;}
 .ml20{margin-left:20px;}
 .ml20{margin-left:20px;}
+.mb10{margin-bottom:10px;}
 .mb20{margin-bottom:20px;}
 .mt20{margin-top:20px;}
 .mt40{margin-top:40px;}
