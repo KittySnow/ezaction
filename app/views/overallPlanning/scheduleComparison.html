@@ -1,0 +1,185 @@
+<div ng-controller="scheduleComparison">
+    <div class="pageTitle">
+        <p class="page-title">历史排程</p>
+    </div>
+    <div class="pageBody cl">
+        <div class="eza-table-caption cl">
+            <div class="fl70">
+                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="tips-title">故宫--吴波酒吧武器库</span>
+            </div>
+            <div class="fr30">
+                <button type="button" class="ezc-btn-blue">排程管理</button>
+                <a href="" class="ml10 ezc-btn-red">返回</a>
+            </div>
+        </div>
+
+        <div class="schedule-bar1">
+            <label class="schedule-bar-label">可用时间：</label>
+            <span class="big-date">2017/09/09</span><span class="schedule-bar1-line">　-　</span><span class="big-date">2017/09/19</span>
+            <button type="button" class="ezc-btn-blue ml20" id="editTimeBtn">修改时间</button>
+        </div>
+
+        <div class="schedule-bar">
+            <label class="schedule-bar-label">档期比对：</label>
+            <span class="date-left"></span>
+            <span class="big-date">2017/09/09</span>
+            <span class="date-right"></span>
+        </div>
+
+        <table class="eza-table-fixed-header">
+            <thead>
+            <col width="10%"><col width="60%"><col width="15%"><col width="15%">
+            <tr>
+                <th>类型</th>
+                <th>比对内容</th>
+                <th>状态</th>
+                <th>备注</th>
+            </tr>
+            <tr>
+                <th>地址</th>
+                <td>故宫</td>
+                <td>可以</td>
+                <td>可以</td>
+            </tr>
+            </thead>
+        </table>
+        <table class="eza-table-fixed-header">
+            <thead>
+            <col width="10%"><col width="15%"><col width="15%"><col width="10%"><col width="10%"><col width="10%"><col width="15%"><col width="15%">
+            <tr>
+                <th>演员</th>
+                <th>角色名称</th>
+                <th>角色</th>
+                <th>演员</th>
+                <th>参演集数</th>
+                <th>参演场数</th>
+                <th>&nbsp;</th>
+                <th>&nbsp; </th>
+            </tr>
+
+            </thead>
+        </table>
+        <div class="table-body-box">
+            <table class="eza-table">
+                <col width="10%"><col width="15%"><col width="15%"><col width="10%"><col width="10%"><col width="10%"><col width="15%"><col width="15%">
+                <tr>
+                    <td>1</td>
+                    <td>xxx</td>
+                    <td>配演</td>
+                    <td>xxx</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>已预订</td>
+                    <td>已安排XX场</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>xxx</td>
+                    <td>配演</td>
+                    <td>xxx</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>已预订</td>
+                    <td>已安排XX场</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>xxx</td>
+                    <td>配演</td>
+                    <td>xxx</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>已预订</td>
+                    <td>已安排XX场</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+<script type="text/template" id="editShootingBox">
+    <ul class="editShootingUl">
+        <li class="cl">
+            <label class="editShootingBox-label">拍摄场景：</label>
+            <input type="text" class="editShootingBox-input1">
+        </li>
+        <li class="cl">
+            <label class="editShootingBox-label">拍摄地址：</label>
+            <input type="text" class="editShootingBox-input1">
+        </li>
+        <li class="cl">
+            <label class="editShootingBox-label">可用时间：</label>
+        </li>
+        <li class="last cl">
+            <dl  class="editShootingBox-date-box cl" id="shootEditDateInputBox1">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input shootEdit-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput1">
+                </dd>
+            </dl>
+            <span class="editShootingBox-date-dec">至</span>
+            <dl  class="editShootingBox-date-box cl" id="shootEditDateInputBox2">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input shootEdit-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput2">
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</script>
+<script>
+    $(function(){
+        $('.table-body-box').height($(window).height()-400);
+        $(window).resize(function(){
+            $('.table-body-box').height($(window).height()-400);
+        });
+
+        $('#editTimeBtn').click(function(){
+            var dialog = new QAQ.Dialog({
+                title:'编辑',
+                width:507,
+                content:$('#editShootingBox').html(),
+                buttons:[{
+                    name:'确定',
+                    cls:'.btn-primary',//可选 自定义按钮css类
+                    click:function(){
+                        var dialog = this;
+                        dialog.close();
+                    }
+                },{
+                    name:'取消',
+                    cls:'.btn-success',//可选 自定义按钮css类
+                    click:function(){
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success:function () {
+                    lay('.layui-input').each(function(){
+                        var s = this;
+                        laydate.render({
+                            elem: s
+                            ,trigger: 'click'
+                        });
+                    });
+
+
+                  /*  laydate.render({
+                        elem: '#shootEditDateInput2'
+                        ,trigger: 'click'
+                    });*/
+                }
+            });
+        })
+
+
+
+
+    })
+</script>

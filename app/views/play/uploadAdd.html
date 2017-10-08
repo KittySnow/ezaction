@@ -102,7 +102,6 @@
 
     $(function(){
            $('#transfer').click(function(){
-
                var dialog = new QAQ.Dialog({
                    title:'提示',
                    content:'<div class="trans-dialog-loading"></div><div class="trans-dialog-tips">正在转译中，请稍后...</div> ',
@@ -111,8 +110,6 @@
                        cls:'.btn-primary',//可选 自定义按钮css类
                        click:function(){
                            var dialog = this;
-
-                           //do something
                            dialog.close();
                        }
                    }]

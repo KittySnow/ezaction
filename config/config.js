@@ -28,6 +28,8 @@ var daBai ={};
         { path: '/overallPlanning/announcementAudit', view: 'overallPlanning/announcementAudit.html', viewUrl: 'overallPlanning/announcementAudit.html', styles: null, scripts: 'overallPlanning/announcementAudit', modules: 'announcementAudit' },
         { path: '/overallPlanning/arrangementNotice', view: 'overallPlanning/arrangementNotice.html', viewUrl: 'overallPlanning/arrangementNotice.html', styles: null, scripts: 'overallPlanning/arrangementNotice', modules: 'arrangementNotice' },
         { path: '/overallPlanning/confirm', view: 'overallPlanning/confirm.html', viewUrl: 'overallPlanning/confirm.html', styles: null, scripts: 'overallPlanning/confirm', modules: 'overallPlanningConfirm' },
+        { path: '/overallPlanning/confirmProgress', view: 'overallPlanning/confirmProgress.html', viewUrl: 'overallPlanning/confirmProgress.html', styles: null, scripts: 'overallPlanning/confirmProgress', modules: 'overallPlanningConfirmProgress' },
+        { path: '/overallPlanning/scheduleComparison', view: 'overallPlanning/scheduleComparison.html', viewUrl: 'overallPlanning/scheduleComparison.html', styles: null, scripts: 'overallPlanning/scheduleComparison', modules: 'scheduleComparison' },
         { path: '/overallPlanning/progressAdmin', view: 'overallPlanning/progressAdmin.html', viewUrl: 'overallPlanning/progressAdmin.html', styles: null, scripts: 'overallPlanning/progressAdmin', modules: 'progressAdmin' },
         { path: '/play/index', view: 'play/index.html', viewUrl: 'play/index.html', styles: null, scripts: 'play/index', modules: 'playIndex' },
         { path: '/play/playApproval', view: 'play/playApproval.html', viewUrl: 'play/playApproval.html', styles: null, scripts: 'play/playApproval', modules: 'playApproval' },

@@ -97,6 +97,7 @@ body{padding-left:20px;padding-right:20px}
 .mr20{margin-right:20px;}
 .ml20{margin-left:20px;}
 .ml20{margin-left:20px;}
+.mb20{margin-bottom:20px;}
 .mt20{margin-top:20px;}
 .mt40{margin-top:40px;}
 .ft16{font-size:16px;font-size: 16px !important;}
@@ -188,7 +189,6 @@ body{padding-left:20px;padding-right:20px}
     font-size:14px;
     line-height: 35px;
     vertical-align:0px;
-    text-align: right;
     text-align: center;
     border: 0;
     border-bottom: 1px solid #000;
@@ -263,6 +263,12 @@ body{padding-left:20px;padding-right:20px}
     table-layout: fixed;
     border-bottom: 1px solid #000;
 }
+.eza-table-fixed-header.pb5 th{
+    font-weight:800;
+    font-size:16px;
+    padding: 12px 0 7px;
+    text-align: center;
+}
 .eza-table-fixed-header th{
     font-weight:800;
     font-size:14px;
@@ -271,7 +277,11 @@ body{padding-left:20px;padding-right:20px}
 }
 .eza-table tr{
     padding:12px 0;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px solid  #b7b6b6;
+}
+.eza-table tr.solid-border{
+    border-bottom: 1px solid  #b7b6b6;
+    border-top: 1px solid  #b7b6b6;
 }
 .eza-table td{
 
@@ -313,6 +323,8 @@ body{padding-left:20px;padding-right:20px}
 
 
 .eza-table-caption{margin-bottom:35px;}
+.eza-table-caption .fl70{width: 70%;float: left}
+.eza-table-caption .fr30{width: 30%;float:right;text-align: right}
 .eza-table-caption .caption-title{font-size:16px;color:#333;font-weight:800;line-height: 36px;}
 .eza-table-caption span.big-title{font-size:20px;font-weight:600;color:#333}
 .eza-table-caption span.sub-title{font-size:14px;color:#333;
@@ -453,7 +465,7 @@ body{padding-left:20px;padding-right:20px}
     font-size: 14px;
 }
 .dark-bg{display: none;position:fixed;left:0;top:0;width:100%;height:100%;z-index: 9999;opacity:0.3;background-color:#000;filter:alpha(opacity=30);}
-.photo-carousel{display:none;width:76%;position:absolute;left:12%;top:10%;bottom:10%;background:#00a2d4;z-index:10000}
+.photo-carousel{display:none;width:76%;position:absolute;left:12%;top:10%;bottom:10%;background:#fff;z-index:10000}
 .dialog-btn-close {
     position: absolute;
     right: -48px;
@@ -472,4 +484,159 @@ body{padding-left:20px;padding-right:20px}
 #baiduMapBox{
     width:100%;
     height:266px;
+}
+.big-date{
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.schedule-bar{
+    font-size: 0;
+    margin-bottom: 5px;
+    line-height: 37px;
+}
+.schedule-bar1{
+    font-size: 0;
+    margin-bottom: 3px;
+    margin-top: -15px;
+    line-height: 37px;
+}
+.schedule-bar1-line{
+    font-size: 20px;
+    vertical-align: top;
+}
+.schedule-bar-label{
+    font-size: 16px;
+    line-height: 36px;
+}
+.date-left{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: 0;
+    background: url(../image/small_blue_left.gif);
+    margin-left:3px;
+    margin-right:26px;
+    cursor: pointer;
+}
+.date-right{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: 0;
+    background: url(../image/small_blue_right.gif);
+    margin-right:3px;
+    margin-left:26px;
+    cursor: pointer;
+}
+
+.eza-tab .eza-nav-tabs {
+    position: relative;
+    border-bottom: none;
+    margin-bottom:5px;
+}
+.eza-tab .eza-nav-tabs li {
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: -1px;
+}
+.eza-tab .eza-nav-tabs li a:hover{
+    color:#298ee5
+}
+.eza-tab .eza-nav-tabs li a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 35px 12px;
+    background: transparent;
+    margin-right: 0;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+    line-height: 18px;
+}
+.eza-tab .eza-nav-tabs li.active{
+    border-bottom:1px solid #333
+}
+.eza-tab .eza-nav-tabs li.active a{
+    font-family: microsoft Yahei;
+    font-size: 18px;
+    font-weight: 600;
+}
+.eza-tab-pane{
+    display: none;
+}
+.editShootingUl{
+    padding:30px 50px;
+}
+.editShootingBox-label{
+    float: left;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.editShootingBox-input1{
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 291px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.icon-rili{
+    width: 22px;
+    height: 20px;
+    background:url(../image/icon_rili.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+    display: block;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.editShootingBox-date-box{
+    padding-right: 30px;
+    float: left;
+    width: 136px;
+    height: 34px;
+    border-bottom: 1px solid #333;
+}
+.editShootingBox-date-box dt{
+    float: right;
+    margin-right: -30px;
+    cursor: pointer;
+}
+.shootEdit-dateinput{
+    border: 0;
+    line-height: 33px;
+    height: 33px;
+    width: 128px;
+    /* padding-left: 10px; */
+    padding-right: 37px;
+    font-family: microsoft yahei;
+    font-size: 20px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.editShootingBox-date-dec{
+    vertical-align: bottom;
+    line-height: 34px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.editShootingUl li.last{
+    padding-left: 26px;
+    margin-top: 5px;
 }
