@@ -1,0 +1,182 @@
+<div id="progressSceneLayer">
+    <div class="overallManagement-btns">
+        <a href="" class="ezc-btn-blue" id="importScene">导入场景</a>
+    </div>
+    <table class="eza-table-fixed-header pb5">
+        <col width="10%">
+        <col width="20%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <col width="10%">
+        <tr>
+            <th>集数</th>
+            <th>场景</th>
+            <th>气氛</th>
+            <th>全剧占比</th>
+            <th>特约/群众</th>
+            <th>化服道</th>
+            <th>操作</th>
+        </tr>
+    </table>
+    <div class="table-body-box">
+        <table class="eza-table">
+            <col width="10%">
+            <col width="20%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="10%">
+            <tr>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+                <td>
+                    <a href="" class="ezc-font-red">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+                <td>
+                    <a href="" class="ezc-font-red">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+                <td>
+                    <a href="" class="ezc-font-red">删除</a>
+                </td>
+            </tr>
+            <tr class="solid-border">
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+                <td>
+                    <a href="" class="ezc-font-red">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="progress-layer" id="progressChooseSceneLayer">
+    <ul class="search-bar-ul cl">
+        <li class="search-bar-li">
+            <label class="search-bar-label">场景：</label>
+            <select name="" id="" class="eza-input-select12 mr10">
+                <option value="1">电视剧</option>
+                <option value="1">网络剧</option>
+            </select>
+            <div class="select-down-wrapper">
+                <div class="select-down-showitem">
+                    <input type="text" class="select-down-left" id="key" placeholder="关键字">
+                    <div class="icon-black-find"></div>
+                </div>
+            </div>
+        </li>
+        <li class="search-bar-li progress-li-fr">
+            <a href="" class="ezc-btn-blue mr10">保存</a>
+            <a href="" class="ezc-btn-red" id="progressChooseSceneBack">返回</a>
+        </li>
+    </ul>
+    <table class="eza-table-fixed-header pb5">
+        <col width="10%">
+        <col width="10%">
+        <col width="20%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <tr>
+            <th><input type="checkbox" name="" id="" class="eza-all-check">全选</th>
+            <th>集数</th>
+            <th>场景</th>
+            <th>气氛</th>
+            <th>全剧占比</th>
+            <th>特约/群众</th>
+            <th>化服道</th>
+        </tr>
+    </table>
+    <div class="table-body-box">
+        <table class="eza-table">
+            <col width="10%">
+            <col width="10%">
+            <col width="20%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <tr>
+                <td><input type="checkbox" name="" id="" class="eza-check"></td>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="" class="eza-check"></td>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="" class="eza-check"></td>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr class="solid-border">
+                <td><input type="checkbox" name="" id="" class="eza-check"></td>
+                <td>1-1</td>
+                <td>外婆家</td>
+                <td>日/夜</td>
+                <td>1%</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#importScene').click(function(){
+            $('#tabList').hide();
+            $('#progressSceneLayer').hide();
+            $('#progressChooseSceneLayer').show();
+        });
+
+        $('#progressChooseSceneBack').click(function () {
+            $('#tabList').show();
+            $('#progressSceneLayer').show();
+            $('#progressChooseSceneLayer').hide();
+        })
+    })
+</script>

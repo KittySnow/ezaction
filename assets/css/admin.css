@@ -181,6 +181,13 @@ body{padding-left:20px;padding-right:20px}
 .search-bar-ul{}
 .search-bar-ul .search-bar-li{float: left;padding:3px 0;margin-right:20px;}
 .search-bar-ul .search-bar-li.wrap-all{width:100%}
+.search-bar-ul .search-bar-li.progress-li-fr{
+    margin-right: 0;
+    float: right;
+}
+.search-bar-ul .search-bar-li.progress-li-fr a{
+    vertical-align: -10px;
+}
 .search-bar-label{float: left;font-size: 16px;line-height: 36px;}
 
 .eza-input-select,.eza-input-select12{
@@ -264,6 +271,9 @@ body{padding-left:20px;padding-right:20px}
     table-layout: fixed;
     border-bottom: 1px solid #000;
 }
+.eza-table-fixed-header.border0{
+    border-bottom: none;
+}
 .eza-table-fixed-header.pb5 th{
     font-weight:800;
     font-size:16px;
@@ -275,6 +285,14 @@ body{padding-left:20px;padding-right:20px}
     font-size:14px;
     padding:12px 0;
     text-align: center;
+}
+.eza-table-fixed-header td{
+    font-size:14px;
+    padding:8px 0;
+    text-align: center;
+}
+.eza-table-fixed-header tr.gray{
+    border-bottom: 1px solid #6f6f6f;
 }
 .eza-table tr{
     padding:12px 0;
@@ -570,6 +588,18 @@ body{padding-left:20px;padding-right:20px}
 }
 .eza-tab-pane{
     display: none;
+    position: relative;
+}
+.overallManagement-btns{
+    position: absolute;
+    right:0;
+    top:-28px;
+}
+.overallManagement-mgr-bar{
+    /* position: absolute; */
+    right:0;
+    top: 0;
+    left:0;
 }
 .editShootingUl{
     padding:30px 50px;
@@ -640,4 +670,18 @@ body{padding-left:20px;padding-right:20px}
 .editShootingUl li.last{
     padding-left: 26px;
     margin-top: 5px;
+}
+.progress-layer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    display: none;
+}
+.eza-all-check{
+    margin-right: 5px;
+}
+.v11{
+    vertical-align: -11px;
+    vertical-align: -11px !important;
 }

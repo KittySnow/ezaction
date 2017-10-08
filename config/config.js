@@ -31,6 +31,8 @@ var daBai ={};
         { path: '/overallPlanning/confirmProgress', view: 'overallPlanning/confirmProgress.html', viewUrl: 'overallPlanning/confirmProgress.html', styles: null, scripts: 'overallPlanning/confirmProgress', modules: 'overallPlanningConfirmProgress' },
         { path: '/overallPlanning/scheduleComparison', view: 'overallPlanning/scheduleComparison.html', viewUrl: 'overallPlanning/scheduleComparison.html', styles: null, scripts: 'overallPlanning/scheduleComparison', modules: 'scheduleComparison' },
         { path: '/overallPlanning/progressAdmin', view: 'overallPlanning/progressAdmin.html', viewUrl: 'overallPlanning/progressAdmin.html', styles: null, scripts: 'overallPlanning/progressAdmin', modules: 'progressAdmin' },
+        { path: '/overallPlanning/progressHistory', view: 'overallPlanning/progressHistory.html', viewUrl: 'overallPlanning/progressHistory.html', styles: null, scripts: 'overallPlanning/progressHistory', modules: 'progressHistory' },
+        { path: '/overallPlanning/overallManagement', view: 'overallPlanning/overallManagement.html', viewUrl: 'overallPlanning/overallManagement.html', styles: null, scripts: 'overallPlanning/overallManagement', modules: 'overallManagement' },
         { path: '/play/index', view: 'play/index.html', viewUrl: 'play/index.html', styles: null, scripts: 'play/index', modules: 'playIndex' },
         { path: '/play/playApproval', view: 'play/playApproval.html', viewUrl: 'play/playApproval.html', styles: null, scripts: 'play/playApproval', modules: 'playApproval' },
         { path: '/play/playApprovalDetail', view: 'play/playApprovalDetail.html', viewUrl: 'play/playApprovalDetail.html', styles: null, scripts: 'play/playApprovalDetail', modules: 'playApprovalDetail' },

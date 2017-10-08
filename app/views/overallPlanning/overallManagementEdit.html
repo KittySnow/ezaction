@@ -1,0 +1,62 @@
+<div ng-controller="overallManagement">
+    <div class="pageTitle">
+        <p class="page-title">排程管理</p>
+    </div>
+
+    <div class="pageBody cl">
+
+        <div class="eza-table-caption cl">
+            <div class="fl70">
+                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="tips-title">故宫--吴波酒吧武器库</span>
+            </div>
+            <div class="fr30">
+                <button type="button" class="ezc-btn-red mr10">驳回</button>
+                <button type="button" class="ezc-btn-green">通过</button>
+            </div>
+        </div>
+
+        <div class="schedule-bar1">
+            <label class="schedule-bar-label">可用时间：</label>
+            <span class="big-date">2017/09/09</span><span class="schedule-bar1-line">　-　</span><span class="big-date">2017/09/19</span>
+        </div>
+
+        <div class="eza-tab">
+            <!-- Nav tabs -->
+            <ul class="eza-nav eza-nav-tabs cl" id="tabList">
+                <li class="active">
+                    <a >场景</a>
+                </li>
+                <li>
+                    <a >演员</a>
+                </li>
+                <li>
+                    <a>职员</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="eza-tab-content">
+                <div class="eza-tab-pane" style="display: block">
+                    <div ng-include="'app/views/overallPlanning/progressScene.html'"></div>
+                </div>
+                <div class="eza-tab-pane">
+                    <div ng-include="'app/views/overallPlanning/progressActor.html'"></div>
+                </div>
+                <div class="eza-tab-pane">
+                    <div ng-include="'app/views/overallPlanning/progressStaff.html'"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#tabList li').on('click',function () {
+            $('#tabList li').removeClass('active');
+            $(this).addClass('active');
+            var index = $(this).index();
+            $('.eza-tab-pane').hide().eq(index).show();
+        })
+    });
+</script>

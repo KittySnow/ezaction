@@ -1,0 +1,117 @@
+<div id="progressStaffLayer">
+    <div class="overallManagement-btns">
+        <a href="" class="ezc-btn-blue mr20"  id="importStaff">导入组</a>
+        <a href="" class="ezc-btn-blue">选择工作人员</a>
+    </div>
+    <table class="eza-table-fixed-header pb5 ">
+        <col width="10%">
+        <col width="20%">
+        <col width="10%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>部门</th>
+            <th>职位</th>
+            <th>手机</th>
+            <th>操作</th>
+        </tr>
+    </table>
+    <div class="table-body-box">
+        <table class="eza-table">
+            <col width="10%">
+            <col width="20%">
+            <col width="10%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <tr>
+                <td>1</td>
+                <td>二狗的爷爷</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>
+                    <a href="" class=" ezc-font-red">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="progress-layer" id="progressChooseStaffLayer">
+    <ul class="search-bar-ul cl">
+        <li class="search-bar-li">
+            <label class="search-bar-label">摄制组：</label>
+            <select name="" id="" class="eza-input-select12 mr20">
+                <option value="1">A</option>
+                <option value="1">B</option>
+            </select>
+            <a href="" class="ezc-btn-blue mr10 v11">选择工作人员</a>
+        </li>
+        <li class="search-bar-li progress-li-fr">
+            <a href="" class="ezc-btn-blue mr10">保存</a>
+            <a href="" class="ezc-btn-red" id="progressChooseStaffBack">返回</a>
+        </li>
+    </ul>
+    <table class="eza-table-fixed-header pb5 ">
+        <col width="10%">
+        <col width="10%">
+        <col width="20%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <col width="15%">
+        <tr>
+            <th><input type="checkbox" name="" id="" class="eza-all-check">全选</th>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>部门</th>
+            <th>职位</th>
+            <th>手机</th>
+        </tr>
+    </table>
+    <div class="table-body-box">
+        <table class="eza-table">
+            <col width="10%">
+            <col width="10%">
+            <col width="20%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <tr>
+                <td><input type="checkbox" name="" id="" class="eza-check"></td>
+                <td>1</td>
+                <td>二狗的爷爷</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#importStaff').click(function(){
+            $('#tabList').hide();
+            $('#progressStaffLayer').hide();
+            $('#progressChooseStaffLayer').show();
+        });
+
+        $('#progressChooseStaffBack').click(function () {
+            $('#tabList').show();
+            $('#progressStaffLayer').show();
+            $('#progressChooseStaffLayer').hide();
+        })
+    })
+</script>
