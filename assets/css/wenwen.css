@@ -4,7 +4,7 @@
 .content .content-header{width:500px;height:100px;margin:0px auto;margin-top:64px;position:relative;}
 .content-header{width: 488px;height:110px;margin:63px auto 30px;}
 .content-main{width: 1105px;height: 60px;margin: 28px auto;position:relative;}
-.content-main #login-all .login-input-bg{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;padding-left: 10px;}
+.content-main #login-all .login-input-bg{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color:#fff;border-radius: 3px;padding-left: 10px;}
 .content-main #login-all .img-icon{width: 41px;height: 45px;position:absolute;z-index:2;color:#FF5600;line-height:35px;}
 .content-main #login-all .iconfont1{left: 22px;top:5px;}
 .content-main #login-all .iconfont2{left: 370px;top:5px;}
