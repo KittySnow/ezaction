@@ -1,38 +1,27 @@
 /*login*/
-/*html,body,.wrap{width:100%;height:100%;overflow:hidden;}*/
 .wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
 .wrap .content{width:100%;height: 350px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top: -175px;min-width:1366px;}
 .content .content-header{width:500px;height:100px;margin:0px auto;margin-top:64px;position:relative;}
-.content-header img{position:absolute;}
-.content-header .img-l{width:66px;height:56px;left:0px;top:0px;}
-.content-header .img-c{width:52px;height:39px;left:70px;top:6px;}
-.content-header .img-r{width:130px;height:35px;left:124px;top:10px;}
-.content-header .img-left{width:126px;height:106px;top:0px;left:0px;}
-.content-header .img-center{width:112px;height:70px;top:24px;left:130px;}
-.content-header .img-right{width:246px;height:68px;top:24px;left:250px;}
+.content-header{width: 488px;height:110px;margin:63px auto 30px;}
 .content-main{width: 1105px;height: 60px;margin: 28px auto;position:relative;}
-.content-main #login-all p{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;padding-left: 10px;}
-.content-main #login-all i{position:absolute;z-index:2;color:#FF5600;line-height:35px;}
-.content-main #login-all i .img-icon{width: 41px;height: 45px;}
-.content-main #login-all .iconfont1{left: 22px;/* width:25px; *//* height:25px; */top:5px;}
-.content-main #login-all .iconfont2{left: 370px;width:25px;height:25px;top:5px;}
-.content-main #login-all .iconfont3{left: 722px;width:25px;height:25px;top:5px;}
-.content-foot i{position:absolute;}
+.content-main #login-all .login-input-bg{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;padding-left: 10px;}
+.content-main #login-all .img-icon{width: 41px;height: 45px;position:absolute;z-index:2;color:#FF5600;line-height:35px;}
+.content-main #login-all .iconfont1{left: 22px;top:5px;}
+.content-main #login-all .iconfont2{left: 370px;top:5px;}
+.content-main #login-all .iconfont3{left: 722px;top:5px;}
+.content-foot{width:1149px;height:42px;margin:30px auto 0;text-align: right}
+.content-foot .forgetBtn{vertical-align: top;display: inline-block;width:60px;height:21px;border:1px solid #1886d4;background-color: transparent;color:#e2e2e3;position:absolute;left:10px;top:0px;text-align:center;line-height:17px;font-size:8px;}
+.content-foot .forgetBtned{vertical-align: top;display: inline-block;width:104px;height:40px;line-height:40px;text-align:center;border:1px solid #1886d4;letter-spacing:1px;background-color:transparent;color:#e2e2e3;font-size:18px;cursor: pointer}
 .content-foot i .saveImg{width:21px;height:21px;}
-.content-foot i .saveImgb{width:42px;height:42px;}
-/*.content-foot .iconfont4{color:#fff;left:88px;top:0px;cursor:pointer;width:21px;height:21px;}*/
-/*.content-foot .iconfont5{color:#00CF75;left:120px;top:0px;cursor:pointer;width:21px;height:21px;}*/
-.content-foot .iconfont4{color:#fff;left:144px;top:0px;cursor:pointer;width:42px;height:42px;}
-.content-foot .iconfont5{color:#00CF75;left:210px;top:0px;cursor:pointer;width:42px;height:42px;}
+.content-foot .iconfont4,.content-foot .iconfont5{color:#fff;cursor:pointer;width:42px;height:42px;display: inline-block;}
+.content-foot .iconfont4{margin-right: 20px;margin-left:36px;}
 .content-main #login-all input{width: 252px;height:35px;position:absolute;left: 53px;top: 10px;outline:none;border-radius:3px;line-height: 36px;font-size: 18px;vertical-align: middle;}
 #yzm{width:116px;}
 .content-main #login-all .firstLine{left:15px;}
 .content-main #login-all .firstLine1{left: 364px;}
 .content-main #login-all .firstLine2{left: 714px;}
 .content-main #login-all .img-ro{position:absolute;right: 61px;}
-.content-foot{width:248px;height:42px;position:relative;left:73%;}
-.content-foot .forgetBtn{width:60px;height:21px;border:1px solid #005D8A;background-color: transparent;color:#DAD8D4;position:absolute;left:10px;top:0px;text-align:center;line-height:17px;font-size:8px;}
-.content-foot .forgetBtned{width:104px;height:40px;line-height:40px;text-align:center;border:1px solid #005D8A;letter-spacing:3px;background-color:transparent;color:#DAD8D4;font-size:18px;position:absolute;left:0px;}
+
 @font-face {font-family: 'iconfont';src: url('../font/iconfont.eot');src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),url('../font/iconfont.woff') format('woff'),url('../font/iconfont.ttf') format('truetype'),url('../font/iconfont.svg#iconfont') format('svg');}
 .iconfont{font-family:"iconfont" !important;font-size:24px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
 .iconfont1{color:#FF7641;}
@@ -41,14 +30,14 @@
 .wrap .content1 .reverseTo a{color:#F1F0EF;height:36px;line-height:36px;display:inline-block;width:420px;text-align:center;}
 .content1 .content-header{width:260px;height:56px;margin:0px auto;margin-top:15px;position:relative;}
 .content-main1{width:240px;height:240px;margin:15px auto;}
-.content-main1 #login-alls .lineL p{width:240px;height:35px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;position:relative;}
-.content-main1 #login-alls .lineL p:not(.firstLine){margin-top:10px;}
-.content-main1 #login-alls .lineL p input{width:88%;height:35px;outline:none;border-radius:3px;position:absolute;left:12%;}
+.content-main1 #login-alls .lineL .login-input-bg{width:240px;height:35px;border:1px solid #FF9F72;background-color: white;border-radius: 3px;position:relative;}
+.content-main1 #login-alls .lineL div:not(.firstLine){margin-top:10px;}
+.content-main1 #login-alls .lineL input{width:88%;height:35px;outline:none;border-radius:3px;position:absolute;left:12%;}
 .content-main1 #login-alls .lineL .iconfont2{position:absolute;z-index:2;color:#FF5600;line-height:35px;width:25px;height:25px;margin-top:5px;}
 .content-main1 #login-alls .lineL .iconfont2 .forgetIcon{width:24px;height:24px;}
 .content-main1 #login-alls .lineL .iconfont2 .forgetIcon1{width:18px;height:18px;margin-top:4px;margin-left:2px;}
-.content-main1 #login-alls .lineL p .img-ro{position:absolute;width:86px;height:35px;right:0px;}
-.content-main1 #login-alls .lineL p .showN{display:inline-block;position:absolute;width:86px;height:35px;line-height:35px;text-align:center;right:0px;background-color:#FF4800;color:#ffffff;}
+.content-main1 #login-alls .lineL .img-ro{position:absolute;width:86px;height:35px;right:0px;}
+.content-main1 #login-alls .lineL .showN{display:inline-block;position:absolute;width:86px;height:35px;line-height:35px;text-align:center;right:0px;background-color:#FF4800;color:#ffffff;}
 .content-foot1{width:200px;height:36px;position:relative;left:70%;top:-33px;}
 .content-foot1 i{position:absolute;}
 .content-foot1 i .saveImg{width:21px;height:21px;}
@@ -153,7 +142,7 @@
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    background: url(../assets/image/select_bg_down.png) 95% 50% no-repeat transparent;
+    background: url(../image/select_bg_down.png) 95% 50% no-repeat transparent;
     background-image:none \0;
     background-image:none \9;
     outline:0;
