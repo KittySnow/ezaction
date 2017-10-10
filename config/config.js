@@ -33,6 +33,9 @@ var daBai ={};
         { path: '/overallPlanning/progressAdmin', view: 'overallPlanning/progressAdmin.html', viewUrl: 'overallPlanning/progressAdmin.html', styles: null, scripts: 'overallPlanning/progressAdmin', modules: 'progressAdmin' },
         { path: '/overallPlanning/progressHistory', view: 'overallPlanning/progressHistory.html', viewUrl: 'overallPlanning/progressHistory.html', styles: null, scripts: 'overallPlanning/progressHistory', modules: 'progressHistory' },
         { path: '/overallPlanning/overallManagement', view: 'overallPlanning/overallManagement.html', viewUrl: 'overallPlanning/overallManagement.html', styles: null, scripts: 'overallPlanning/overallManagement', modules: 'overallManagement' },
+
+
+
         { path: '/play/index', view: 'play/index.html', viewUrl: 'play/index.html', styles: null, scripts: 'play/index', modules: 'playIndex' },
         { path: '/play/playApproval', view: 'play/playApproval.html', viewUrl: 'play/playApproval.html', styles: null, scripts: 'play/playApproval', modules: 'playApproval' },
         { path: '/play/playApprovalDetail', view: 'play/playApprovalDetail.html', viewUrl: 'play/playApprovalDetail.html', styles: null, scripts: 'play/playApprovalDetail', modules: 'playApprovalDetail' },
@@ -45,7 +48,8 @@ var daBai ={};
         { path: '/play/editorChange', view: 'play/editorChange.html', viewUrl: 'play/editorChange.html', styles: null, scripts: 'play/editorChange', modules: 'editorChange' },
         { path: '/play/editorAdd', view: 'play/editorAdd.html', viewUrl: 'play/editorAdd.html', styles: null, scripts: 'play/editorAdd', modules: 'editorAdd' },
         { path: '/shooting/location', view: 'shooting/location.html', viewUrl: 'shooting/location.html', styles: null, scripts: 'shooting/location', modules: 'shootingLocation' },
-        { path: '/shooting/locationDetail', view: 'shooting/locationDetail.html', viewUrl: 'shooting/locationDetail.html', styles: null, scripts: 'shooting/locationDetail', modules: 'shootingLocationDetail' }
+        { path: '/shooting/locationDetail', view: 'shooting/locationDetail.html', viewUrl: 'shooting/locationDetail.html', styles: null, scripts: 'shooting/locationDetail', modules: 'shootingLocationDetail' },
+        { path: '/shooting/locationDetailAdd', view: 'shooting/locationDetailAdd.html', viewUrl: 'shooting/locationDetailAdd.html', styles: null, scripts: 'shooting/locationDetailAdd', modules: 'shootingLocationDetailAdd' }
 
 
 

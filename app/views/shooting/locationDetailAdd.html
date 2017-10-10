@@ -1,0 +1,130 @@
+<div ng-controller="shootingLocationDetailAdd">
+    <div class="dark-bg"></div>
+    <div class="photo-carousel">
+        <a class="dialog-btn-close"><i></i></a>
+        <div class="bx-wrapper" style="background-image:url(assets/image/pic/rb1.jpg)">
+        </div>
+    </div>
+    <div class="pageBody mt40 cl">
+
+        <div class="pageBody-left">
+            <div class="eza-table-caption cl">
+                <span class="caption-title">场景位置</span>
+            </div>
+            <div class="swiper-container" id="location-scene">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(assets/image/pic/rb1.jpg)" data-img="assets/image/pic/rb1.jpg" >
+                        <span class="target">点击放大</span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/image/pic/rb1.jpg)" data-img="assets/image/pic/rb1.jpg" >
+                        <span class="target">点击放大</span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/image/pic/rb1.jpg)" data-img="assets/image/pic/rb1.jpg" >
+                        <span class="target">点击放大</span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/image/pic/rb1.jpg)" data-img="assets/image/pic/rb1.jpg" >
+                        <span class="target">点击放大</span>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+
+            <div class="shootDetail-info-short cl">
+                <span class="fl">拍摄时间:2017/09/26</span>
+                <span class="fr">6/7</span>
+            </div>
+
+            <div class="shootDetail-scene-info1 cl">
+                <span class="big-title-letter">
+                    场景名称
+                </span>
+                <span class="sub">
+                    风格
+                </span>
+
+                <div class="fr">
+                    <span>
+                        公园　200㎡　3000元/天
+                    </span>
+                </div>
+            </div>
+
+            <div class="shootDetail-scene-info2 cl">
+                <span class="contact">
+                    场景联系人: XXXXX
+                </span>
+                <span class="tel">
+                    电话：135****1111
+                </span>
+            </div>
+
+            <div class="shootDetail-scene-info3 cl">
+                <h1>场景描述</h1>
+                <div class="shootDetail-info3-box">
+                    　　场面描写，就是对一个特定的时间与地点内许多人物活动的总体情况的描写。它往往是叙述、描写、抒情等表述方法的综合运用，是自然景色、社会环境、人物活动等描写对象的集中表现。常见的有劳动场面、战斗场面、运动场面以及各种会议场面等。 场面描写要表现出一种特定的气氛，单一的表达方式和写作手法是不够的，要 综合运用记叙、描写、抒情、议论等表达手段，以及映衬、象征等多种手法，这样才能使场面变成一幅生动而充满感染力的图画。
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="pageBody-right">
+            <div class="eza-table-caption cl">
+                <span class="caption-title">实景拍摄</span>
+            </div>
+
+            <div id="baiduMapBox">
+
+            </div>
+
+
+            <div class="shootDetail-scene-info3 cl">
+                <h2>北京市东城区毛家湾胡同甲13号</h2>
+                <h1>注意事项</h1>
+                <div class="shootDetail-info3-box">
+                    场面描写，就是对一个特定的时间与地点内许多人物活动的总体情况的描写。它往往是叙述、描写、抒情等表述方法的综合运用，是自然景色、社会环境、人物活动等描写对象的集中表现。常见的有劳动场面、战斗场面、运动场面以及各种会议场面等。 场面描写要表现出一种特定的气氛，单一的表达方式和写作手法是不够的，要 综合运用记叙、描写、抒情、议论等表达手段，以及映衬、象征等多种手法，这样才能使场面变成一幅生动而充满感染力的图画。
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+    $(function(){
+        $('.target').on('click',function(){
+            $('.dark-bg').show();
+            var img = $(this).parent().attr('data-img');
+            $('.bx-wrapper').css('backgroundImage','url('+img+')');
+            $('.photo-carousel').show();
+        });
+
+        $('.dialog-btn-close').on('click',function(){
+            $('.dark-bg').hide();
+            $('.photo-carousel').hide();
+        });
+
+
+
+            // 百度地图API功能
+        var map = new BMap.Map("baiduMapBox");    // 创建Map实例
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+        var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+        var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+        var new_point = new BMap.Point(121.542831,31.275695);// 设置地图显示的城市 此项是必须设置的
+        var marker = new BMap.Marker(new_point);  // 创建标注
+        map.centerAndZoom(new_point,15); // 初始化地图,设置中心点坐标和地图级别
+        map.addOverlay(marker);              // 将标注添加到地图中
+        map.panTo(new_point);
+        map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+        map.addControl(top_left_control);
+        map.addControl(top_left_navigation);
+
+    })
+</script>
+
