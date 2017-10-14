@@ -170,11 +170,12 @@
         <li class="cl">
             <label class="roleAddUl-label">角色定位：</label>
             <div class="fancy-select-mine">
-                <!--<ul class="options" style="top: 82px;">
+                <div class="trigger">男一</div>
+                <ul class="options">
                     <li data-value="1" class="selected">电视剧</li>
                     <li data-value="1打击" class="">1打击</li>
                     <li data-value="Dolor Sit" class="">Dolor Sit</li>
-                </ul>-->
+                </ul>
             </div>
         </li>
         <li class="cl">
@@ -184,7 +185,7 @@
     </ul>
 </script>
 
-<script>
+<script type="application/javascript">
     $(function(){
         $('#roleAdd').click(function(){
             var dialog = new QAQ.Dialog({
@@ -208,7 +209,18 @@
                         //do something
                         dialog.close();
                     }
-                }]
+                }],
+                success:function(){
+                    $('.fancy-select-mine .trigger').click(function(){
+                        var sel = $(this);
+                        sel.next('.options').toggleClass('open');
+
+                        $('.open li').on('click',function(){
+
+                        });
+
+                    })
+                }
             });
         })
 

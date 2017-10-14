@@ -2,7 +2,7 @@ ul,li{
     margin:0;
     padding: 0;
 }
-div.fancy-select,div.fancy-select-mine{
+div.fancy-select{
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
@@ -24,7 +24,7 @@ div.fancy-select select:focus + div.trigger.open {
     box-shadow: none;
 }
 
-div.fancy-select div.trigger {
+div.fancy-select div.trigger{
     font-family: microsoft yahei;
     display: block;
     height: 45px;
@@ -41,7 +41,7 @@ div.fancy-select div.trigger {
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    background: url(select_bg_down.png) 97% center no-repeat #fff;
+    background: url(../image/select_bg_down.png) 97% center no-repeat #fff;
     background-image:none \0;
     background-image:none \9;
     outline:0;
@@ -61,11 +61,11 @@ div.fancy-select div.trigger.open:after {
 
 }
 
-div.fancy-select ul.options,.fancy-select-mine ul.options {
+div.fancy-select ul.options {
     list-style: none;
     margin: 0;
     position: absolute;
-    top: 82px;
+    top: 40px;
     left: 0;
     visibility: hidden;
     opacity: 0;
@@ -79,14 +79,12 @@ div.fancy-select ul.options,.fancy-select-mine ul.options {
     -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
     -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
     -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
-}
-div.fancy-select ul,div.fancy-select-mine ul{
     border:1px solid #666;
     padding: 10px 5px;
 }
-div.fancy-select ul.options.open ,div.fancy-select-mine ul.options.open{
+div.fancy-select ul.options.open{
     visibility: visible;
-    top: 45px;
+    top: 40px;
     opacity: 1;
 
     /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
@@ -98,7 +96,7 @@ div.fancy-select ul.options.open ,div.fancy-select-mine ul.options.open{
     -o-transition: opacity 300ms ease-out, top 300ms ease-out;
 }
 
-div.fancy-select ul.options.overflowing, div.fancy-select-mine ul.options.overflowing{
+div.fancy-select ul.options.overflowing{
     top: auto;
     bottom: 40px;
     transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
@@ -108,7 +106,7 @@ div.fancy-select ul.options.overflowing, div.fancy-select-mine ul.options.overfl
     -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
 }
 
-div.fancy-select ul.options.overflowing.open, div.fancy-select-mine ul.options.open {
+div.fancy-select ul.options.overflowing.open{
     top: auto;
     bottom: 50px;
 
@@ -133,9 +131,13 @@ div.fancy-select ul.options li ,div.fancy-select-mine ul.options li{
     -o-transition: all 150ms ease-out;
 }
 
-div.fancy-select ul.options li.selected,div.fancy-select ul.options li.hover,div.fancy-select-mine ul.options li.hover,div.fancy-select-mine ul.options li.hover {
+div.fancy-select ul.options li.selected,
+div.fancy-select ul.options li.hover,
+div.fancy-select-mine ul.options li:hover,
+div.fancy-select-mine ul.options li.selected{
     color: #000;
     font-weight: 600;
+    border-bottom: 1px solid #333 !important;
 }
 
 /*
