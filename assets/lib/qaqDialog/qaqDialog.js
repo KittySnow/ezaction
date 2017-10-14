@@ -701,8 +701,8 @@
                         name  : '确定',
                         cls:'.btn-success',
                         click: function(){
-                            callback && callback();
                             this.close();
+                            callback && callback();
                         }
                     },
                     {

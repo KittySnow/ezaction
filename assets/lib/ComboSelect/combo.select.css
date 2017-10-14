@@ -1,13 +1,14 @@
 /** * Wrapper*/
 .combo-select {
-    position: relative;
+    position: absolute;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     min-width: 96px;
     max-width: 211px;
     display: inline-block;
     width: auto;
+    float: left;
 }
 .combo-select .combo-input {
     margin-bottom: 0;
@@ -16,14 +17,14 @@
 .combo-input {
     outline:0;
     border: 0;
-    border-bottom: 1px solid #333;
+    border-bottom:1px solid #333;
     line-height: 33px;
     height: 33px;
-    width: 189px;
-    padding-left: 10px;
+    width: 187px;
+    padding-left: 12px;
     padding-right: 10px;
     font-family: microsoft yahei;
-    font-size: 14px;
+    font-size: 16px;
     background: transparent;
     float: left;
     margin-bottom:14px;
@@ -103,11 +104,11 @@
 .combo-dropdown {
     padding: 10px 5px;
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     top: 100%;
+    border: 1px solid #333;
+    border-top: 0;
     left: 0;
-    min-width: 100%;
-    max-width: 300px;
     max-height: 300px;
     margin: 0;
     display: none;
@@ -130,5 +131,5 @@
 }
 /** * Search marker*/
 .combo-marker {
-    text-decoration: underline;
+    color:#298ee5
 }

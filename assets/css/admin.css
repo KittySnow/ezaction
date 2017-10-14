@@ -142,6 +142,7 @@ body{padding-left:20px;padding-right:20px}
 .nav-menu li.nav-menu-li .second-menu li.dec-line1{position: absolute;width: 10px;height: 1px;background: #999;top: 17px;left: -19px;margin-bottom: 0;padding-left: 0;}
 .nav-menu li.nav-menu-li .second-menu li .dec-line2{position: absolute;width: 9px;height: 1px;background: #999;top: 17px;left: -10px;padding-left: 0;}
 .nav-menu li.nav-menu-li .second-menu li.dec-line{position: absolute;width:1px;background: #999;bottom: 17px;top: 17px;left: -10px;padding-left: 0;}
+
 .nav-menu-bottom{position: absolute;padding: 0;bottom:10px;left:0;right:0;width: 250px;}
 .nav-menu-bottom li{font-size: 18px;line-height: 40px;color: #333;font-weight: 800;}
 .nav-menu-bottom{position: absolute;padding: 0;bottom:0;left:0;right:0;width: 250px;}
@@ -209,21 +210,35 @@ body{padding-left:20px;padding-right:20px}
 .editShootingUl li.last{padding-left: 26px;margin-top: 5px;}
 .progress-layer{position: absolute;top: 0;width: 100%;z-index: 15;display: none;}
 .eza-all-check{margin-right: 5px;}
-.eza-article-box{height: 200px;overflow: auto;line-height: 24px;font-size: 14px;font-family: "Microsoft YaHei";color:#333;font-weight: 600;}
+.eza-article-box{height: 240px;overflow: auto;line-height: 24px;font-size: 14px;font-family: "Microsoft YaHei";color:#333;font-weight: 600;margin-bottom: 20px;}
 
 .roleAddUl{padding: 57px 100px 37px;/* position: relative; */}
 .roleAddUl li{height: 39px;}
 .roleAddUl-label{float: left;font-size: 16px;line-height: 36px;font-weight: 600;}
-.roleAddUl-input1{border: 0;border-bottom: 1px solid #333;line-height: 33px;height: 33px;width: 189px;padding-left: 10px;padding-right: 10px;font-family: microsoft yahei;font-size: 14px;background: transparent;float: right;margin-bottom: 14px;}
+.roleAddUl-input1{border: 0;border-bottom: 1px solid #333;line-height: 33px;height: 33px;width: 189px;padding-left: 10px;padding-right: 10px;font-family: microsoft yahei;font-size: 14px;background: transparent;float: right;outline: 0;}
 
-
+.roleName-input{
+    outline:0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 183px;
+    color: #333;
+    padding-left: 12px;
+    padding-right: 13px;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    background: transparent;
+    float: left;
+}
 div.fancy-select-mine{
     position: absolute;
     text-transform: uppercase;
     font-size: 14px;
     color: #333;
-    min-width: 96px;
-    max-width: 211px;
+    min-width: 120px;
+    max-width: 200px;
     display: inline-block;
     width: auto;
     z-index: 50;
@@ -239,7 +254,7 @@ div.fancy-select-mine div.trigger {
     line-height:34px;
     vertical-align:0px;
     border-bottom: 1px solid #333;
-    text-align: center;
+    text-align: left;
     color:#333;
     white-space: nowrap;
     padding: 0px 35px 0px 10px;
@@ -293,10 +308,36 @@ div.fancy-select-mine ul.open{
     visibility:visible;
     opacity:1;
 }
+div.fancy-select-mine ul.options li.rhref{
+    color: #000;
+    font-weight: 600;
+    border-bottom: 1px solid #333 !important;
+}
+div.fancy-select-mine ul.options li.rhref a:hover{
+    color: #298ee5;
+}
+div.fancy-select-mine ul.options li.rhref a:hover .add-span{
+    color: #298ee5;
+}
+div.fancy-select-mine ul.options li.rhref .add-span{
+    font-size: 24px;
+    vertical-align: -2px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.rhref-input{
+    font-size: 16px;
+    color:#333;
+    outline:0;
+    line-height: 35px;
+    height: 35px;
+    border:0;
+    width:;
+}
 /*login*/
 .wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
 .wrap .content{width:100%;height: 350px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top: -175px;min-width:1366px;}
-.content .content-header{width:500px;height:100px;margin:0px auto;margin-top:64px;position:relative;}
+.content .content-header{width:500px;height:100px;margin:0 auto;margin-top:64px;position:relative;}
 .content-header{width: 488px;height:110px;margin:63px auto 30px;}
 .content-main{width: 1105px;height: 60px;margin: 28px auto;position:relative;}
 .content-main #login-all .login-input-bg{position:absolute;width: 318px;height: 54px;border:1px solid #FF9F72;background-color:#fff;border-radius: 3px;padding-left: 10px;}

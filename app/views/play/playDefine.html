@@ -20,10 +20,12 @@
                 </li>
                 <li class="search-bar-li mt5">
                     <label class="search-bar-label">　　场景：</label>
-                    <select name="" id="" class="eza-input-select12 mr10">
-                        <option value="1">电视剧</option>
-                        <option value="1">网络剧</option>
-                    </select>
+                    <div class="fl mr10">
+                        <select name="" id="feiefei" style="width:109px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
                     <div class="select-down-wrapper">
                         <div class="select-down-showitem">
                             <input type="text" class="select-down-left" id="key" placeholder="关键字">
@@ -105,8 +107,8 @@
 
             <table class="eza-table-fixed-header pb5">
                 <thead>
-                <col width="20%"><col width="15%"><col width="15%">
-                <col width="15%"><col width="15%"><col width="20%">
+                <col width="15%"><col width="15%"><col width="15%">
+                <col width="15%"><col width="15%"><col width="25%">
                 <tr>
                     <th>角色</th>
                     <th>角色定位</th>
@@ -119,8 +121,8 @@
             </table>
             <div class="table-body-boxed">
                 <table class="eza-table">
-                    <col width="20%"><col width="15%"><col width="15%">
-                    <col width="15%"><col width="15%"><col width="20%">
+                    <col width="15%"><col width="15%"><col width="15%">
+                    <col width="15%"><col width="15%"><col width="25%">
                     <tr>
                         <td>二狗的爷爷</td>
                         <td>主演</td>
@@ -165,16 +167,35 @@
     <ul class="roleAddUl">
         <li class="cl">
             <label class="roleAddUl-label">角色名称：</label>
-            <input type="text" class="roleAddUl-input1">
+            <select id="roleName">
+                <option value="">月份</option>
+                <option value="一月">一月</option>
+                <option value="二月">二月</option>
+                <option value="三月">三月</option>
+                <option value="四月">四月</option>
+                <option value="五月">五月</option>
+                <option value="六月">六月</option>
+                <option value="七月">七月</option>
+                <option value="八月">八月</option>
+                <option value="九月">九月</option>
+                <option value="十月">十月</option>
+                <option value="十一月">十一月</option>
+                <option value="十二月">十二月</option>
+            </select>
         </li>
         <li class="cl">
             <label class="roleAddUl-label">角色定位：</label>
+            <input name="" type="hidden" id="roleFixed" value=""/>
             <div class="fancy-select-mine">
-                <div class="trigger">男一</div>
+                <div class="trigger" id="roleTrigger">男一</div>
                 <ul class="options">
                     <li data-value="1" class="selected">电视剧</li>
                     <li data-value="1打击" class="">1打击</li>
                     <li data-value="Dolor Sit" class="">Dolor Sit</li>
+                    <li data-value="Dolor Sit" class="">Dolor Sit</li>
+                    <li class="rhref">
+                        <a href="javascript:;"><span class="add-span">+</span>添加</a>
+                    </li>
                 </ul>
             </div>
         </li>
@@ -187,6 +208,17 @@
 
 <script type="application/javascript">
     $(function(){
+
+        $('.eza-table .ezc-font-red').on('click',function(){
+            var $this = $(this);
+            new QAQ.Dialog.confirm('确认删除吗？',function(){
+                //自己请丢后台
+                $this.parent().parent().remove();
+            })
+        });
+
+        $('#feiefei').fancySelect();
+
         $('#roleAdd').click(function(){
             var dialog = new QAQ.Dialog({
                 title:'添加',
@@ -196,7 +228,6 @@
                     name:'确定',
                     cls:'btn-primary',//可选 自定义按钮css类
                     click:function(){
-                        var dialog = this;
                         //do something
                         dialog.close();
                     }
@@ -211,22 +242,70 @@
                     }
                 }],
                 success:function(){
-                    $('.fancy-select-mine .trigger').click(function(){
-                        var sel = $(this);
-                        sel.next('.options').toggleClass('open');
-
-                        $('.open li').on('click',function(){
-
-                        });
-
-                    })
+                    mgrRole()
                 }
             });
         })
 
-        $('.drama-init-edit').click(function(){
-            var that = $(this);
 
+
+        $('.eza-table .ezc-font-green').click(function(){
+            var $this = $(this);
+            var dialog = new QAQ.Dialog({
+                title:'编辑',
+                content:$('#roleAddBox').html(),
+                width:502,
+                buttons:[{
+                    name:'确定',
+                    cls:'btn-primary',//可选 自定义按钮css类
+                    click:function(){
+                        //表单提交自己写
+                        dialog.close();
+                    }
+                },
+                    {
+                        name:'取消',
+                        cls:'btn-danger',//可选 自定义按钮css类
+                        click:function(){
+                            this.close();
+                        }
+                    }],
+                success:function(){
+                    $('#roleName').val('一月');
+                    mgrRole();
+                }
+            });
         })
+
+        function mgrRole(){
+            $('#roleName').comboSelect({inputClass: 'roleName-input'});
+
+            $('.fancy-select-mine .trigger').on('click',function(){
+                var sel = $(this);
+                sel.next('.options').toggleClass('open');
+            })
+
+            $(document).off('click').on('click',function(e){
+                if($(e.target).closest(".fancy-select-mine").length == 0){
+                    if($('.open').css('display')=='block'){
+                        $('.fancy-select-mine .options').removeClass('open');
+                    }
+                }
+            });
+
+
+            $(".options li:not('.rhref')").off('click').on('click',function(){
+                $(".options li").removeClass('selected');
+                var $this = $(this);
+                var value= $this.addClass('selected').attr('data-value');
+                var text= $this.text();
+                $('.fancy-select-mine .trigger').html(text);
+                $('#roleFixed').val(value);
+                $('.options.open').removeClass('open');
+            });
+        }
+
+
+
     });
 </script>
