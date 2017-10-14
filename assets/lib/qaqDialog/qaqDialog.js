@@ -699,15 +699,15 @@
                 buttons:[
                     {
                         name  : '确定',
-                        cls:'.btn-primary',
+                        cls:'.btn-success',
                         click: function(){
-                            this.close();
                             callback && callback();
+                            this.close();
                         }
                     },
                     {
                         name  : '取消',
-                        cls:'.btn-default',
+                        cls:'.btn-danger',
                         click: function(){
                             this.close();
                         }

@@ -2,7 +2,7 @@ ul,li{
     margin:0;
     padding: 0;
 }
-div.fancy-select {
+div.fancy-select,div.fancy-select-mine{
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
@@ -56,19 +56,16 @@ div.fancy-select div.trigger {
     -o-transition: all 240ms ease-out;
 }
 
-div.fancy-select div.trigger.open {
-
-}
 
 div.fancy-select div.trigger.open:after {
 
 }
 
-div.fancy-select ul.options {
+div.fancy-select ul.options,.fancy-select-mine ul.options {
     list-style: none;
     margin: 0;
     position: absolute;
-    top: 40px;
+    top: 82px;
     left: 0;
     visibility: hidden;
     opacity: 0;
@@ -83,11 +80,11 @@ div.fancy-select ul.options {
     -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
     -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
 }
-div.fancy-select ul{
+div.fancy-select ul,div.fancy-select-mine ul{
     border:1px solid #666;
     padding: 10px 5px;
 }
-div.fancy-select ul.options.open {
+div.fancy-select ul.options.open ,div.fancy-select-mine ul.options.open{
     visibility: visible;
     top: 45px;
     opacity: 1;
@@ -101,10 +98,9 @@ div.fancy-select ul.options.open {
     -o-transition: opacity 300ms ease-out, top 300ms ease-out;
 }
 
-div.fancy-select ul.options.overflowing {
+div.fancy-select ul.options.overflowing, div.fancy-select-mine ul.options.overflowing{
     top: auto;
     bottom: 40px;
-
     transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
     -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
     -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
@@ -112,7 +108,7 @@ div.fancy-select ul.options.overflowing {
     -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
 }
 
-div.fancy-select ul.options.overflowing.open {
+div.fancy-select ul.options.overflowing.open, div.fancy-select-mine ul.options.open {
     top: auto;
     bottom: 50px;
 
@@ -123,7 +119,7 @@ div.fancy-select ul.options.overflowing.open {
     -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
 }
 
-div.fancy-select ul.options li {
+div.fancy-select ul.options li ,div.fancy-select-mine ul.options li{
     line-height: 39px;
     text-align: center;
     color: #999;
@@ -137,17 +133,15 @@ div.fancy-select ul.options li {
     -o-transition: all 150ms ease-out;
 }
 
-div.fancy-select ul.options li.selected {
+div.fancy-select ul.options li.selected,div.fancy-select ul.options li.hover,div.fancy-select-mine ul.options li.hover,div.fancy-select-mine ul.options li.hover {
     color: #000;
     font-weight: 600;
 }
 
-div.fancy-select ul.options li.hover {
-    color: #000;
-    font-weight: 600;
+/*
+.select-down-wrapper{position: relative;*/
+/* float:left *//*
 }
-
-.select-down-wrapper{position: relative;/* float:left */}
 .select-down-showitem{padding-left: 12px;padding-right: 36px;height: 36px;line-height: 36px;background: transparent;color: #0e0e0e;font-size: 14px;clear: both;border: 1px solid #333;border-top: 0;position: relative;}
 .select-down{padding-left: 12px;padding-right: 12px;width: 300px;height:36px;line-height:36px;background: #fff;color:#0e0e0e;font-size:14px;}
 .select-down-left,.select-down-leftw{overflow: hidden;width: 100%;text-overflow: ellipsis;white-space: nowrap;font-size:14px;cursor: text;outline: 0;color: #afafaf;height: 35px;line-height: 35px;border: 0;padding: 0;}
@@ -173,4 +167,4 @@ div.fancy-select ul.options li.hover {
     margin-top: 4px;
     float: right;
 }
-.icon-black-find{background-image: url(../assets/image/icon_find.jpg);position: absolute;right: 3px;top: 0;}
+.icon-black-find{background-image: url(../assets/image/icon_find.jpg);position: absolute;right: 3px;top: 0;}*/

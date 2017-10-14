@@ -44,8 +44,13 @@
       }
       trigger = wrapper.find('.trigger');
 
+     if(opts.search){
+         wrapper.append($('<div class="select-down-showitem"><input type="text" class="select-down-left" id="txt" placeholder="请输入关键字"><div class="icon-black-find"></div></div>'));
+     }
       options = wrapper.find('.options');
-
+        if(opts.search){
+            options.css('top','82px');
+        }
       disabled = sel.prop('disabled');
       if (disabled) {
         wrapper.addClass('disabled');
