@@ -1,5 +1,5 @@
 body{font-family:"Microsoft YaHei", Arial, sans-serif;-webkit-text-size-adjust:100%;}
-*{padding:0;margin:0;border:0;text-align:left;font-style:normal;font-weight:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none; color:#222}
+*{padding:0;margin:0;border:0;text-align:left;font-style:normal;font-weight:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none; color: #333;}
 nav, footer, section, header, article{display:block;}
 ol,ul{list-style:none;}
 .cl,.clearfix{*zoom:1;}
@@ -8,7 +8,7 @@ u{text-decoration:none;}
 input,select,button{font-family:"Microsoft YaHei", Arial, sans-serif;}
 a:link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;}
 a:link, a:visited, a:hover, a:active{color:#333333;text-decoration:none;}
-a:hover{color:#298ee5;text-decoration:none;}
+a:hover{color:#333333;text-decoration:none;}
 input, textarea{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
 body{color:#333333;background-color:#fff;font-size:12px;}
 a{color:#333333;cursor:pointer;}
@@ -19,4 +19,3 @@ a{color:#333333;cursor:pointer;}
 .tr{text-align:right}
 form{margin:0;padding:0;}
 img{border:0;display:block;}
-#layui-laydate36 .layui-laydate-header{background-color:#393D49;}#layui-laydate36 .layui-this{background-color:#393D49 !important;}

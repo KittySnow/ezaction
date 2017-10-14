@@ -13,12 +13,12 @@
     <script src="fancySelect.js"></script>
     <script>
         $(document).ready(function () {
-            $('#basic-usage-demo').fancySelect();
+            $('#basic-usage-demo').fancySelect({search:true});
         });
 		</script>
 </head>
 <body style="padding: 100px 0px 0px 200px;">
-<select id="basic-usage-demo">
+<select id="basic-usage-demo" style="width: 250px;">
   <option value="1">电视剧</option>
   <option>1打击</option>
   <option>Dolor Sit</option>
@@ -30,5 +30,7 @@
   <option>Zoobie</option>
   <option>Frang</option>
 </select>
+
+
 </body>
 </html>

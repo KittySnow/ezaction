@@ -21,6 +21,7 @@
         return;
       }
       sel.addClass('fancified');
+        var w =  sel.width();
       sel.css({
         width: 1,
         height: 1,
@@ -30,18 +31,26 @@
         left: 0,
         opacity: 0
       });
-      sel.wrap('<div class="fancy-select">');
+      sel.wrap('<div class="fancy-select" style="width: '+w+'px">');
       wrapper = sel.parent();
       if (sel.data('class')) {
         wrapper.addClass(sel.data('class'));
       }
       wrapper.append('<div class="trigger">');
-      console.log('1111',wrapper);
+
+
       if (!(isiOS && !settings.forceiOS)) {
         wrapper.append('<ul class="options">');
       }
       trigger = wrapper.find('.trigger');
+
+     if(opts.search){
+         wrapper.append($('<div class="select-down-showitem"><input type="text" class="select-down-left" id="txt" placeholder="请输入关键字"><div class="icon-black-find"></div></div>'));
+     }
       options = wrapper.find('.options');
+        if(opts.search){
+            options.css('top','82px');
+        }
       disabled = sel.prop('disabled');
       if (disabled) {
         wrapper.addClass('disabled');
