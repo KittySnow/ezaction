@@ -1,6 +1,5 @@
 'use strict';
-angular.module('app').controller('shootingLocationDetail', function ($rootScope, $route) {
-    $rootScope.navMenu = '#' + $route.current.originalPath;
+angular.module('app').controller('shootingLocationDetail', function () {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
