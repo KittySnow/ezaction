@@ -7,8 +7,8 @@ ol,ul{list-style:none;}
 u{text-decoration:none;}
 input,select,button{font-family:"Microsoft YaHei", Arial, sans-serif;}
 a:link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;}
-a:link, a:visited, a:hover, a:active{color:#333333;text-decoration:none;}
-a:hover{color:#333333;text-decoration:none;}
+a:link, a:visited, a:hover, a:active{text-decoration:none;}
+a:hover{text-decoration:none;}
 input, textarea{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
 body{color:#333333;background-color:#fff;font-size:12px;}
 a{color:#333333;cursor:pointer;}

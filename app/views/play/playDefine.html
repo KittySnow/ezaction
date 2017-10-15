@@ -20,8 +20,8 @@
                 </li>
                 <li class="search-bar-li mt5">
                     <label class="search-bar-label">　　场景：</label>
-                    <div class="fl mr10">
-                        <select name="" id="feiefei" style="width:109px">
+                    <div class="mr10 gray-selcet-box">
+                        <select name="" id="playScene" style="width:109px">
                             <option value="1">电视剧</option>
                             <option value="2">网络剧</option>
                         </select>
@@ -217,7 +217,7 @@
             })
         });
 
-        $('#feiefei').fancySelect();
+        $('#playScene').fancySelect();
 
         $('#roleAdd').click(function(){
             var dialog = new QAQ.Dialog({
@@ -245,7 +245,7 @@
                     mgrRole()
                 }
             });
-        })
+        });
 
 
 
@@ -275,7 +275,7 @@
                     mgrRole();
                 }
             });
-        })
+        });
 
         function mgrRole(){
             $('#roleName').comboSelect({inputClass: 'roleName-input'});
@@ -283,7 +283,7 @@
             $('.fancy-select-mine .trigger').on('click',function(){
                 var sel = $(this);
                 sel.next('.options').toggleClass('open');
-            })
+            });
 
             $(document).off('click').on('click',function(e){
                 if($(e.target).closest(".fancy-select-mine").length == 0){

@@ -19,10 +19,12 @@
                     <li class="search-bar-li">
                         <form action="" method="post">
                             <label class="search-bar-label">场号：</label>
-                            <select name="" id="" class="eza-input-select mr10">
-                                <option value="1">1</option>
-                                <option value="1">2</option>
-                            </select>
+                            <div class="gray-selcet-box mr10">
+                                <select name="" id="sceneNum">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
                             <div class="select-down-wrapper">
                                 <div class="select-down-showitem">
                                     <input type='text' class="select-down-left" id="txt" placeholder="哈哈">
@@ -86,7 +88,8 @@
             <div class="playApprovalDetail-btns-box">
                 <button type="button" class="ezc-btn-blue mr20">打印</button>
                 <button type="button" class="ezc-btn-green mr20">通过</button>
-                <button type="button" class="ezc-btn-red">驳回</button>
+                <button type="button" class="ezc-btn-red mr20">驳回</button>
+                <a class="ezc-btn-orange" href="">返回</a>
             </div>
 
             <div class="ez-content-box">
@@ -105,6 +108,7 @@
     $(function(){
         $('.table-body-box').height($(window).height()-400);
         $('.ez-content-box').height($(window).height()-350);
+        $('#sceneNum').fancySelect();
         $(window).resize(function(){
             $('.table-body-box').height($(window).height()-400);
             $('.ez-content-box').height($(window).height()-350);

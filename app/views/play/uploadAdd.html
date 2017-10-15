@@ -10,7 +10,7 @@
         <div class="search-bar">
             <ul class="search-bar-ul cl">
                 <li class="search-bar-li">
-                    <form action="" method="post">
+                    <form action="" method="post" id="">
                         <label class="search-bar-label">剧本名称：</label>
                         <div class="select-down-wrapper mr10">
                             <div class="select-down-showitem">
@@ -20,10 +20,12 @@
                         </div>
 
                         <label class="search-bar-label">剧本类型：</label>
-                        <select name="" id="" class="eza-input-select ">
-                            <option value="1">电视剧</option>
-                            <option value="1">网络剧</option>
-                        </select>
+                        <div class="gray-selcet-box">
+                            <select name="" id="playScene" style="width:109px">
+                                <option value="1">电视剧</option>
+                                <option value="2">网络剧</option>
+                            </select>
+                        </div>
 
                     </form>
                 </li>
@@ -114,8 +116,9 @@
                        }
                    }]
                });
-           })
+           });
 
+           $('#playScene').fancySelect();
     });
 
 </script>

@@ -10,9 +10,7 @@
     <title>EZaction</title>
     <link rel="stylesheet" href="assets/css/base.css"/>
     <link rel="stylesheet" href="assets/css/admin.css"/>
-    <link rel="stylesheet" href="assets/css/yardTable.css"/>
-    <link rel="stylesheet" href="assets/font/iconfont.css"/>
-
+    <link rel="stylesheet" href="assets/css/fancy.css"/>
 </head>
 <body style="min-width:600px;">
 <!--导航条-->
@@ -25,59 +23,76 @@
 </div>
 
 <div class="main-container">
-    <section class="inquiry-wrap-section">
-        <div class="inquiry-wrap">
-            <div class="dramaLook-title"><span class="dramaLook-title1">《让子弹飞飞一会》</span><span>电影剧本</span></div>
-            <p class="dramaLook-chaxun">
-                <span>场号：</span>
-                <select name="" class="bookNum">
-                    <option value="" selected = "selected">1</option>
-                    <option value="">2</option>
-                    <option value="">303</option>
-                </select>
-                <input type="text" placeholder="白马" id="actorName"/>
-                <i class="iconfont icon-sousuo dramaLook-btn"></i>
-            </p>
-            <div class="dramaLook-result">
-                <p>总集数：<span>40集</span></p>
-                <p>总场数：<span>100</span></p>
-                <p>总剧占比：<span>10%</span></p>
-                <p>集数占比：<span>10%</span></p>
-            </div>
+    <div class="container-box">
+         <div class="container-no-side-box">
+             <div class="pageWraper">
+                 <h1 class="play-title">
+                     《让子弹飞飞一会》<span>电影剧本</span>
+                 </h1>
 
-            <div class="dramaLook-text">
-                北洋年间 南部中国 <span class="leftSpace">(10%)</span><br>
-                青石岭 日外 <span class="leftSpace1">( 5%)</span><br>
-                <p class="locHeight"></p>
-                青山百石<br>
-                雄关漫道<br>
-                苍鹰翱翔天际<br>
-                铁轨直插远方<br>
-                一颗后脑勺由画面上方落下，耳朵紧贴轨道，听。<br>
-                须臾，头颅轻起，让出缝隙，手指插入耳孔，挖静。<br>
-                再听。<br>
-                铁轨抖动，隆隆声由远及近，由远及近。<br>
-                呜——汽笛长嘶。<br>
-                脑袋古登一颗，后脑勺变成正脸。<br><br>
-                大眼惊恐。<br>
-                火车从这边来了！<br>
-                铁轮飞转，白烟滚滚，血旗烈烈，风驰电掣。<br>
-                <span class="strongL">白马</span>十匹，炽然出现。率两节车厢呼啸而来。<br>
-                马拉火车。十匹<span class="strongL">白马</span>是火车头。<br>
-                <span class="strongL">白马</span>黑车，游龙战舰。
-            </div>
-            <div class="dramaLook-text1">
-                青石岭 日外<span class="leftSpace2"> 1.5%</span><br>
-                <p class="locHeight"></p>
-                准心<br>
-                长枪的准心里，马拉火车早被牢牢”锁死“。<br>
-                远处火车飞奔十丈，近处准心缓移一寸。
-            </div>
-        </div>
-        <div class="container-footed">
-            东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
-        </div>
-    </section>
+                 <form action="" method="post" class="form-bar">
+                     <label class="form-bar-label">场号：</label>
+                     <div class="gray-selcet-box fn mr10">
+                         <select name="" id="sceneNum">
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                         </select>
+                     </div>
+                     <div class="form-down-wrapper">
+                         <div class="select-down-showitem">
+                             <input type='text' class="select-down-left" id="txt" placeholder="哈哈">
+                             <div class="icon-black-find"></div>
+                         </div>
+                     </div>
+                 </form>
+
+                 <div class="form-help-bar">
+                     <span>总集数：40集</span>
+                     <span>总场数：100</span>
+                     <span>总剧占比：10%</span>
+                     <span>集数占比：10%</span>
+                 </div>
+
+                 <div class="ez-content-box ft16">
+                     <div class="dramaLook-text">
+                         北洋年间 南部中国 <span class="leftSpace">(10%)</span><br>
+                         青石岭 日外 <span class="leftSpace1">( 5%)</span><br>
+                         <br>
+                         <br>
+                         <p class="locHeight"></p>
+                         青山百石<br>
+                         雄关漫道<br>
+                         苍鹰翱翔天际<br>
+                         铁轨直插远方<br>
+                         一颗后脑勺由画面上方落下，耳朵紧贴轨道，听。<br>
+                         须臾，头颅轻起，让出缝隙，手指插入耳孔，挖静。<br>
+                         再听。<br>
+                         铁轨抖动，隆隆声由远及近，由远及近。<br>
+                         呜——汽笛长嘶。<br>
+                         脑袋古登一颗，后脑勺变成正脸。<br><br>
+                         大眼惊恐。<br>
+                         火车从这边来了！<br>
+                         铁轮飞转，白烟滚滚，血旗烈烈，风驰电掣。<br>
+                         <span class="strongL">白马</span>十匹，炽然出现。率两节车厢呼啸而来。<br>
+                         马拉火车。十匹<span class="strongL">白马</span>是火车头。<br>
+                         <span class="strongL">白马</span>黑车，游龙战舰。
+                     </div>
+                     <div class="dramaLook-text1">
+                         青石岭 日外<span class="leftSpace2"> 1.5%</span><br>
+                         <p class="locHeight"></p>
+                         准心<br>
+                         长枪的准心里，马拉火车早被牢牢”锁死“。<br>
+                         远处火车飞奔十丈，近处准心缓移一寸。
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+    </div>
+
+    <div class="container-foot">
+        东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
+    </div>
 
 </div>
 <script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
@@ -87,20 +102,20 @@
 <script src="assets/lib/angularjs/1.4.4/angular-sanitize.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
 <script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
+
+<script src="assets/lib/qaqDialog/qaqDialog.js"></script>
+<script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
+<script src="assets/lib/layDate-v5.0.7/laydate/laydate.js"></script>
+<script src="assets/lib/fancySelect.js"></script>
+<script src="assets/lib/ComboSelect/jquery.combo.select.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Z1hMF38Ss03mdYL6tFMLvAPi"></script>
 <script src="config/config.js"></script>
 <script src="config/app.js"></script>
 <script>
     $(function(){
 
-        var navMenu;
-        $(".nav-menu li[class!='active']:not('.second-menu li')").hover(function(){
-            navMenu  = $('.nav-menu li.active');
-            $('.second-menu').hide();
-            $(this).find('.second-menu').slideDown(100);
-        },function(){
-            $('.second-menu').hide();
-            navMenu.find('.second-menu').slideDown(100);
-        });
+        $('#sceneNum').fancySelect();
 
     })
 </script>

@@ -6,6 +6,7 @@ body{padding-left:20px;padding-right:20px}
 .navbar .exit-icon{float: right;display:block;width:20px;height:20px;margin-left:20px;margin-right:20px;background: url(../image/admin_icon_stop.png);margin-top:20px;cursor: pointer;}
 .main-container{position: absolute;padding: 0;top:61px;bottom:0;left: 0;right: 0;min-height:600px;}
 .main-container .container-box{position: absolute;padding: 0;top:0;bottom: 30px;left:20px;right:20px;padding-left: 251px;background: url(../image/admin_body.jpg) no-repeat center center;}
+.main-container .container-box .container-no-side-box{margin-left:-251px;}
 .main-container .container-box .container-menu-box{position: absolute;padding: 0;top:0;bottom:0;left:0;padding-top:10px;width: 250px;}
 .main-container .container-foot{position: absolute;bottom: 0;left:20px;right: 20px;height: 30px;text-align: center;font-size: 12px;color: #666;font-family: Simsun;line-height: 20px;}
 .ng-views{height: 100%;overflow: auto;/*no position: relative*/}
@@ -51,7 +52,6 @@ body{padding-left:20px;padding-right:20px}
 .ezc-select{font-family: microsoft yahei;margin-right:6px;width: 106px;height: 45px;font-size: 16px;line-height: 45px;vertical-align:0px;text-align: right;border: 0;border-radius:1px;color:#333;padding:0px 35px 0px 10px;padding:5px 4px 5px 10px \0;padding:5px 10px 5px 10px \9;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../image/select_bg_down.png) right center no-repeat #fff;background-image:none \0;background-image:none \9;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-transition:border-color ease-in-out .15s;-o-transition:border-color ease-in-out .15s;transition:border-color ease-in-out .15s;}
 .ezc-select.month-sel,.enter-select.day-sel{width:85px;}
 .ezc-font-blue.small,.ezc-font-orange.small,.ezc-font-red.small,.ezc-font-green.small{padding: 3px 10px;}
-
 .eza-input-select,.eza-input-select12{font-family: microsoft yahei;width: 120px;height: 37px;font-size:14px;line-height: 35px;vertical-align:0px;text-align: center;border: 0;border-bottom: 1px solid #000;border-radius:1px;color: #afafaf;padding: 0px 35px 0px 20px;padding:5px 4px 5px 10px \0;padding:5px 10px 5px 10px \9;-webkit-appearance:none;-moz-appearance:none;appearance:none;background: url(../image/select_bg_down.png) 95% 50% no-repeat transparent;background-image:none \0;background-image:none \9;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-transition:border-color ease-in-out .15s;-o-transition:border-color ease-in-out .15s;transition:border-color ease-in-out .15s;float: left;}
 .eza-input-select12{padding-left:12px;}
 
@@ -93,6 +93,7 @@ body{padding-left:20px;padding-right:20px}
 .eza-table-caption span.tips-title{font-size:16px;color:#333;margin-right:20px;}
 .eza-table{border-collapse: collapse !important;width: 100%;table-layout: fixed;}
 .eza-table-fixed-header{border-collapse: collapse !important;width: 100%;table-layout: fixed;border-bottom: 1px solid #000;}
+.eza-table-fixed-header.border-top{border-top:1px solid #333;}
 .eza-table-fixed-header.border0{border-bottom: none;}
 .eza-table-fixed-header.pb5 th{font-weight:800;font-size:16px;padding: 12px 0 7px;text-align: center;}
 .eza-table-fixed-header th{font-weight:800;font-size:14px;padding:12px 0;text-align: center;}
@@ -122,6 +123,7 @@ body{padding-left:20px;padding-right:20px}
 .nav-menu li.nav-menu-li{margin-bottom: 20px;position: relative;}
 .nav-menu li.nav-menu-li span.nav-name{font-size: 18px;color:#000;vertical-align: baseline;line-height: 32px;}
 .nav-menu li.nav-menu-li span.nav-name:hover,.nav-menu li.nav-menu-li .second-menu li .second-menu-name:hover{color:#298ee5}
+.nav-menu li.nav-menu-li.active a{color:#ff5710;}
 .nav-menu li.nav-menu-li.active span.nav-name,.nav-menu li.nav-menu-li .second-menu li.checked .second-menu-name{color:#ff5710;}
 .nav-menu li.nav-menu-li.active span.nav-name:hover,.nav-menu li.nav-menu-li .second-menu li.checked .second-menu-name:hover{color:#ff5710}
 .nav-menu li.nav-menu-li .menu-icon{display:inline-block;width: 32px;height:32px;cursor: pointer;margin-right:10px;vertical-align: -3px;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
@@ -164,7 +166,7 @@ body{padding-left:20px;padding-right:20px}
 .center-password-box table.center-password{width: 320px;height: 330px;font-size: 16px;line-height: 34px;}
 .password-sub-box{text-align: center;}
 .playApprovalDetail-btns-box{margin-top:61px;text-align:right;margin-bottom:70px;}
-.ez-content-box{margin-bottom:20px;word-break:break-all;word-wrap:break-word;overflow: auto;}
+.ez-content-box{margin-bottom:20px;word-break:break-all;word-wrap:break-word;overflow: auto;line-height:1.375}
 .ez-content-box pre{white-space: pre-wrap!important;word-wrap: break-word!important;*white-space:normal!important;}
 .playUploadIndex-table{margin-bottom:36px}
 .eza-input-file-box{position: relative;display: inline-block;cursor: pointer;}
@@ -325,14 +327,63 @@ div.fancy-select-mine ul.options li.rhref .add-span{
     margin-right: 5px;
     font-weight: 600;
 }
-.rhref-input{
+.gray-selcet-box{
+    float: left;
+}
+.gray-selcet-box div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+}
+
+.pageWraper{
+    width:50%;
+    margin: 30px auto 0;
+    padding-bottom:20px;
+}
+.container-no-side-box .play-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom:32px;
+}
+.container-no-side-box .play-title span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.form-bar{
+    text-align:center;
+    margin-bottom: 10px;
+}
+.form-bar-label{
+    display: inline-block;
     font-size: 16px;
-    color:#333;
-    outline:0;
-    line-height: 35px;
-    height: 35px;
-    border:0;
-    width:;
+    line-height: 36px;
+}
+.gray-selcet-box.fn {
+    display: inline-block;
+    float: none;
+}
+.gray-selcet-box.fn div.fancy-select div.trigger{
+    font-size: 16px;
+}
+.form-down-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.form-down-wrapper .select-down-left{
+    font-size:16px;
+}
+.form-help-bar{
+    font-size:0;
+    text-align: center;
+    margin-bottom:23px;
+}
+.form-help-bar span{
+    font-size:16px;
+    margin-right: 25px;
 }
 /*login*/
 .wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
