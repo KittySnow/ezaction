@@ -1,11 +1,4 @@
-
 'use strict';
-
-(function (app) {
-
-    app.controller( 'playDefine', ['$route','$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($route ,$routeParams, $timeout, $http,$scope,$rootScope,tips) {
-        console.log($route);
-        $rootScope.navMenu = '#'+ $route.current.originalPath;
-    }]);
-
-})(angular.module('playDefine', []));
+angular.module('app').controller('playDefine', function ($rootScope, $route) {
+    $rootScope.navMenu = '#' + $route.current.originalPath;
+});

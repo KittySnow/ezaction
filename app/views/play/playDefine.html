@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<div ng-controller="playDefine">
+<div>
     <div class="pageBody mt40 cl">
 
         <div class="pageBody-left1">
@@ -37,18 +37,24 @@
             <div class="mt20">
                 <table class="eza-table-fixed-header pb5" id="roledeTable">
                     <thead>
-                    <col width="20%"><col width="40%"><col width="20%"><col width="20%">
-                    <tr>
-                        <th>场号</th>
-                        <th>场景</th>
-                        <th>气氛</th>
-                        <th>对比</th>
-                    </tr>
+                        <col width="20%">
+                        <col width="40%">
+                        <col width="20%">
+                        <col width="20%">
+                        <tr>
+                            <th>场号</th>
+                            <th>场景</th>
+                            <th>气氛</th>
+                            <th>对比</th>
+                        </tr>
                     </thead>
                 </table>
                 <div class="table-body-box">
                     <table class="eza-table">
-                        <col width="20%"><col width="40%"><col width="20%"><col width="20%">
+                        <col width="20%">
+                        <col width="40%">
+                        <col width="20%">
+                        <col width="20%">
                         <tr>
                             <td>20-20</td>
                             <td>外婆家</td>
@@ -93,10 +99,10 @@
             </div>
 
             <div class="eza-article-box">
-                首先明确一点，剧本区别于任何一种文体形式，我经常看到有的朋友把剧本写成了小说或人物传记，这是不对的，至少是不专业的。剧本有自己专署的格式，写剧本从某种程度上说是个技术活。 <br>
-                写剧本也不是什么很崇高的艺术创作，这只是一个普通的工种，剧作家和清洁工人没什么区别，都是很普通的工作而已，所以每个人都可以写剧本，每个人都可以当导演。当然，既然是一个工种，就有自己的规范。这些规范也许不会让你迅速变成一个专家，但至少能使你看上去像一个专家。或者，不至于让你糟糕的格式成为审稿人枪毙你稿子的理由。因为一个审稿人每天要看三到四篇稿子，如果你的剧本格式看上去不怎么专业的话，他完全有理由翻上几页就把你的剧本扔在角落里凉快。
+                首先明确一点，剧本区别于任何一种文体形式，我经常看到有的朋友把剧本写成了小说或人物传记，这是不对的，至少是不专业的。剧本有自己专署的格式，写剧本从某种程度上说是个技术活。
+                <br> 写剧本也不是什么很崇高的艺术创作，这只是一个普通的工种，剧作家和清洁工人没什么区别，都是很普通的工作而已，所以每个人都可以写剧本，每个人都可以当导演。当然，既然是一个工种，就有自己的规范。这些规范也许不会让你迅速变成一个专家，但至少能使你看上去像一个专家。或者，不至于让你糟糕的格式成为审稿人枪毙你稿子的理由。因为一个审稿人每天要看三到四篇稿子，如果你的剧本格式看上去不怎么专业的话，他完全有理由翻上几页就把你的剧本扔在角落里凉快。
+                <br> Ⅰ:把剧本写成小说
                 <br>
-                Ⅰ:把剧本写成小说<br>
             </div>
 
             <div class="eza-table-caption1 cl">
@@ -107,22 +113,30 @@
 
             <table class="eza-table-fixed-header pb5">
                 <thead>
-                <col width="15%"><col width="15%"><col width="15%">
-                <col width="15%"><col width="15%"><col width="25%">
-                <tr>
-                    <th>角色</th>
-                    <th>角色定位</th>
-                    <th>参演场数</th>
-                    <th>参演集数</th>
-                    <th>演员</th>
-                    <th>操作</th>
-                </tr>
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="25%">
+                    <tr>
+                        <th>角色</th>
+                        <th>角色定位</th>
+                        <th>参演场数</th>
+                        <th>参演集数</th>
+                        <th>演员</th>
+                        <th>操作</th>
+                    </tr>
                 </thead>
             </table>
             <div class="table-body-boxed">
                 <table class="eza-table">
-                    <col width="15%"><col width="15%"><col width="15%">
-                    <col width="15%"><col width="15%"><col width="25%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="25%">
                     <tr>
                         <td>二狗的爷爷</td>
                         <td>主演</td>
@@ -185,7 +199,7 @@
         </li>
         <li class="cl">
             <label class="roleAddUl-label">角色定位：</label>
-            <input name="" type="hidden" id="roleFixed" value=""/>
+            <input name="" type="hidden" id="roleFixed" value="" />
             <div class="fancy-select-mine">
                 <div class="trigger" id="roleTrigger">男一</div>
                 <ul class="options">
@@ -194,7 +208,8 @@
                     <li data-value="Dolor Sit" class="">Dolor Sit</li>
                     <li data-value="Dolor Sit" class="">Dolor Sit</li>
                     <li class="rhref">
-                        <a href="javascript:;"><span class="add-span">+</span>添加</a>
+                        <a href="javascript:;">
+                            <span class="add-span">+</span>添加</a>
                     </li>
                 </ul>
             </div>
@@ -207,11 +222,11 @@
 </script>
 
 <script type="application/javascript">
-    $(function(){
+    $(function () {
 
-        $('.eza-table .ezc-font-red').on('click',function(){
+        $('.eza-table .ezc-font-red').on('click', function () {
             var $this = $(this);
-            new QAQ.Dialog.confirm('确认删除吗？',function(){
+            new QAQ.Dialog.confirm('确认删除吗？', function () {
                 //自己请丢后台
                 $this.parent().parent().remove();
             })
@@ -219,29 +234,30 @@
 
         $('#playScene').fancySelect();
 
-        $('#roleAdd').click(function(){
+        $('#roleAdd').click(function () {
             var dialog = new QAQ.Dialog({
-                title:'添加',
-                content:$('#roleAddBox').html(),
-                width:502,
-                buttons:[{
-                    name:'确定',
-                    cls:'btn-primary',//可选 自定义按钮css类
-                    click:function(){
-                        //do something
-                        dialog.close();
+                title: '添加',
+                content: $('#roleAddBox').html(),
+                width: 502,
+                buttons: [{
+                        name: '确定',
+                        cls: 'btn-primary', //可选 自定义按钮css类
+                        click: function () {
+                            //do something
+                            dialog.close();
+                        }
+                    },
+                    {
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
+                            var dialog = this;
+                            //do something
+                            dialog.close();
+                        }
                     }
-                },
-                {
-                    name:'取消',
-                    cls:'btn-danger',//可选 自定义按钮css类
-                    click:function(){
-                        var dialog = this;
-                        //do something
-                        dialog.close();
-                    }
-                }],
-                success:function(){
+                ],
+                success: function () {
                     mgrRole()
                 }
             });
@@ -249,56 +265,59 @@
 
 
 
-        $('.eza-table .ezc-font-green').click(function(){
+        $('.eza-table .ezc-font-green').click(function () {
             var $this = $(this);
             var dialog = new QAQ.Dialog({
-                title:'编辑',
-                content:$('#roleAddBox').html(),
-                width:502,
-                buttons:[{
-                    name:'确定',
-                    cls:'btn-primary',//可选 自定义按钮css类
-                    click:function(){
-                        //表单提交自己写
-                        dialog.close();
-                    }
-                },
+                title: '编辑',
+                content: $('#roleAddBox').html(),
+                width: 502,
+                buttons: [{
+                        name: '确定',
+                        cls: 'btn-primary', //可选 自定义按钮css类
+                        click: function () {
+                            //表单提交自己写
+                            dialog.close();
+                        }
+                    },
                     {
-                        name:'取消',
-                        cls:'btn-danger',//可选 自定义按钮css类
-                        click:function(){
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
                             this.close();
                         }
-                    }],
-                success:function(){
+                    }
+                ],
+                success: function () {
                     $('#roleName').val('一月');
                     mgrRole();
                 }
             });
         });
 
-        function mgrRole(){
-            $('#roleName').comboSelect({inputClass: 'roleName-input'});
+        function mgrRole() {
+            $('#roleName').comboSelect({
+                inputClass: 'roleName-input'
+            });
 
-            $('.fancy-select-mine .trigger').on('click',function(){
+            $('.fancy-select-mine .trigger').on('click', function () {
                 var sel = $(this);
                 sel.next('.options').toggleClass('open');
             });
 
-            $(document).off('click').on('click',function(e){
-                if($(e.target).closest(".fancy-select-mine").length == 0){
-                    if($('.open').css('display')=='block'){
+            $(document).off('click').on('click', function (e) {
+                if ($(e.target).closest(".fancy-select-mine").length == 0) {
+                    if ($('.open').css('display') == 'block') {
                         $('.fancy-select-mine .options').removeClass('open');
                     }
                 }
             });
 
 
-            $(".options li:not('.rhref')").off('click').on('click',function(){
+            $(".options li:not('.rhref')").off('click').on('click', function () {
                 $(".options li").removeClass('selected');
                 var $this = $(this);
-                var value= $this.addClass('selected').attr('data-value');
-                var text= $this.text();
+                var value = $this.addClass('selected').attr('data-value');
+                var text = $this.text();
                 $('.fancy-select-mine .trigger').html(text);
                 $('#roleFixed').val(value);
                 $('.options.open').removeClass('open');

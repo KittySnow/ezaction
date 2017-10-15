@@ -1,11 +1,12 @@
-<div ng-controller="scheduleComparison">
+<div>
     <div class="pageTitle">
         <p class="page-title">档期比对</p>
     </div>
     <div class="pageBody cl">
         <div class="eza-table-caption cl">
             <div class="fl70">
-                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="big-title">让子弹飞一会</span>
+                <span class="sub-title">(电影)</span>
                 <span class="tips-title">故宫--吴波酒吧武器库</span>
             </div>
             <div class="fr30">
@@ -16,7 +17,9 @@
 
         <div class="schedule-bar1">
             <label class="schedule-bar-label">可用时间：</label>
-            <span class="big-date">2017/09/09</span><span class="schedule-bar1-line">　-　</span><span class="big-date">2017/09/19</span>
+            <span class="big-date">2017/09/09</span>
+            <span class="schedule-bar1-line">　-　</span>
+            <span class="big-date">2017/09/19</span>
             <button type="button" class="ezc-btn-blue ml20" id="editTimeBtn">修改时间</button>
         </div>
 
@@ -74,7 +77,7 @@
             <label class="editShootingBox-label">可用时间：</label>
         </li>
         <li class="last cl">
-            <dl  class="editShootingBox-date-box cl" id="shootEditDateInputBox1">
+            <dl class="editShootingBox-date-box cl" id="shootEditDateInputBox1">
                 <dt>
                     <i class="icon-rili"></i>
                 </dt>
@@ -83,7 +86,7 @@
                 </dd>
             </dl>
             <span class="editShootingBox-date-dec">至</span>
-            <dl  class="editShootingBox-date-box cl" id="shootEditDateInputBox2">
+            <dl class="editShootingBox-date-box cl" id="shootEditDateInputBox2">
                 <dt>
                     <i class="icon-rili"></i>
                 </dt>
@@ -95,46 +98,46 @@
     </ul>
 </script>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-400);
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-400);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 400);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 400);
         });
 
-        $('#editTimeBtn').click(function(){
+        $('#editTimeBtn').click(function () {
             var dialog = new QAQ.Dialog({
-                title:'编辑',
-                width:507,
-                content:$('#editShootingBox').html(),
-                buttons:[{
-                    name:'确定',
-                    cls:'.btn-primary',//可选 自定义按钮css类
-                    click:function(){
+                title: '编辑',
+                width: 507,
+                content: $('#editShootingBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
                         var dialog = this;
                         dialog.close();
                     }
-                },{
-                    name:'取消',
-                    cls:'.btn-success',//可选 自定义按钮css类
-                    click:function(){
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
                         var dialog = this;
                         dialog.close();
                     }
                 }],
-                success:function () {
-                    lay('.layui-input').each(function(){
+                success: function () {
+                    lay('.layui-input').each(function () {
                         var s = this;
                         laydate.render({
-                            elem: s
-                            ,trigger: 'click'
+                            elem: s,
+                            trigger: 'click'
                         });
                     });
 
 
-                  /*  laydate.render({
-                        elem: '#shootEditDateInput2'
-                        ,trigger: 'click'
-                    });*/
+                    /*  laydate.render({
+                          elem: '#shootEditDateInput2'
+                          ,trigger: 'click'
+                      });*/
                 }
             });
         })

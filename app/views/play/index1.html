@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<div ng-controller="playIndex1">
+<div>
     <div class="pageHeader">
         <div class="search-bar">
             <ul class="search-bar-ul cl">
@@ -9,7 +9,9 @@
                         <div class="select-down-wrapper">
                             <div class="select-down-showitem">
                                 <input type='text' class="select-down-left" id="txt" placeholder="电视剧">
-                                <a href="#/play/playSearch" style="position:relative"><div class="icon-black-find" id="searchPlay" style="position:absolute"></div></a>
+                                <a href="#/play/playSearch" style="position:relative">
+                                    <div class="icon-black-find" id="searchPlay" style="position:absolute"></div>
+                                </a>
                             </div>
                         </div>
                     </form>
@@ -27,22 +29,32 @@
         </div>
         <table class="eza-table-fixed-header">
             <thead>
-            <col width="15%"><col width="20%"><col width="15%">
-            <col width="15%"><col width="15%"><col width="10%"><col width="10%">
-            <tr>
-                <th>版本</th>
-                <th>状态</th>
-                <th>执行剧本</th>
-                <th>总集数</th>
-                <th>总场次</th>
-                <th colspan="2" align="center">操作</th>
-            </tr>
+                <col width="15%">
+                <col width="20%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="10%">
+                <col width="10%">
+                <tr>
+                    <th>版本</th>
+                    <th>状态</th>
+                    <th>执行剧本</th>
+                    <th>总集数</th>
+                    <th>总场次</th>
+                    <th colspan="2" align="center">操作</th>
+                </tr>
             </thead>
         </table>
         <div class="table-body-box">
             <table class="eza-table" id="tableDitor">
-                <col width="15%"><col width="20%"><col width="15%">
-                <col width="15%"><col width="15%"><col width="10%"><col width="10%">
+                <col width="15%">
+                <col width="20%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="10%">
+                <col width="10%">
                 <tr>
                     <td>1</td>
                     <td>编辑</td>
@@ -66,7 +78,7 @@
                     <td>
                         <a class="blue-fonts" href="./playLook.html">查看</a>
                     </td>
-                    <td  class="resetV">
+                    <td class="resetV">
                         <a class="" href="">撤回审批</a>
                     </td>
                 </tr>
@@ -118,22 +130,32 @@
         </div>
         <table class="eza-table-fixed-header">
             <thead>
-            <col width="15%"><col width="20%"><col width="15%">
-            <col width="15%"><col width="15%"><col width="10%"><col width="10%">
-            <tr>
-                <th>版本</th>
-                <th>状态</th>
-                <th>执行剧本</th>
-                <th>总集数</th>
-                <th>总场次</th>
-                <th colspan="2" align="center">操作</th>
-            </tr>
+                <col width="15%">
+                <col width="20%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="10%">
+                <col width="10%">
+                <tr>
+                    <th>版本</th>
+                    <th>状态</th>
+                    <th>执行剧本</th>
+                    <th>总集数</th>
+                    <th>总场次</th>
+                    <th colspan="2" align="center">操作</th>
+                </tr>
             </thead>
         </table>
         <div class="table-body-box">
             <table class="eza-table" id="tabled">
-                <col width="15%"><col width="20%"><col width="15%">
-                <col width="15%"><col width="15%"><col width="10%"><col width="10%">
+                <col width="15%">
+                <col width="20%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="10%">
+                <col width="10%">
                 <tr>
                     <td>1</td>
                     <td>编辑</td>
@@ -156,7 +178,7 @@
                     <td>
                         <a class="blue-fonts" href="./playLook.html">查看</a>
                     </td>
-                    <td  class="resetV">
+                    <td class="resetV">
                         <a class="" href="">撤回审批</a>
                     </td>
                 </tr>
@@ -214,25 +236,25 @@
     </div>
 </div>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-430);
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-360);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 430);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 360);
         })
 
-        $(".resetV a").click(function(){
-           var thisW= $(this).index();
-          var dataFont=$(this).text();
-            var dataBtn=dataFont.substring(0,4);
-            if(dataBtn=="撤回审批"){
-                $(this).css("color","");
+        $(".resetV a").click(function () {
+            var thisW = $(this).index();
+            var dataFont = $(this).text();
+            var dataBtn = dataFont.substring(0, 4);
+            if (dataBtn == "撤回审批") {
+                $(this).css("color", "");
                 $(this).addClass("blue-fonts");
                 $(this).text("编辑");
-               if($(".resetV a").hasClass("blue-fonts")){
-                  $(".resetV a").click(function(){
-                      $(this).attr("href","#/play/playEditor")
-                  })
-               }
+                if ($(".resetV a").hasClass("blue-fonts")) {
+                    $(".resetV a").click(function () {
+                        $(this).attr("href", "#/play/playEditor")
+                    })
+                }
             }
         })
     })

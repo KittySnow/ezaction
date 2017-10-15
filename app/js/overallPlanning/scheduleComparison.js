@@ -1,11 +1,4 @@
 'use strict';
-
-(function (app) {
-
-    app.controller( 'scheduleComparison', ['$route','$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($route ,$routeParams, $timeout, $http,$scope,$rootScope,tips) {
-        console.log($route);
-        $rootScope.navMenu = '#'+ $route.current.originalPath;
-    }]);
-
-})(angular.module('scheduleComparison', []));
-
+angular.module('app').controller('scheduleComparison', function ($rootScope, $route) {
+    $rootScope.navMenu = '#' + $route.current.originalPath;
+});

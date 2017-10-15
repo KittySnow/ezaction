@@ -1,11 +1,4 @@
 'use strict';
-
-(function (app) {
-
-    app.controller( 'announcementAudit', ['$route','$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($route ,$routeParams, $timeout, $http,$scope,$rootScope,tips) {
-        console.log($route);
-        $rootScope.navMenu = '#'+ $route.current.originalPath;
-    }]);
-
-})(angular.module('announcementAudit', []));
-
+angular.module('app').controller('announcementAudit', function ($rootScope, $route) {
+    $rootScope.navMenu = '#' + $route.current.originalPath;
+});

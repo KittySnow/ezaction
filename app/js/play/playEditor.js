@@ -1,11 +1,4 @@
-
 'use strict';
-
-(function (app) {
-
-    app.controller( 'playEditor', ['$route','$routeParams', '$timeout', '$http','$scope','$rootScope','tips', function ($route ,$routeParams, $timeout, $http,$scope,$rootScope,tips) {
-        console.log($route);
-        $rootScope.navMenu = '#'+ $route.current.originalPath;
-    }]);
-
-})(angular.module('playEditor', []));
+angular.module('app').controller('playEditor', function ($rootScope, $route) {
+    $rootScope.navMenu = '#' + $route.current.originalPath;
+});

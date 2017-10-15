@@ -1,4 +1,4 @@
-<div ng-controller="shootingLocation">
+<div>
 
     <div class="pageHeader">
         <div class="search-bar">
@@ -40,24 +40,36 @@
     <div class="pageBody">
         <table class="eza-table-fixed-header">
             <thead>
-            <col width="5%"><col width="8%"><col width="8%">
-            <col width="15%"><col width="27%"><col width="8%"><col width="10%"><col width="19%">
-            <tr>
-                <th>序号</th>
-                <th>场景分类</th>
-                <th>风格</th>
-                <th>场景名称</th>
-                <th>地址</th>
-                <th>联系人</th>
-                <th>电话</th>
-                <th>操作</th>
-            </tr>
+                <col width="5%">
+                <col width="8%">
+                <col width="8%">
+                <col width="15%">
+                <col width="27%">
+                <col width="8%">
+                <col width="10%">
+                <col width="19%">
+                <tr>
+                    <th>序号</th>
+                    <th>场景分类</th>
+                    <th>风格</th>
+                    <th>场景名称</th>
+                    <th>地址</th>
+                    <th>联系人</th>
+                    <th>电话</th>
+                    <th>操作</th>
+                </tr>
             </thead>
         </table>
         <div class="table-body-box">
             <table class="eza-table">
-                <col width="5%"><col width="8%"><col width="8%">
-                <col width="15%"><col width="27%"><col width="8%"><col width="10%"><col width="19%">
+                <col width="5%">
+                <col width="8%">
+                <col width="8%">
+                <col width="15%">
+                <col width="27%">
+                <col width="8%">
+                <col width="10%">
+                <col width="19%">
                 <tr>
                     <td>1</td>
                     <td>摄影棚</td>
@@ -102,10 +114,10 @@
     </div>
 </div>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-270);
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-270);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 270);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 270);
         })
     })
 </script>

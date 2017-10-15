@@ -1,140 +1,150 @@
 <meta charset="utf-8">
-<div ng-controller="playSearch">
-<div class="pageHeader">
-    <div class="search-bar">
-        <ul class="search-bar-ul cl">
-            <li class="search-bar-li">
-                <form action="" method="post">
-                    <label class="search-bar-label1">剧本名称：</label>
-                    <div class="select-down-wrapper">
-                        <div class="select-down-showitem">
-                            <input type='text' class="select-down-left" id="txt" placeholder="电视剧">
-                            <div class="icon-black-find"></div>
+<div>
+    <div class="pageHeader">
+        <div class="search-bar">
+            <ul class="search-bar-ul cl">
+                <li class="search-bar-li">
+                    <form action="" method="post">
+                        <label class="search-bar-label1">剧本名称：</label>
+                        <div class="select-down-wrapper">
+                            <div class="select-down-showitem">
+                                <input type='text' class="select-down-left" id="txt" placeholder="电视剧">
+                                <div class="icon-black-find"></div>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
 
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class="pageBody">
-    <div class="eza-table-top cl">
-        <div class="eza-font" style="margin-top:-15px;">
-            剧本名称
+                </li>
+            </ul>
         </div>
     </div>
-    <table class="eza-table-fixed-header">
-        <thead>
-        <col width="15%"><col width="15%"><col width="15%">
-        <col width="15%"><col width="15%"><col width="12%"><col width="13%">
-        <tr>
-            <th>版本</th>
-            <th>状态</th>
-            <th>执行剧本</th>
-            <th>总集数</th>
-            <th>总场次</th>
-            <th colspan="2" align="center">操作</th>
-        </tr>
-        </thead>
-    </table>
-    <div class="table-body-box">
-        <table class="eza-table" id="tabled">
-            <col width="15%"><col width="15%"><col width="15%">
-            <col width="15%"><col width="15%"><col width="12%"><col width="13%">
-            <tr>
-                <td>1</td>
-                <td>编辑</td>
-                <td>- -</td>
-                <td>- -</td>
-                <td>- -</td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">查看</a>
-                </td>
-                <td class="resetV">
-                    <a class="mr10" href="">撤回审批</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>审核中</td>
-                <td>是</td>
-                <td>10</td>
-                <td>20</td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">查看</a>
-                </td>
-                <td  class="resetV">
-                    <a class="mr10" href="">撤回审批</a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>通过</td>
-                <td>是</td>
-                <td>10</td>
-                <td>20</td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">查看</a>
-                </td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">编辑</a>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>编辑</td>
-                <td>是</td>
-                <td>10</td>
-                <td>20</td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">查看</a>
-                </td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">编辑</a>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>审核中</td>
-                <td>- -</td>
-                <td>- -</td>
-                <td>- -</td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">查看</a>
-                </td>
-                <td>
-                    <a class="ezc-font-blue mr10" href="">编辑</a>
-                </td>
-            </tr>
-        </table>
-    </div>
 
-    <div class="pagination">
-        <a href="javascript:void(0)">首页</a>
-        <span class="prev disable"></span>
-        <span class="current">1</span>
-        <a href="#">2</a>
-        <span>...</span>
-        <a href="#">6</a>
-        <a href="#" class="next"></a>
+    <div class="pageBody">
+        <div class="eza-table-top cl">
+            <div class="eza-font" style="margin-top:-15px;">
+                剧本名称
+            </div>
+        </div>
+        <table class="eza-table-fixed-header">
+            <thead>
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="12%">
+                <col width="13%">
+                <tr>
+                    <th>版本</th>
+                    <th>状态</th>
+                    <th>执行剧本</th>
+                    <th>总集数</th>
+                    <th>总场次</th>
+                    <th colspan="2" align="center">操作</th>
+                </tr>
+            </thead>
+        </table>
+        <div class="table-body-box">
+            <table class="eza-table" id="tabled">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="12%">
+                <col width="13%">
+                <tr>
+                    <td>1</td>
+                    <td>编辑</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">查看</a>
+                    </td>
+                    <td class="resetV">
+                        <a class="mr10" href="">撤回审批</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>审核中</td>
+                    <td>是</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">查看</a>
+                    </td>
+                    <td class="resetV">
+                        <a class="mr10" href="">撤回审批</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>通过</td>
+                    <td>是</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">查看</a>
+                    </td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>编辑</td>
+                    <td>是</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">查看</a>
+                    </td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">编辑</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>审核中</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">查看</a>
+                    </td>
+                    <td>
+                        <a class="ezc-font-blue mr10" href="">编辑</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <a href="javascript:void(0)">首页</a>
+            <span class="prev disable"></span>
+            <span class="current">1</span>
+            <a href="#">2</a>
+            <span>...</span>
+            <a href="#">6</a>
+            <a href="#" class="next"></a>
+        </div>
     </div>
-</div>
 </div>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-360);
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-320);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 360);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 320);
         })
 
-        $(".resetV a").click(function(){
-            var thisW= $(this).index();
-            var dataFont=$(this).text();
-            var dataBtn=dataFont.substring(0,4);
-            if(dataBtn=="撤回审批"){
-                $(this).css("color","");
+        $(".resetV a").click(function () {
+            var thisW = $(this).index();
+            var dataFont = $(this).text();
+            var dataBtn = dataFont.substring(0, 4);
+            if (dataBtn == "撤回审批") {
+                $(this).css("color", "");
                 $(this).addClass("ezc-font-blue");
                 $(this).text("编辑");
             }

@@ -1,10 +1,8 @@
-<div ng-controller="playUploadAdd">
-
+<div>
 
     <div class="pageTitle">
         <p class="page-title">新建剧本</p>
     </div>
-
 
     <div class="pageHeader">
         <div class="search-bar">
@@ -48,17 +46,21 @@
 
         <table class="eza-table-fixed-header">
             <thead>
-            <col width="20%"><col width="40%"><col width="40%">
-            <tr>
-                <th>序号</th>
-                <th>版本</th>
-                <th>操作</th>
-            </tr>
+                <col width="20%">
+                <col width="40%">
+                <col width="40%">
+                <tr>
+                    <th>序号</th>
+                    <th>版本</th>
+                    <th>操作</th>
+                </tr>
             </thead>
         </table>
         <div class="table-body-box">
             <table class="eza-table">
-                <col width="20%"><col width="40%"><col width="40%">
+                <col width="20%">
+                <col width="40%">
+                <col width="40%">
                 <tr>
                     <td>1</td>
                     <td>xxxxxxxx文件</td>
@@ -77,7 +79,7 @@
                     <td>1</td>
                     <td>
                         <div class="eza-input-file-box">
-                            <input type="file" name="" class="eza-input-file40"/>
+                            <input type="file" name="" class="eza-input-file40" />
                             <span class="ezc-font-blue" href="#/play/playApprovalDetail">上传剧本</span>
                         </div>
 
@@ -102,23 +104,22 @@
 <script>
     //所有的删除操作，删除数据后刷新页面
 
-    $(function(){
-           $('#transfer').click(function(){
-               var dialog = new QAQ.Dialog({
-                   title:'提示',
-                   content:'<div class="trans-dialog-loading"></div><div class="trans-dialog-tips">正在转译中，请稍后...</div> ',
-                   buttons:[{
-                       name:'确定',
-                       cls:'.btn-primary',//可选 自定义按钮css类
-                       click:function(){
-                           var dialog = this;
-                           dialog.close();
-                       }
-                   }]
-               });
-           });
+    $(function () {
+        $('#transfer').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '提示',
+                content: '<div class="trans-dialog-loading"></div><div class="trans-dialog-tips">正在转译中，请稍后...</div> ',
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }]
+            });
+        });
 
-           $('#playScene').fancySelect();
+        $('#playScene').fancySelect();
     });
-
 </script>

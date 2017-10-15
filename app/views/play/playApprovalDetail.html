@@ -1,16 +1,16 @@
 <meta charset="utf-8">
-<div ng-controller="playApprovalDetail">
+<div>
 
     <div class="pageTitle">
         <p class="page-title">剧本审批</p>
     </div>
 
-
     <div class="pageBody cl">
 
         <div class="pageBody-left">
             <div class="eza-table-caption">
-                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="big-title">让子弹飞一会</span>
+                <span class="sub-title">(电影)</span>
                 <span class="tips-title">总集数：100集</span>
                 <span class="tips-title">总场数：100场</span>
             </div>
@@ -37,18 +37,24 @@
             </div>
             <table class="eza-table-fixed-header">
                 <thead>
-                <col width="10%"><col width="60%"><col width="15%"><col width="15%">
-                <tr>
-                    <th>场号</th>
-                    <th>场景</th>
-                    <th>气氛</th>
-                    <th>剧本占比</th>
-                </tr>
+                    <col width="10%">
+                    <col width="60%">
+                    <col width="15%">
+                    <col width="15%">
+                    <tr>
+                        <th>场号</th>
+                        <th>场景</th>
+                        <th>气氛</th>
+                        <th>剧本占比</th>
+                    </tr>
                 </thead>
             </table>
             <div class="table-body-box">
                 <table class="eza-table">
-                    <col width="10%"><col width="60%"><col width="15%"><col width="15%">
+                    <col width="10%">
+                    <col width="60%">
+                    <col width="15%">
+                    <col width="15%">
                     <tr>
                         <td>1-1</td>
                         <td>外婆家</td>
@@ -105,13 +111,13 @@
     </div>
 </div>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-400);
-        $('.ez-content-box').height($(window).height()-350);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 400);
+        $('.ez-content-box').height($(window).height() - 350);
         $('#sceneNum').fancySelect();
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-400);
-            $('.ez-content-box').height($(window).height()-350);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 400);
+            $('.ez-content-box').height($(window).height() - 350);
         })
     })
 </script>

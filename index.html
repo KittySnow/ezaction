@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <base href="/">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="format-detection" content="telephone=no" />
@@ -8,22 +10,23 @@
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Cache-Control" content="max-age=0" />
     <title>EZaction</title>
-    <link rel="stylesheet" href="assets/css/base.css"/>
-    <link rel="stylesheet" href="assets/css/admin.css"/>
-    <link rel="stylesheet" href="assets/css/qaqDialog.css"/>
-    <link rel="stylesheet" href="assets/css/swiper.css"/>
-    <link rel="stylesheet" href="assets/lib/layDate-v5.0.7/layDate/theme/default/laydate.css"/>
-    <link rel="stylesheet" href="assets/css/fancy.css"/>
-    <link rel="stylesheet" href="assets/lib/ComboSelect/combo.select.css"/>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
+    <link rel="stylesheet" href="assets/css/qaqDialog.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/fancy.css" />
+    <link rel="stylesheet" href="assets/lib/layDate-v5.0.7/layDate/theme/default/laydate.css" />
+    <link rel="stylesheet" href="assets/lib/ComboSelect/combo.select.css" />
 </head>
+
 <body style="min-width:600px;">
     <!--导航条-->
     <div class="navbar cl">
-         <a href="#" class="logo"></a>
-         <div class="navbar-fr">
-             <a class="exit-icon"  title="退出" href=""></a>
-             <div class="username">XX公司</div>
-         </div>
+        <a href="#" class="logo"></a>
+        <div class="navbar-fr">
+            <a class="exit-icon" title="退出" href=""></a>
+            <div class="username">XX公司</div>
+        </div>
     </div>
 
     <div class="main-container">
@@ -31,7 +34,7 @@
             <div class="container-menu-box">
                 <ul class="nav-menu">
                     <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/'||  navMenu == '#/index' || navMenu == '#/index/resetPassword' ]">
-                        <a href="#/index">
+                        <a href="#">
                             <i class="menu-icon menu-icon1"></i>
                             <span class="nav-name">首页</span>
                         </a>
@@ -69,7 +72,7 @@
                                     <span class="second-menu-name">剧本管理</span>
                                 </a>
                             </li>
-                            <li  ng-class="{true:'checked',false:''}[navMenu == '#/play/playDefine']">
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/playDefine']">
                                 <div class="dec-line2"></div>
                                 <a href="#/play/playDefine">
                                     <i class="menu-small-icon"></i>
@@ -123,8 +126,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/overallPlanning/progressAdmin'||
-                     navMenu == '#/overallPlanning/confirm' || navMenu == '#/overallPlanning/arrangementNotice' || navMenu == '#/overallPlanning/announcementAudit']">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/overallPlanning/progressAdmin'|| navMenu == '#/overallPlanning/confirm' || navMenu == '#/overallPlanning/arrangementNotice' || navMenu == '#/overallPlanning/announcementAudit']">
                         <a href="">
                             <i class="menu-icon menu-icon4"></i>
                             <span class="nav-name">统筹</span>
@@ -175,51 +177,50 @@
             </div>
 
             <!--后台页面架子-->
-            <div ng-view class="ng-views view-slide-in">
+            <div ui-view class="ng-views view-slide-in">
 
             </div>
         </div>
         <div class="container-foot">
-            东方浩星（北京）传媒科技有限公司版权所有&copy; 2017    京ICP备12009034号
+            东方浩星（北京）传媒科技有限公司版权所有&copy; 2017 京ICP备12009034号
         </div>
     </div>
-<script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular-resource.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular-route.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular-sanitize.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular-animate.min.js"></script>
-<script src="assets/lib/angularjs/1.4.4/angular-touch.min.js"></script>
+    <script src="assets/lib/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="assets/lib/angularjs/1.6.6/angular.min.js"></script>
+    <script src="assets/lib/angularjs/1.6.6/angular-sanitize.min.js"></script>
+    <script src="assets/lib/angular-ui-router-0.4.3/release/angular-ui-router.min.js"></script>
+    <script src="assets/lib/oclazyload-1.1.0/dist/ocLazyLoad.min.js"></script>
 
-<script src="assets/lib/qaqDialog/qaqDialog.js"></script>
-<script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
-<script src="assets/lib/layDate-v5.0.7/laydate/laydate.js"></script>
-<script src="assets/lib/fancySelect.js"></script>
-<script src="assets/lib/ComboSelect/jquery.combo.select.js"></script>
+    <script src="assets/lib/qaqDialog/qaqDialog.js"></script>
+    <script src="assets/lib/swiper-3.4.2.jquery.min.js"></script>
+    <script src="assets/lib/layDate-v5.0.7/laydate/laydate.js"></script>
+    <script src="assets/lib/fancySelect.js"></script>
+    <script src="assets/lib/ComboSelect/jquery.combo.select.js"></script>
 
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Z1hMF38Ss03mdYL6tFMLvAPi"></script>
-<script src="config/config.js"></script>
-<script src="config/app.js"></script>
-<script>
-    $(function(){
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Z1hMF38Ss03mdYL6tFMLvAPi"></script>
+    <script src="config/app.js"></script>
+    <script src="config/router.js"></script>
+    <script>
+        $(function () {
 
-        var navMenu =  $('.nav-menu li.active');
-        $(".nav-menu .nav-menu-li").mouseenter(function(){
-            var $this  = $(this);
-            if($this[0].className.indexOf('active')==-1){
-                navMenu  = $('.nav-menu li.active');
-                $('.second-menu').hide();
-                $this.find('.second-menu').slideDown(100);
-            }
-        }).mouseleave(function(){
-            var $this  = $(this);
-            if($this[0].className.indexOf('active')==-1) {
-                $('.second-menu').hide();
-                navMenu.find('.second-menu').slideDown(100);
-            }
-        });
+            var navMenu = $('.nav-menu li.active');
+            $(".nav-menu .nav-menu-li").mouseenter(function () {
+                var $this = $(this);
+                if ($this[0].className.indexOf('active') == -1) {
+                    navMenu = $('.nav-menu li.active');
+                    $('.second-menu').hide();
+                    $this.find('.second-menu').slideDown(100);
+                }
+            }).mouseleave(function () {
+                var $this = $(this);
+                if ($this[0].className.indexOf('active') == -1) {
+                    $('.second-menu').hide();
+                    navMenu.find('.second-menu').slideDown(100);
+                }
+            });
 
-    })
-</script>
+        })
+    </script>
 </body>
+
 </html>

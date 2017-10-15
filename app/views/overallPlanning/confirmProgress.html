@@ -1,4 +1,4 @@
-<div ng-controller="overallPlanningConfirmProgress">
+<div>
     <div class="pageTitle">
         <p class="page-title">排程管理</p>
     </div>
@@ -7,7 +7,8 @@
 
         <div class="eza-table-caption cl">
             <div class="fl70">
-                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="big-title">让子弹飞一会</span>
+                <span class="sub-title">(电影)</span>
                 <span class="tips-title">故宫--吴波酒吧武器库</span>
             </div>
             <div class="fr30">
@@ -18,17 +19,19 @@
 
         <div class="schedule-bar1">
             <label class="schedule-bar-label">可用时间：</label>
-            <span class="big-date">2017/09/09</span><span class="schedule-bar1-line">　-　</span><span class="big-date">2017/09/19</span>
+            <span class="big-date">2017/09/09</span>
+            <span class="schedule-bar1-line">　-　</span>
+            <span class="big-date">2017/09/19</span>
         </div>
 
         <div class="eza-tab">
             <!-- Nav tabs -->
             <ul class="eza-nav eza-nav-tabs cl" id="tabList">
                 <li class="active">
-                    <a >场景</a>
+                    <a>场景</a>
                 </li>
                 <li>
-                    <a >演员</a>
+                    <a>演员</a>
                 </li>
                 <li>
                     <a>职员</a>
@@ -51,8 +54,8 @@
     </div>
 </div>
 <script>
-    $(function(){
-        $('#tabList li').on('click',function () {
+    $(function () {
+        $('#tabList li').on('click', function () {
             $('#tabList li').removeClass('active');
             $(this).addClass('active');
             var index = $(this).index();

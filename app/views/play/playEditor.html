@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<div ng-controller="playEditor">
+<div>
 
     <div class="pageTitle">
         <p class="page-title editor-title">剧本编辑</p>
@@ -10,14 +10,15 @@
 
         <div class="pageBody-left1">
             <div class="eza-table-caption1">
-                <span class="big-title">让子弹飞一会</span> <span  class="sub-title">(电影)</span>
+                <span class="big-title">让子弹飞一会</span>
+                <span class="sub-title">(电影)</span>
                 <form action="" method="post" id="postB">
                     <label class="search-bar-label1">版本：</label>
                     <select name="" id="roleEditor" class="eza-input-selected">
                         <option value="1">1</option>
                         <option value="1">2</option>
                     </select>
-                    </form>
+                </form>
                 <span class="tips-title mainCount">总集数：100集</span>
                 <span class="tips-title mainSource">总场数：100场</span>
             </div>
@@ -42,25 +43,34 @@
             </div>
             <table class="eza-table-fixed-header">
                 <thead>
-                <col width="10%"><col width="40%"><col width="15%"><col width="15%"><col width="20%">
-                <tr>
-                    <th>场号</th>
-                    <th>场景</th>
-                    <th>气氛</th>
-                    <th>剧本占比</th>
-                    <th colspan="2" align="center">操作</th>
-                </tr>
+                    <col width="10%">
+                    <col width="40%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="20%">
+                    <tr>
+                        <th>场号</th>
+                        <th>场景</th>
+                        <th>气氛</th>
+                        <th>剧本占比</th>
+                        <th colspan="2" align="center">操作</th>
+                    </tr>
                 </thead>
             </table>
             <div class="table-body-box">
                 <table class="eza-table">
-                    <col width="10%"><col width="40%"><col width="15%"><col width="15%"><col width="20%">
+                    <col width="10%">
+                    <col width="40%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="20%">
                     <tr>
                         <td>1-1</td>
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a>
+                        <td>
+                            <a class="blue-fonts" href="#/play/editorChange">编辑</a>
                             <a class="green-fonts rightPading" href="#/play/editorAdd">添加</a>
                         </td>
 
@@ -70,7 +80,8 @@
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a>
+                        <td>
+                            <a class="blue-fonts" href="#/play/editorChange">编辑</a>
                             <a class="green-fonts rightPading" href="#/play/editorAdd">添加</a>
                         </td>
                     </tr>
@@ -79,7 +90,8 @@
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a>
+                        <td>
+                            <a class="blue-fonts" href="#/play/editorChange">编辑</a>
                             <a class="green-fonts rightPading" href="#/play/editorAdd">添加</a>
                         </td>
                     </tr>
@@ -88,7 +100,8 @@
                         <td>外婆家</td>
                         <td>日/外</td>
                         <td>3.75%</td>
-                        <td><a class="blue-fonts" href="#/play/editorChange">编辑</a>
+                        <td>
+                            <a class="blue-fonts" href="#/play/editorChange">编辑</a>
                             <a class="green-fonts rightPading" href="#/play/editorAdd">添加</a>
                         </td>
                     </tr>
@@ -97,20 +110,21 @@
                         <td>- -</td>
                         <td>- -</td>
                         <td class="fontWeight">15%</td>
-                        <td><a href="#">- -</a>
+                        <td>
+                            <a href="#">- -</a>
                             <a class="rightPading" href="#">- -</a>
                     </tr>
                 </table>
             </div>
-<!--分页插件-->
+            <!--分页插件-->
             <!--<div class="pagination">-->
-                <!--<a href="javascript:void(0)">首页</a>-->
-                <!--<span class="prev disable"></span>-->
-                <!--<span class="current">1</span>-->
-                <!--<a href="#">2</a>-->
-                <!--<span>...</span>-->
-                <!--<a href="#">6</a>-->
-                <!--<a href="#" class="next"></a>-->
+            <!--<a href="javascript:void(0)">首页</a>-->
+            <!--<span class="prev disable"></span>-->
+            <!--<span class="current">1</span>-->
+            <!--<a href="#">2</a>-->
+            <!--<span>...</span>-->
+            <!--<a href="#">6</a>-->
+            <!--<a href="#" class="next"></a>-->
             <!--</div>-->
 
         </div>
@@ -134,12 +148,12 @@
     </div>
 </div>
 <script>
-    $(function(){
-        $('.table-body-box').height($(window).height()-400);
-        $('.ez-content-box').height($(window).height()-250);
-        $(window).resize(function(){
-            $('.table-body-box').height($(window).height()-400);
-            $('.ez-content-box').height($(window).height()-250);
+    $(function () {
+        $('.table-body-box').height($(window).height() - 400);
+        $('.ez-content-box').height($(window).height() - 250);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 400);
+            $('.ez-content-box').height($(window).height() - 250);
         })
     })
 </script>
