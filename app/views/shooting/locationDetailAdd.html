@@ -8,11 +8,55 @@
         </div>
     </div>
     <div class="pageBody mt40 cl">
-
+        <div class="eza-table-caption1 cl">
+            <a class="ezc-btn-red fr">返回</a>
+            <button type="button" class="ezc-btn-blue fr">修改</button>
+        </div>
         <div class="pageBody-left">
-            <div class="eza-table-caption cl">
-                <span class="caption-title">场景位置</span>
-            </div>
+            <table>
+                <tr>
+                    <td>场景名称：</td>
+                    <td>
+                        <input type="text" class="eza-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>联系人：</td>
+                    <td>
+                        <input type="text" class="eza-input mr10"> <input type="text" class="eza-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>地址：</td>
+                    <td>
+                        <div class="">
+                            <div class="mr10 gray-selcet-box">
+                                <select name="" id="countryScene" style="width:91px">
+                                    <option value="1">中国</option>
+                                </select>
+                            </div>
+                            <div class="mr10 gray-selcet-box">
+                                <select name="" id="provinceScene" style="width:91px">
+                                    <option value="1">浙江</option>
+                                </select>
+                            </div>
+                            <div class="mr10 gray-selcet-box">
+                                <select name="" id="citySelct" style="width:91px">
+                                    <option value="1">杭州</option>
+                                </select>
+                            </div>
+                            <div class="mr10 gray-selcet-box">
+                                <select name="" id="areaSelect" style="width:91px">
+                                    <option value="1">西湖</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </td>
+                </tr>
+            </table>
             <div class="swiper-container" id="location-scene">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image:url(assets/image/pic/rb1.jpg)" data-img="assets/image/pic/rb1.jpg">
@@ -40,30 +84,6 @@
                 <span class="fr">6/7</span>
             </div>
 
-            <div class="shootDetail-scene-info1 cl">
-                <span class="big-title-letter">
-                    场景名称
-                </span>
-                <span class="sub">
-                    风格
-                </span>
-
-                <div class="fr">
-                    <span>
-                        公园　200㎡　3000元/天
-                    </span>
-                </div>
-            </div>
-
-            <div class="shootDetail-scene-info2 cl">
-                <span class="contact">
-                    场景联系人: XXXXX
-                </span>
-                <span class="tel">
-                    电话：135****1111
-                </span>
-            </div>
-
             <div class="shootDetail-scene-info3 cl">
                 <h1>场景描述</h1>
                 <div class="shootDetail-info3-box">
@@ -75,14 +95,10 @@
 
 
         <div class="pageBody-right">
-            <div class="eza-table-caption cl">
-                <span class="caption-title">实景拍摄</span>
-            </div>
 
             <div id="baiduMapBox">
 
             </div>
-
 
             <div class="shootDetail-scene-info3 cl">
                 <h2>北京市东城区毛家湾胡同甲13号</h2>
