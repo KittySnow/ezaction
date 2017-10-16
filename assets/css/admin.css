@@ -352,6 +352,17 @@ div.fancy-select-mine ul.options li.rhref .add-span{
     font-weight: 600;
     font-size: 14px;
 }
+.container-no-side-box .play-title1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom:4px;
+}
+.container-no-side-box .sub-title1{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom:26px;
+}
 .form-bar{
     text-align:center;
     margin-bottom: 10px;
@@ -360,6 +371,12 @@ div.fancy-select-mine ul.options li.rhref .add-span{
     display: inline-block;
     font-size: 16px;
     line-height: 36px;
+}
+.form-bar-label1{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 36px;
+    vertical-align:10px;
 }
 .gray-selcet-box.fn {
     display: inline-block;
@@ -376,6 +393,7 @@ div.fancy-select-mine ul.options li.rhref .add-span{
 .form-down-wrapper .select-down-left{
     font-size:16px;
 }
+
 .form-help-bar{
     font-size:0;
     text-align: center;
@@ -385,8 +403,32 @@ div.fancy-select-mine ul.options li.rhref .add-span{
     font-size:16px;
     margin-right: 25px;
 }
+.combo-select.play-name-combo-select {
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+}
+.play-name-select,.play-scene-select{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 35px;
+    height: 35px;
+    width: 179px;
+    color: #afafaf;
+    padding-left: 12px;
+    padding-right: 13px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    display: inline-block;
+}
+.play-scene-select{
+    width:75px;
+}
+
 /*login*/
-.wrap{background-image: url("../image/login/bglogo.jpg");background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
+.wrap{background-image: url(../image/login/bglogo.jpg);background-size:100%;background-repeat:no-repeat;min-width:1366px;position:absolute;top:0;bottom:0;left:0;right:0;overflow:hidden;}
 .wrap .content{width:100%;height: 350px;background-color:rgba(0,0,0,0.5);position:absolute;top:50%;margin-top: -175px;min-width:1366px;}
 .content .content-header{width:500px;height:100px;margin:0 auto;margin-top:64px;position:relative;}
 .content-header{width: 488px;height:110px;margin:63px auto 30px;}
