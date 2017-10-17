@@ -127,4 +127,15 @@
     font-size: 14px !important;
     color: #333;
     text-align: left;
+    cursor: pointer;
+}
+.gray-selcet-box,.gray-select-box{
+    float: left;
+}
+.gray-selcet-box div.fancy-select div.trigger,.gray-select-box div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+    cursor: pointer;
 }

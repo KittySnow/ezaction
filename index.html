@@ -10,13 +10,13 @@
     <meta http-equiv="Cache-Control" content="max-age=0" />
     <title>EZaction</title>
     <link rel="stylesheet" href="assets/css/base.css" />
-    <link rel="stylesheet" href="assets/css/admin.css" />
     <link rel="stylesheet" href="assets/css/qaqDialog.css" />
     <link rel="stylesheet" href="assets/css/swiper.css" />
     <link rel="stylesheet" href="assets/css/fancy.css" />
     <link rel="stylesheet" href="assets/lib/layDate-v5.0.7/layDate/theme/default/laydate.css" />
     <link rel="stylesheet" href="assets/lib/ComboSelect/combo.select.css" />
     <link rel="stylesheet" href="assets/css/add.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
 </head>
 
 <body style="min-width:600px;">
@@ -88,7 +88,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail'|| navMenu == '#/shooting/locationDetailAdd']">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail'|| navMenu == '#/shooting/locationDetailAdd'|| navMenu == '#/shooting/teamBuilding' || navMenu == '#/shooting/teamBuildingAdd' || navMenu == '#/shooting/teamBuildingImport']">
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
@@ -117,9 +117,9 @@
                                     <span class="second-menu-name">职员管理</span>
                                 </a>
                             </li>
-                            <li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/teamBuilding' || navMenu == '#/shooting/teamBuildingAdd' || navMenu == '#/shooting/teamBuildingImport']">
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/shooting/teamBuilding">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">团队管理</span>
                                 </a>
