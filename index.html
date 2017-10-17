@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/fancy.css" />
     <link rel="stylesheet" href="assets/lib/layDate-v5.0.7/layDate/theme/default/laydate.css" />
     <link rel="stylesheet" href="assets/lib/ComboSelect/combo.select.css" />
+    <link rel="stylesheet" href="assets/css/add.css" />
 </head>
 
 <body style="min-width:600px;">
@@ -87,7 +88,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail']">
+                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail'|| navMenu == '#/shooting/locationDetailAdd']">
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
@@ -95,7 +96,7 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/location' || navMenu == '#/shooting/locationDetail' ]">
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/location' || navMenu == '#/shooting/locationDetail' || navMenu == '#/shooting/locationDetailAdd' ]">
                                 <div class="dec-line2"></div>
                                 <a href="#/shooting/location">
                                     <i class="menu-small-icon"></i>
@@ -137,28 +138,56 @@
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/progressAdmin">
                                     <i class="menu-small-icon"></i>
-                                    <span class="second-menu-name">排程管理</span>
+                                    <span class="second-menu-name">排程计划</span>
                                 </a>
                             </li>
                             <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/confirm']">
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/confirm">
                                     <i class="menu-small-icon"></i>
-                                    <span class="second-menu-name">统筹确认</span>
+                                    <span class="second-menu-name">排程安排</span>
                                 </a>
                             </li>
                             <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/arrangementNotice']">
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/arrangementNotice">
                                     <i class="menu-small-icon"></i>
-                                    <span class="second-menu-name">通告安排</span>
+                                    <span class="second-menu-name">排程审批</span>
                                 </a>
                             </li>
                             <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
-                                    <span class="second-menu-name">通告审核</span>
+                                    <span class="second-menu-name">日程安排</span>
+                                </a>
+                            </li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                                <div class="dec-line2"></div>
+                                <a href="#/overallPlanning/announcementAudit">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">日工作安排</span>
+                                </a>
+                            </li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                                <div class="dec-line2"></div>
+                                <a href="#/overallPlanning/announcementAudit">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">制片审批</span>
+                                </a>
+                            </li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                                <div class="dec-line2"></div>
+                                <a href="#/overallPlanning/announcementAudit">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">导演审批</span>
+                                </a>
+                            </li>
+                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                                <div class="dec-line2"></div>
+                                <a href="#/overallPlanning/announcementAudit">
+                                    <i class="menu-small-icon"></i>
+                                    <span class="second-menu-name">日程终审</span>
                                 </a>
                             </li>
                         </ul>

@@ -1,0 +1,130 @@
+.eza-textarea-box-loc{
+    border: 1px solid #333;
+    padding: 10px 13px;
+    margin-bottom: 15px;
+}
+.eza-textarea-box-loc .eaz-textarea{
+    width: 100%;
+    display: block;
+    font-size:14px;
+    line-height: 16px;
+    height:48px;
+    background: transparent;
+    resize: none;
+    font-family: microsoft yahei;
+    outline: 0;
+}
+.locationDetail-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.locationDetail-table td{
+    padding: 0;
+}
+.locationDetail-table th{
+    vertical-align: top;
+    font-size: 16px;
+    padding: 0;
+    line-height: 40px;
+}
+.eza-input.loc-name{
+    width: 388px;
+}
+.eza-input.loc-contact{
+    width: 88px;
+}
+
+.upload-box{
+    width: 100%;
+    margin-right: 15px;
+}
+.upload-box li{
+    width:165px;
+    margin-left:18px;
+    float: left;
+    height: 193px;
+    text-align: center;
+    margin-bottom:15px;
+}
+.upload-box li.upload-btn-li .upload-pic-font{
+    font-size: 12px;
+    color:#afafaf;
+}
+.upload-box li.upload-btn-li .upload-pic-font:hover{
+    color:#298ee5;
+}
+.upload-box li.upload-btn-li .upload-pic-btn{
+    margin:20px auto;
+    width: 132px;
+    cursor: pointer;
+}
+.pic-show-box{
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    margin-bottom:5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.gray-txt{
+    line-height: 28px;
+    font-size: 14px;
+    color: #999;
+}
+.locationDetail-table div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+}
+.locationDetail-table .black-select-box{
+    width: 22%;
+}
+.locationDetail-table .black-select-box select{
+    width: 100%;
+}
+.upload-img-wrapper{
+    position: relative;
+    text-align: center;
+    width: 132px;
+    margin: 13px auto 18px;
+}
+.upload-img-box{
+    width: 132px;
+    height: 106px;
+    text-align: center;
+}
+.upload-img-file{
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 132px;
+    height: 134px;
+    display: block;
+    outline: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+.upload-date-wrapper{
+    width: 247px;
+    margin: 0 auto;
+}
+.upload-date-wrapper .shootEdit-dateinput.ft16{
+    text-indent:15px;
+}
+.locationDetail-table div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+}
+.black-select-box{
+    float: left;
+}
+.black-selcet-box div.fancy-select div.trigger{
+    font-size: 14px !important;
+    color: #333;
+    text-align: left;
+}

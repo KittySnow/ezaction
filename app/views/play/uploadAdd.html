@@ -101,6 +101,7 @@
 </div>
 
 
+
 <script>
     //所有的删除操作，删除数据后刷新页面
 
@@ -109,14 +110,27 @@
             var dialog = new QAQ.Dialog({
                 title: '提示',
                 content: '<div class="trans-dialog-loading"></div><div class="trans-dialog-tips">正在转译中，请稍后...</div> ',
+                width: 502,
                 buttons: [{
-                    name: '确定',
-                    cls: '.btn-primary', //可选 自定义按钮css类
+                    name: '保存',
+                    cls: 'btn-primary', //可选 自定义按钮css类
                     click: function () {
-                        var dialog = this;
+                        //表单提交自己写
                         dialog.close();
                     }
-                }]
+                },
+                    {
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
+                            this.close();
+                        }
+                    }
+                ],
+                success: function () {
+                    $('#roleName').val('一月');
+                    mgrRole();
+                }
             });
         });
 

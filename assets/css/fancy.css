@@ -41,7 +41,7 @@ div.fancy-select div.trigger{
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    background: url(../image/select_bg_down.png) 97% center no-repeat #fff;
+    background: url(../image/select_bg_down.png) 97% center no-repeat transparent;
     background-image:none \0;
     background-image:none \9;
     outline:0;
