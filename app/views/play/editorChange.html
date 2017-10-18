@@ -1,28 +1,71 @@
 <meta charset="utf-8">
 <div>
-    <div class="drama-init">
-        <header class="drama-edit-title">剧本编辑-编辑</header>
-        <p class="drama-edit-text">
-            <span class="drama-edit-name">让子弹飞一会</span>
-            <span class="drama-edit-name1">（电影）</span>
-            &nbsp;&nbsp;
-            <span>XXXXXX版本</span> &nbsp;&nbsp;
-            <span>第一场第四集</span>
-        </p>
+    <div class="pageTitle">
+        <p class="page-title editor-title">剧本编辑-编辑</p>
+    </div>
+
+
+    <div class="pageBody">
+        <div class="eza-table-caption">
+            <span class="big-title">让子弹飞一会</span>
+            <span class="sub-title">(电影)</span>
+            <span class="tips-title">XXXXXX版本</span>
+            <span class="tips-title">第一集第3场</span>
+        </div>
+
         <form action="" method="post">
-            <label class="drama-edit-label1">场景：</label>
-            <textarea class="drama-edit-yard"></textarea>
-            <br/>
-            <label class="drama-edit-label3">气氛：</label>
-            <select class="drama-edit-select1" name="" id="">
-                <option value="">日</option>
-            </select>
-            <select class="drama-edit-select2" name="" id="">
-                <option value="">夜</option>
-            </select>
-            <br/>
-            <label class="drama-edit-label2">内容：</label>
-            <textarea class="drama-edit-content" placeholder="请输入剧本内容"></textarea>
+            <div class="eza-textarea-box-loc cl">
+                <label class="ft16">场景：</label>
+                <textarea class="eaz-textarea"></textarea>
+            </div>
+            <!-- <div>
+                <label class="ft16">气氛：</label>
+                <select class="drama-edit-select1" name="" id="">
+                    <option value="">日</option>
+                </select>
+                <select class="drama-edit-select2" name="" id="">
+                    <option value="" selected="selected">内</option>
+                    <option value="">内景</option>
+                    <option value="">外景</option>
+                    <option value="">内外景</option>
+                </select>
+            </div> -->
+            <div class="eza-toolbar-select cl">
+                <label class="search-bar-label">气氛：</label>
+                <div class="gray-selcet-box mr10">
+                    <select name="" id="playEditorChangeSelect1">
+                        <option value="1">日</option>
+                        <option value="2">夜</option>
+                    </select>
+                </div>
+                <div class="gray-selcet-box mr10">
+                    <select name="" id="playEditorChangeSelect2">
+                        <option value="1">内景</option>
+                        <option value="2">外景</option>
+                        <option value="3">内外景</option>
+                    </select>
+                </div>
+            </div>
+            <div class="eza-textarea-box-loc cl">
+                <label class="ft16">内容：</label>
+                <textarea class="eaz-textarea eaz-textarea-content" placeholder="请输入剧本内容"></textarea>
+            </div>
+            <div class="eza-form-inputgroup">
+                <button type="button" class="ezc-btn-green mr20">保存</button>
+                <button type="button" class="ezc-btn-orange">取消</button>
+            </div>
         </form>
     </div>
 </div>
+<script>
+    $(function () {
+        $('#playEditorChangeSelect1').fancySelect();
+        $('#playEditorChangeSelect2').fancySelect();
+        //     $('.table-body-box').height($(window).height() - 400);
+        //     $('.ez-content-box').height($(window).height() - 250);
+        //     $(window).resize(function () {
+        //         $('.table-body-box').height($(window).height() - 400);
+        //         $('.ez-content-box').height($(window).height() - 250);
+        //     })
+    })
+</script>
