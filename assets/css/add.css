@@ -139,3 +139,12 @@
     text-indent: 4px;
     cursor: pointer;
 }
+.newTeam-ul{
+    width: 227px;
+    margin: 75px auto 50px;
+}
+.newTeam-ul li{
+    margin-bottom:5px;
+}
+.newTeam-label{float: left;font-size: 16px;line-height: 36px;font-weight: 600;}
+.newTeam-input1{border: 0;border-bottom: 1px solid #333;line-height: 33px;height: 33px;width: 126px;padding-left: 10px;padding-right: 10px;font-family: microsoft yahei;font-size: 14px;background: transparent;float: right;outline: 0;}

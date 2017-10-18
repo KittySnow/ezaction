@@ -23,13 +23,13 @@
                     </form>
                 </li>
                 <li class="search-bar-li">
-                    <a href="#/shooting/teamBuildingAdd" class="ezc-btn-green search-bar-tips ft16">新建团队</a>
+                    <a href="javascript:void(0)" class="ezc-btn-green search-bar-tips ft16" id="newTeamBtn">新建团队</a>
                 </li>
                 <li class="search-bar-li">
-                    <a href="#/shooting/teamBuildingAdd" class="ezc-btn-blue search-bar-tips ft16">组名变更</a>
+                    <a href="javascript:void(0)" class="ezc-btn-blue search-bar-tips ft16"  id="updateTeamBtn">组名变更</a>
                 </li>
                 <li class="search-bar-li progress-li-fr">
-                    <a href="#/shooting/teamBuildingAdd" class="ezc-btn-green search-bar-tips ft16">添加组员</a>
+                    <a href="#/shooting/teamBuildingImport" class="ezc-btn-green search-bar-tips ft16">添加组员</a>
                 </li>
             </ul>
         </div>
@@ -114,6 +114,18 @@
 
     </div>
 </div>
+<script id="newTeamBox" type="text/template">
+    <ul class="newTeam-ul cl">
+        <li class="cl">
+            <label class="newTeam-label">团队名称：</label>
+            <input type="text" class="newTeam-input1">
+        </li>
+        <li class="cl">
+            <label class="newTeam-label">团队别名：</label>
+            <input type="text" class="newTeam-input1">
+        </li>
+    </ul>
+</script>
 <script>
     $(function () {
         $('.table-body-box').height($(window).height() - 270);
@@ -123,9 +135,63 @@
             inputClass: 'roleName-input'
         });
 
-        $('#countrySelect').fancySelect();
-        $('#scenePlay').fancySelect();
-        $('#stylePlay').fancySelect();
+        $('#newTeamBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '添加',
+                content: $('#newTeamBox').html(),
+                width: 502,
+                buttons: [{
+                    name: '确定',
+                    cls: 'btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        //do something
+                        dialog.close();
+                    }
+                },
+                    {
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
+                            var dialog = this;
+                            //do something
+                            dialog.close();
+                        }
+                    }
+                ],
+                success: function () {
+                }
+            });
+        });
+
+        $('#updateTeamBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '添加',
+                content: $('#newTeamBox').html(),
+                width: 502,
+                buttons: [{
+                    name: '确定',
+                    cls: 'btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        //do something
+                        dialog.close();
+                    }
+                },
+                    {
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
+                            var dialog = this;
+                            //do something
+                            dialog.close();
+                        }
+                    }
+                ],
+                success: function () {
+                    //记得用off('click')再on
+                }
+            });
+        });
+
         $(window).resize(function () {
             $('.table-body-box').height($(window).height() - 270);
         })

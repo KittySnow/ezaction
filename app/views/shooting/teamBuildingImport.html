@@ -1,108 +1,61 @@
 <div>
-    <div class="pageHeader">
-        <div class="search-bar">
-            <ul class="search-bar-ul cl">
-                <li class="search-bar-li">
-                    <form action="" method="post">
-                        <label class="search-bar-label">地点：</label>
-
-                        <div class="mr20 gray-select-box">
-                            <select name="" id="countrySelect">
-                                <option value="1">中国</option>
-                            </select>
-                        </div>
-                        <label class="search-bar-label ml10">场景分类：</label>
-
-                        <div class="mr20 gray-select-box">
-                            <select name="" id="scenePlay">
-                                <option value="1">摄影棚</option>
-                            </select>
-                        </div>
-                        <label class="search-bar-label ml10">风格：</label>
-                        <div class="mr20 gray-select-box">
-                            <select name="" id="stylePlay">
-                                <option value="1">现代</option>
-                            </select>
-                        </div>
-
-                        <div class="select-down-wrapper">
-                            <div class="select-down-showitem">
-                                <input type='text' class="select-down-left" id="txt" placeholder="哈哈">
-                                <div class="icon-black-find"></div>
-                            </div>
-                        </div>
-                    </form>
-                </li>
-                <li class="search-bar-li">
-                    <a href="#/shooting/teamBuildingAdd" class="ezc-btn-green search-bar-tips ft16">新建</a>
-                </li>
-            </ul>
-        </div>
+    <div class="pageTitle">
+        <p class="page-title">XXX组--组员导入</p>
     </div>
 
-    <div class="pageBody">
-        <table class="eza-table-fixed-header">
-            <thead>
-            <col width="5%">
-            <col width="15%">
-            <col width="5%">
-            <col width="14%">
-            <col width="13%">
-            <col width="13%">
-            <col width="5%">
-            <col width="15%">
+    <div class="pageHeader">
+        <ul class="search-bar-ul cl">
+            <li class="search-bar-li">
+                <label class="search-bar-label">关键字：</label>
+                <div class="select-down-wrapper">
+                    <div class="select-down-showitem">
+                        <input type='text' class="select-down-left" id="txt" placeholder="姓名/职位/手机">
+                        <div class="icon-black-find"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="search-bar-li progress-li-fr">
+                <a href="" class="ezc-btn-green mr10">保存</a>
+                <a href="" class="ezc-btn-red" id="progressChooseStaffBack">返回</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pageBody mt10">
+        <table class="eza-table-fixed-header pb5 ">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
             <col width="20%">
             <tr>
+                <th><input type="checkbox" name="" id="" class="eza-all-check">全选</th>
                 <th>序号</th>
                 <th>姓名</th>
-                <th>性别</th>
-                <th>组名</th>
-                <th>别名</th>
                 <th>职位</th>
-                <th>领导</th>
-                <th>电话</th>
-                <th>操作</th>
+                <th>手机</th>
             </tr>
-            </thead>
         </table>
         <div class="table-body-box">
             <table class="eza-table">
-                <col width="5%">
-                <col width="15%">
-                <col width="5%">
-                <col width="14%">
-                <col width="13%">
-                <col width="13%">
-                <col width="5%">
-                <col width="15%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
                 <col width="20%">
                 <tr>
+                    <td><input type="checkbox" name="checkname" id="" class="eza-check"></td>
                     <td>1</td>
-                    <td>迪丽热巴</td>
-                    <td>男</td>
-                    <td>A组</td>
-                    <td>木人</td>
-                    <td>摄影师</td>
-                    <td>是</td>
-                    <td>18410127723</td>
-                    <td>
-                        <a class="ezc-font-orange small" href="#/shooting/teamBuildingAdd">修改</a>
-                        <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
-                    </td>
+                    <td>二狗的爷爷</td>
+                    <td>xxxx</td>
+                    <td>xxxx</td>
                 </tr>
                 <tr>
+                    <td><input type="checkbox" name="checkname" id="" class="eza-check"></td>
                     <td>1</td>
-                    <td>迪丽热巴</td>
-                    <td>男</td>
-                    <td>A组</td>
-                    <td>木人</td>
-                    <td>摄影师</td>
-                    <td>是</td>
-                    <td>18410127723</td>
-                    <td>
-                        <a class="ezc-font-orange small" href="#/shooting/teamBuildingAdd">修改</a>
-                        <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
-                    </td>
+                    <td>二狗的爷爷</td>
+                    <td>xxxx</td>
+                    <td>xxxx</td>
                 </tr>
             </table>
         </div>
@@ -121,12 +74,22 @@
 </div>
 <script>
     $(function () {
-        $('.table-body-box').height($(window).height() - 270);
-        $('#countrySelect').fancySelect();
-        $('#scenePlay').fancySelect();
-        $('#stylePlay').fancySelect();
+        $('.table-body-box').height($(window).height() - 320);
+
+        $(".eza-all-check").click(function(){
+            if(this.checked){
+                $(".eza-check").each(function() {
+                    $(this).prop("checked", true);
+                });
+            }else{
+                $(".eza-check").each(function() {
+                    $(this).prop("checked", false);
+                });
+            }
+        });
+
         $(window).resize(function () {
-            $('.table-body-box').height($(window).height() - 270);
+            $('.table-body-box').height($(window).height() - 320);
         })
     })
 </script>
