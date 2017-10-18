@@ -73,9 +73,9 @@ angular.module('app', [
     }).state('teamBuilding', {
         url: '/shooting/teamBuilding',
         templateUrl: 'app/views/shooting/teamBuilding.html'
-    }).state('teamBuildingAdd', {
-        url: '/shooting/teamBuildingAdd',
-        templateUrl: 'app/views/shooting/teamBuildingAdd.html'
+    }).state('teamBuildingImport', {
+        url: '/shooting/teamBuildingImport',
+        templateUrl: 'app/views/shooting/teamBuildingImport.html'
     }).state('shootingLocation', {
         url: '/shooting/location',
         templateUrl: 'app/views/shooting/location.html'
