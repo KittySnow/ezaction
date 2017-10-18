@@ -135,7 +135,7 @@
                 <i class="icon-rili"></i>
             </dt>
             <dd>
-                <input type="text" class="layui-input shootEdit-dateinput ft16" placeholder="yyyy-MM-dd" id="shootEditDateInput1" lay-key="1">
+                <input type="text" class="layui-input shootEdit-dateinput ft16" placeholder="yyyy-MM-dd" id="cameraDateInput">
             </dd>
         </dl>
     </div>
@@ -150,30 +150,36 @@
 
 
         $('#uploadBtn').click(function () {
+
             var dialog = new QAQ.Dialog({
-                title: '上传',
-                width:502,
-                height:226,
-                content:$('#locUploadAddBox').html(),
-                buttons: [{
-                    name: '保存',
-                    cls: 'btn-primary', //可选 自定义按钮css类
-                    click: function () {
-                        //表单提交自己写
-                        dialog.close();
-                    }
-                },
-                    {
-                        name: '取消',
-                        cls: 'btn-danger', //可选 自定义按钮css类
+                    title: '上传',
+                    width:502,
+                    height:226,
+                    content:$('#locUploadAddBox').html(),
+                    buttons: [{
+                        name: '保存',
+                        cls: 'btn-primary', //可选 自定义按钮css类
                         click: function () {
+                            //表单提交自己写
                             this.close();
                         }
+                    },
+                        {
+                            name: '取消',
+                            cls: 'btn-danger', //可选 自定义按钮css类
+                            click: function () {
+                                this.close();
+                            }
+                        }
+                    ],
+                    success: function () {
+                        laydate.render({
+                            elem: '#cameraDateInput'
+                            ,trigger: 'click'
+                        })
                     }
-                ],
-                success: function () {
-                }
-            });
+                });
+
         });
 
     })
