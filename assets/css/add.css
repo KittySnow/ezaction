@@ -1,9 +1,9 @@
-.eza-textarea-box-loc{
+.eza-textarea-box-loc,.eza-textarea-box{
     border: 1px solid #333;
     padding: 10px 13px;
     margin-bottom: 15px;
 }
-.eza-textarea-box-loc .eaz-textarea{
+.eza-textarea-box-loc .eaz-textarea,.eza-textarea-box .eaz-textarea{
     width: 100%;
     display: block;
     font-size:14px;
