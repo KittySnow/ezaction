@@ -1,36 +1,72 @@
 <meta charset="utf-8">
 <div>
-    <div class="drama-init">
-        <header class="drama-edit-title">剧本编辑-添加</header>
-        <p class="drama-edit-text">
-            <span class="drama-edit-name">让子弹飞一会</span>
-            <span class="drama-edit-name1">（电影）</span>
-            &nbsp;&nbsp;
-            <span>XXXXXX版本</span>
-        </p>
+    <div class="pageTitle">
+        <p class="page-title editor-title">剧本编辑-添加</p>
+    </div>
+
+
+    <div class="pageBody">
+        <div class="eza-table-caption">
+            <span class="big-title">让子弹飞一会</span>
+            <span class="sub-title">(电影)</span>
+            <span class="tips-title">XXXXXX版本</span>
+            <span class="tips-title">第一集第3场</span>
+        </div>
+
         <form action="" method="post">
-            <p style="height: 46px">
-                <label class="drama-edit-label3">剧集：</label>
+            <div class="eza-textarea-box-loc cl">
+                <label class="ft16">场景：</label>
+                <textarea class="eaz-textarea"></textarea>
+            </div>
+            <!-- <div>
+                <label class="ft16">气氛：</label>
                 <select class="drama-edit-select1" name="" id="">
-                    <option value="">40-1</option>
+                    <option value="">日</option>
                 </select>
-            </p>
-            <label class="drama-edit-label4">场景：</label>
-            <textarea class="drama-edit-yard"></textarea>
-            <br/>
-            <label class="drama-edit-label3">气氛：</label>
-            <select class="drama-edit-select1" name="" id="">
-                <option value="">日</option>
-            </select>
-            <select class="drama-edit-select2" name="" id="">
-                <option value="" selected="selected">内</option>
-                <option value="">内景</option>
-                <option value="">外景</option>
-                <option value="">内外景</option>
-            </select>
-            <br/>
-            <label class="drama-edit-label2">内容：</label>
-            <textarea class="drama-edit-content" placeholder="请输入剧本内容"></textarea>
+                <select class="drama-edit-select2" name="" id="">
+                    <option value="" selected="selected">内</option>
+                    <option value="">内景</option>
+                    <option value="">外景</option>
+                    <option value="">内外景</option>
+                </select>
+            </div> -->
+            <form action="" method="post">
+                <div class="eza-toolbar-select cl">
+                    <label class="search-bar-label">气氛：</label>
+                    <div class="gray-selcet-box mr10">
+                        <select name="" id="playEditorAddSelect1">
+                            <option value="1">日</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="gray-selcet-box mr10">
+                        <select name="" id="playEditorAddSelect2">
+                            <option value="1">夜</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="eza-textarea-box-loc cl">
+                    <label class="ft16">内容：</label>
+                    <textarea class="eaz-textarea eaz-textarea-content" placeholder="请输入剧本内容"></textarea>
+                </div>
+                <div class="eza-form-inputgroup">
+                    <button type="button" class="ezc-btn-green mr20">保存</button>
+                    <button type="button" class="ezc-btn-orange">取消</button>
+                </div>
+            </form>
         </form>
     </div>
 </div>
+<script>
+    $(function () {
+        $('#playEditorAddSelect1').fancySelect();
+        $('#playEditorAddSelect2').fancySelect();
+        //     $('.table-body-box').height($(window).height() - 400);
+        //     $('.ez-content-box').height($(window).height() - 250);
+        //     $(window).resize(function () {
+        //         $('.table-body-box').height($(window).height() - 400);
+        //         $('.ez-content-box').height($(window).height() - 250);
+        //     })
+    })
+</script>

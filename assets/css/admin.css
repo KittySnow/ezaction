@@ -1881,3 +1881,39 @@ div.fancy-select-mine ul.options li.rhref .add-span {
     position: absolute;
     right: 61px;
 }
+
+
+/* textarea */
+
+.pageBody .eza-textarea-box-loc {
+    margin-left: 62px;
+}
+
+.pageBody .eza-textarea-box-loc label {
+    float: left;
+    margin-left: -62px;
+}
+
+.pageBody .eza-textarea-box-loc .eaz-textarea {
+    height: auto;
+    min-height: 60px;
+}
+
+.pageBody .eza-textarea-box-loc .eaz-textarea-content {
+    min-height: 300px;
+}
+
+
+/* toolbar-select */
+
+.eza-toolbar-select {
+    margin-bottom: 15px;
+    padding-left: 14px;
+}
+
+
+/* form-inputgroup */
+
+.eza-form-inputgroup {
+    text-align: right;
+}
