@@ -208,7 +208,17 @@ body {
     float: right;
     width: 39%
 }
-
+.pageRightBoxBar{
+    position: relative;padding-right: 390px;
+}
+.pageLeftBoxBar{
+    position: relative;padding-left: 390px;
+}
+.pageRightBoxBar-right{
+    position: absolute;
+    top:0;
+    right:0;
+}
 
 /*component*/
 

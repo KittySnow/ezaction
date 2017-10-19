@@ -1,95 +1,157 @@
 <div>
-    <div class="pageHeader">
-        <div class="search-bar">
-            <ul class="search-bar-ul cl">
-                <li class="search-bar-li">
-                    <form action="" method="post">
-                        <label class="search-bar-label">剧本：</label>
-                        <div class="select-down-wrapper">
-                            <div class="select-down-showitem">
-                                <input type='text' class="select-down-left" id="txt" value="哈哈">
-                                <div class="icon-black-down"></div>
-                            </div>
-                            <ul class="select-down-box" style="">
-                                <li>
-                                    <span class="select-down-leftw">DEFAULT</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="submit" class="ezc-btn-blue ml20">查询</button>
-                    </form>
-                </li>
-                <li class="search-bar-li">
-                    <button type="button" class="ezc-btn-blue">添加排程</button>
-                </li>
-            </ul>
+    <div class="pageRightBoxBar">
+        <div class="pageHeader">
+            <div class="search-bar">
+                <ul class="search-bar-ul cl">
+                    <li class="search-bar-li">
+                        <form action="" method="post">
+                            <label class="search-bar-label">剧本：</label>
+                            <select id="playName">
+                                <option value="">月份</option>
+                                <option value="一月">一月</option>
+                                <option value="二月">二月</option>
+                                <option value="三月">三月</option>
+                                <option value="四月">四月</option>
+                                <option value="五月">五月</option>
+                                <option value="六月">六月</option>
+                                <option value="七月">七月</option>
+                                <option value="八月">八月</option>
+                                <option value="九月">九月</option>
+                                <option value="十月">十月</option>
+                                <option value="十一月">十一月</option>
+                                <option value="十二月">十二月</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li class="search-bar-li">
+                        <button type="button" class="ezc-btn-green">剧本导入</button>
+                    </li>
+                    <li class="search-bar-li">
+                        <button type="button" class="ezc-btn-green">新增计划</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pageBody">
+            <table class="eza-table-fixed-header pb5">
+                <thead>
+                <col width="25%">
+                <col width="10%">
+                <col width="10%">
+                <col width="15%">
+                <col width="10%">
+                <col width="30%">
+                <tr>
+                    <th>时间段</th>
+                    <th>场景</th>
+                    <th>分场景</th>
+                    <th>地址</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+            </table>
+            <div style="min-height:500px;overflow: auto">
+                <table class="eza-table">
+                    <col width="10%">
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="10%">
+                    <col width="30%">
+                    <tr>
+                        <td>2017/09/09--2017-09-29</td>
+                        <td>故宫</td>
+                        <td>1</td>
+                        <td>小区</td>
+                        <td>正在审批</td>
+                        <td>
+                            <a class="ezc-font-green small">细化场景</a>
+                            <a class="ezc-font-blue small">编辑</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2017/09/09--2017-09-29</td>
+                        <td>故宫</td>
+                        <td>1</td>
+                        <td>小区</td>
+                        <td>正在审批</td>
+                        <td>
+                            <a class="ezc-font-green small">细化场景</a>
+                            <a class="ezc-font-blue small">编辑</a>
+                        </td>
+                    </tr>
+                    <tr class="solid-border">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>1</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <a class="ezc-font-blue small">编辑</a>
+                            <a class="ezc-font-red small">删除</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="pageRightBoxBar-right">
+            <div class="fr progress-admin-upTimeBtn">
+                <button type="button" class="ezc-btn-green">更新时间</button>
+            </div>
+            <div class="mt40 cl">
+                <div class="schedule-bar1">
+                    <label class="schedule-bar-label">计划时间：</label>
+                    <span class="big-date">2017/09/09</span>
+                    <span class="schedule-bar1-line">　-　</span>
+                    <span class="big-date">2017/09/19</span>
+                </div>
+                <div class="schedule-bar">
+                    <label class="schedule-bar-label">档期比对：</label>
+                    <span class="date-left"></span>
+                    <span class="big-date">2017/09/09</span>
+                    <span class="date-right"></span>
+                </div>
+            </div>
+            <div class="pageBody">
+                <table class="eza-table-fixed-header pb5">
+                    <thead>
+                    <col width="20%">
+                    <col width="60%">
+                    <col width="20%">
+                    <tr>
+                        <th>区分</th>
+                        <th>安排对象</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+                </table>
+                <div style="min-height:500px;overflow: auto">
+                    <table class="eza-table">
+                        <col width="20%">
+                        <col width="60%">
+                        <col width="20%">
+                        <tr>
+                            <th>区分</th>
+                            <th>安排对象</th>
+                            <th>状态</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="pageBody">
-        <table class="eza-table-fixed-header">
-            <thead>
-                <col width="10%">
-                <col width="15%">
-                <col width="20%">
-                <col width="15%">
-                <col width="10%">
-                <col width="30%">
-                <tr>
-                    <th>序号</th>
-                    <th>地址</th>
-                    <th>场景</th>
-                    <th>时间段</th>
-                    <th>状态</th>
-                    <th width="25%">操作</th>
-                </tr>
-            </thead>
-        </table>
-        <div style="min-height:500px;overflow: auto">
-            <table class="eza-table">
-                <col width="10%">
-                <col width="15%">
-                <col width="20%">
-                <col width="15%">
-                <col width="10%">
-                <col width="30%">
-                <tr>
-                    <td>1</td>
-                    <td>故宫</td>
-                    <td>小区</td>
-                    <td>2017/09/09--2017-09-29</td>
-                    <td>正在审批</td>
-                    <td>
-                        <a class="ezc-font-blue mr10 small">统筹管理</a>
-                        <a class="ezc-font-blue mr10 small">历史排程</a>
-                        <a class="ezc-font-red small">删除</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>故宫</td>
-                    <td>小区</td>
-                    <td>2017/09/09--2017-09-29</td>
-                    <td>正在审批</td>
-                    <td>
-                        <a class="ezc-font-blue mr10 small" href="#/overallPlanning/overallManagement">统筹管理</a>
-                        <a class="ezc-font-blue mr10 small" href="#/overallPlanning/progressHistory">历史排程</a>
-                        <a class="ezc-font-red small">删除</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>故宫</td>
-                    <td>小区</td>
-                    <td>2017/09/09--2017-09-29</td>
-                    <td>正在审批</td>
-                    <td>
-                        <a class="ezc-font-blue mr10 small">统筹管理</a>
-                        <a class="ezc-font-blue mr10 small">历史排程</a>
-                        <a class="ezc-font-red small">删除</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
+
 </div>
+
+<script>
+    $(function () {
+        $('#playName').comboSelect({
+            comboClass: 'combo-select pr',
+            inputClass: 'roleName-input'
+        });
+    })
+</script>
