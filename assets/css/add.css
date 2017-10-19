@@ -1,3 +1,4 @@
+
 .eza-textarea-box-loc,.eza-textarea-box{
     border: 1px solid #333;
     padding: 10px 13px;
@@ -148,3 +149,123 @@
 }
 .newTeam-label{float: left;font-size: 16px;line-height: 36px;font-weight: 600;}
 .newTeam-input1{border: 0;border-bottom: 1px solid #333;line-height: 33px;height: 33px;width: 126px;padding-left: 10px;padding-right: 10px;font-family: microsoft yahei;font-size: 14px;background: transparent;float: right;outline: 0;}
+
+.progress-schedule-bar{
+    font-size: 0;
+    margin-bottom: 5px;
+    line-height: 37px;
+}
+.progress-schedule-bar-date {
+    vertical-align: top;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #333;
+}
+
+.progress-schedule-bar-line {
+    font-size: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+    vertical-align: top;
+}
+
+.progress-schedule-bar-label {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.addProgressAdminUl {
+    padding: 30px 50px;
+}
+.editProgressAdminUl {
+    padding: 35px 50px;
+}
+.addProgressAdminBox-label {
+    float: left;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.addProgressAdminBox-input1,.editProgressAdminBox-input1{
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 326px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.editProgressAdminBox-input1{
+    width: 279px;
+}
+.editProgressAdminBox-noInput{
+    border: 0;
+    line-height: 33px;
+    height: 33px;
+    width: 279px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.icon-rili {
+    width: 22px;
+    height: 20px;
+    background: url(../image/icon_rili.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+    display: block;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.addProgressAdminBox-date-box {
+    padding-right: 30px;
+    float: left;
+    width: 125px;
+    height: 34px;
+    border-bottom: 1px solid #333;
+}
+
+.addProgressAdminBox-date-box dt {
+    float: right;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.addProgressAdmin-dateinput {
+    border: 0;
+    line-height: 33px;
+    height: 33px;
+    width: 107px;
+    padding-right: 37px;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+    padding-left: 12px;
+}
+
+.addProgressAdminBox-date-dec {
+    vertical-align: bottom;
+    line-height: 34px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.addProgressAdminUl li.last {
+    padding-left: 26px;
+    margin-top: 5px;
+}
