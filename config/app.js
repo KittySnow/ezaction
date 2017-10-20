@@ -34,6 +34,9 @@ angular.module('app', [
     }).state('progressHistory', {
         url: '/overallPlanning/progressHistory',
         templateUrl: 'app/views/overallPlanning/progressHistory.html'
+    }).state('assignByDay', {
+        url: '/overallPlanning/assignByDay',
+        templateUrl: 'app/views/overallPlanning/assignByDay.html'
     }).state('overallManagement', {
         url: '/overallPlanning/overallManagement',
         templateUrl: 'app/views/overallPlanning/overallManagement.html'

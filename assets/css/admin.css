@@ -213,7 +213,7 @@ body {
     padding-right: 420px;
 }
 .pageLeftBoxBar{
-    position: relative;padding-left: 390px;
+    position: relative;padding-left: 480px;
 }
 .pageRightBoxBar-right{
     position: absolute;
@@ -221,7 +221,12 @@ body {
     right: 0;
     width: 390px;
 }
-
+.pageLeftBoxBar-left{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 460px;
+}
 /*component*/
 
 .red-star {
@@ -1350,7 +1355,7 @@ body {
 .overallManagement-btns {
     position: absolute;
     right: 0;
-    top: -28px;
+    top: -38px;
 }
 
 .overallManagement-mgr-bar {
