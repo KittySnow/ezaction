@@ -58,16 +58,18 @@
       updateTriggerText = function() {
         return trigger.text(sel.find(':selected').text());
       };
-      sel.on('blur', function() {
+/*      sel.on('blur', function() {
         if (trigger.hasClass('open')) {
           return setTimeout(function() {
             return trigger.trigger('close');
           }, 120);
         }
-      });
-      trigger.on('close', function() {
-        trigger.removeClass('open');
-        return options.removeClass('open');
+      });*/
+      sel.on('close', function() {
+        if (trigger.hasClass('open')) {
+          trigger.removeClass('open');
+          return options.removeClass('open');
+        }
       });
       trigger.on('click', function() {
         var offParent, parent;
@@ -162,7 +164,9 @@
         }
         options.find('.selected').removeClass('selected');
         $(e.currentTarget).addClass('selected');
-        return sel.val($(this).data('value')).trigger('change').trigger('blur').trigger('focus');
+        sel.val($(this).data('value')).trigger('change').trigger('close').trigger('focus');
+        trigger.removeClass('open');
+        return sel;
       });
       options.on('mouseenter', 'li', function() {
         var hovered, nowHovered;
