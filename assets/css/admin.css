@@ -1984,6 +1984,22 @@ div.fancy-select-mine ul.options li.rhref .add-span {
     color: #FFF;
 }
 
+.actor-add-avatar img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.actor-add-avatar span {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
 .actor-add-tabs {
     margin-top: 30px;
     text-align: center;
@@ -2019,6 +2035,7 @@ div.fancy-select-mine ul.options li.rhref .add-span {
 
 .form-actor-add li {
     display: block;
+    line-height: 36px;
     margin-top: 5px;
 }
 
@@ -2048,9 +2065,25 @@ div.fancy-select-mine ul.options li.rhref .add-span {
 }
 
 .form-actor-add .information textarea {
-    margin-top: 10px;
     width: 700px;
     height: 120px;
+    margin-top: 10px;
     padding: 15px;
     border: 1px solid #333;
+}
+
+.form-actor-add .information p {
+    width: 700px;
+    margin-top: 10px;
+}
+
+.actor-schedule-list {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.actor-schedule-list .schedule-list {
+    display: inline-block;
+    max-width: 600px;
+    margin: 0 auto;
 }

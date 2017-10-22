@@ -126,6 +126,12 @@ angular.module('app', [
     }).state('shootingActorAdd', {
         url: '/shooting/actorAdd',
         templateUrl: 'app/views/shooting/actorAdd.html'
+    }).state('shootingActorDetail', {
+        url: '/shooting/actorDetail',
+        templateUrl: 'app/views/shooting/actorDetail.html'
+    }).state('shootingActorSchedule', {
+        url: '/shooting/actorSchedule',
+        templateUrl: 'app/views/shooting/actorSchedule.html'
     });
 }).controller('app.controller', function () {
 

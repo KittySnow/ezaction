@@ -1,0 +1,206 @@
+<div>
+
+    <div class="pageHeader">
+        <div class="search-bar">
+            <ul class="search-bar-ul cl">
+                <li class="search-bar-li">
+                    <label class="search-bar-label">XXXXXXX艺人 -- 详情</label>
+                </li>
+                <li class="search-bar-li progress-li-fr">
+                    <a href="javascript:void(0)" class="ezc-btn-green search-bar-tips ft16">编辑</a>
+                    <a href="javascript:void(0)" class="ezc-btn-orange search-bar-tips ft16">返回</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pageBody">
+        <div class="actor-add-avatar">
+            <div>
+                <img src="" alt="林俊杰">
+            </div>
+            <span class="ft16">
+                林俊杰
+                <small>男</small>
+            </span>
+        </div>
+        <ul class="actor-add-tabs">
+            <li>
+                <a href="#/shooting/actorDetail" class="ft16">基础信息</a>
+            </li>
+            <li class="active">
+                <a href="javascript:void(0)" class="ft16">档期</a>
+            </li>
+        </ul>
+        <div class="actor-schedule-list">
+            <div class="schedule-list">
+                <table class="eza-table-fixed-header pb5">
+                    <thead>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <tr>
+                            <th>开始日期</th>
+                            <th>结束日期</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="table-body-box">
+                    <table class="eza-table">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>可安排</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>不可预订</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>不可预订</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>可安排</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>不可预订</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/27</td>
+                            <td>2017/09/30</td>
+                            <td>不可预订</td>
+                            <td>
+                                <a class="ezc-font-blue small new-actor-btn" href="javascript:void(0)">修改</a>
+                                <a class="ezc-font-red small" href="javascript:void(0)">删除</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/template" id="newActorBox">
+    <ul class="newActorBoxUL">
+        <li class="cl">
+            <label class="addProgressAdminBox-label">开始日期：</label>
+            <dl class="addProgressAdminBox-date-box cl" id="shootEditDateInputBox1">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput1">
+                </dd>
+            </dl>
+        </li>
+        <li class="cl">
+            <label class="addProgressAdminBox-label">结束日期：</label>
+            <dl class="addProgressAdminBox-date-box cl" id="shootEditDateInputBox2">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput2">
+                </dd>
+            </dl>
+        </li>
+        <li class="cl">
+            <form action="" method="post">
+                <label class="search-bar-label">是否有空：</label>
+                <div class="gray-selcet-box mr10">
+                    <select name="" id="haveFreeTime">
+                        <option value="1">可安排</option>
+                        <option value="2">暂无时间</option>
+                    </select>
+                </div>
+            </form>
+        </li>
+    </ul>
+</script>
+<script>
+    $(function () {
+
+        $('.fancy-select').fancySelect();
+
+        lay('.layui-input').each(function () {
+            var s = this;
+            laydate.render({
+                elem: s,
+                trigger: 'click'
+            });
+        });
+
+        $('.new-actor-btn').click(function () {
+            var dialog = new QAQ.Dialog({
+                id: 'new-actor-dialog',
+                title: '编辑',
+                content: $('#newActorBox').html(),
+                width: 502,
+                buttons: [{
+                        name: '保存',
+                        cls: 'btn-primary', //可选 自定义按钮css类
+                        click: function () {
+                            //do something
+                            dialog.close();
+                        }
+                    },
+                    {
+                        name: '取消',
+                        cls: 'btn-danger', //可选 自定义按钮css类
+                        click: function () {
+                            var dialog = this;
+                            //do something
+                            dialog.close();
+                        }
+                    }
+                ],
+                success: function () {
+                    $('#haveFreeTime').fancySelect();
+                    lay('.layui-input').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+                }
+            });
+        });
+
+    })
+</script>
