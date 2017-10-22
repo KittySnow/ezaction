@@ -208,25 +208,32 @@ body {
     float: right;
     width: 39%
 }
-.pageRightBoxBar{
+
+.pageRightBoxBar {
     position: relative;
     padding-right: 420px;
 }
-.pageLeftBoxBar{
-    position: relative;padding-left: 480px;
+
+.pageLeftBoxBar {
+    position: relative;
+    padding-left: 480px;
 }
-.pageRightBoxBar-right{
+
+.pageRightBoxBar-right {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     width: 390px;
 }
-.pageLeftBoxBar-left{
+
+.pageLeftBoxBar-left {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 460px;
 }
+
+
 /*component*/
 
 .red-star {
@@ -733,9 +740,11 @@ body {
     border-bottom: 1px solid #b7b6b6;
     border-top: 1px solid #b7b6b6;
 }
+
 .eza-table tr.solid-border-bottom {
     border-bottom: 1px solid #b7b6b6;
 }
+
 .eza-table td {
     font-size: 14px;
     text-align: center;
@@ -1936,4 +1945,22 @@ div.fancy-select-mine ul.options li.rhref .add-span {
 
 .eza-form-inputgroup {
     text-align: right;
+}
+
+
+/* actor */
+
+#new-actor-dialog .newActorBoxUL {
+    display: inline-block;
+    margin: 30px auto;
+}
+
+#new-actor-dialog .sb_dialog_layer_main,
+#new-actor-dialog .sb_dialog_layer_cont {
+    overflow: visible;
+    text-align: center;
+}
+
+#new-actor-dialog .sb_dialog_layer_cont li {
+    margin-top: 5px;
 }

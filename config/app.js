@@ -102,9 +102,43 @@ angular.module('app', [
                 ]);
             }
         }
+    }).state('shootingActor', {
+        url: '/shooting/actor',
+        templateUrl: 'app/views/shooting/actor.html'
+    }).state('shootingActorAdd', {
+        url: '/shooting/actorAdd',
+        templateUrl: 'app/views/shooting/actorAdd.html'
     });
 }).controller('app.controller', function () {
 
+}).directive('menuAutoActive', function ($rootScope, $state) {
+    return {
+        restrict: 'A',
+        link: function (scope, element) {
+            $rootScope.$on('$stateChangeSuccess', function () {
+                var currentUrl = $state.current.url ? $state.current.url : '';
+                element.find('li').removeClass('active').removeClass('checked');
+                element.find('a').each(function (index, link) {
+                    var href = link.attributes.href.value.replace(/^#/, '');
+                    if (href && (new RegExp(href)).test(currentUrl)) {
+                        var parent = angular.element(link.parentNode);
+                        if (parent.hasClass('nav-menu-li')) {
+                            parent.addClass('active');
+                        } else {
+                            parent.addClass('checked');
+                            (function deep(node) {
+                                if (!node.attributes['menu-auto-active']) {
+                                    node.tagName === 'UL' && angular.element(node).hasClass('second-menu') && angular.element(node).slideDown(100);
+                                    node.tagName === 'LI' && angular.element(node).addClass('active');
+                                    deep(node.parentNode);
+                                }
+                            }(link.parentNode));
+                        }
+                    }
+                });
+            });
+        }
+    }
 }).run(function ($rootScope, $state) {
     $rootScope.$on('$stateChangeSuccess', function () {
         $rootScope.navMenu = '#' + $state.current.url;

@@ -610,7 +610,7 @@
                 $(this).find('.second-menu').slideDown(100);
             }, function () {
                 $('.second-menu').hide();
-                navMenu.find('.second-menu').slideDown(100);
+                navMenu.find('.second-menu').slideDown(100).removeAttr('style');
             });
 
         })

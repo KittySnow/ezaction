@@ -32,8 +32,8 @@
     <div class="main-container">
         <div class="container-box">
             <div class="container-menu-box">
-                <ul class="nav-menu">
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/'||  navMenu == '#/index' || navMenu == '#/index/resetPassword' ]">
+                <ul class="nav-menu" menu-auto-active>
+                    <li class="nav-menu-li">
                         <a href="#">
                             <i class="menu-icon menu-icon1"></i>
                             <span class="nav-name">首页</span>
@@ -41,7 +41,7 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/index/resetPassword']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/index/resetPassword">
                                     <i class="menu-small-icon"></i>
@@ -50,7 +50,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/play/uploadIndex'||  navMenu == '#/play/playEditor' ||  navMenu == '#/play/editorAdd' ||  navMenu == '#/play/editorChange' || navMenu == '#/play/index1' || navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' || navMenu == '#/play/uploadAdd' || navMenu == '#/play/playDefine' || navMenu == '#/play/playSearch']">
+                    <li class="nav-menu-li">
                         <a href="">
                             <i class="menu-icon menu-icon2"></i>
                             <span class="nav-name">剧本</span>
@@ -58,28 +58,28 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/uploadIndex' || navMenu == '#/play/uploadAdd']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/play/uploadIndex">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本转义</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/index1']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/play/index1">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">剧本管理</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/playDefine']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/play/playDefine">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">角色定义</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/play/playApproval' || navMenu ==  '#/play/playApprovalDetail' ]">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/play/playApproval">
                                     <i class="menu-small-icon"></i>
@@ -88,7 +88,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/shooting/location'|| navMenu == '#/shooting/locationDetail'|| navMenu == '#/shooting/locationDetailAdd'|| navMenu == '#/shooting/teamBuilding' || navMenu == '#/shooting/teamBuildingAdd' || navMenu == '#/shooting/teamBuildingImport']">
+                    <li class="nav-menu-li">
                         <a href="">
                             <i class="menu-icon menu-icon3"></i>
                             <span class="nav-name">建组</span>
@@ -96,7 +96,7 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/location' || navMenu == '#/shooting/locationDetail' || navMenu == '#/shooting/locationDetailAdd' ]">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/shooting/location">
                                     <i class="menu-small-icon"></i>
@@ -105,7 +105,7 @@
                             </li>
                             <li>
                                 <div class="dec-line2"></div>
-                                <a href="">
+                                <a href="#/shooting/actor">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">演员管理</span>
                                 </a>
@@ -117,7 +117,7 @@
                                     <span class="second-menu-name">职员管理</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/shooting/teamBuilding' || navMenu == '#/shooting/teamBuildingAdd' || navMenu == '#/shooting/teamBuildingImport']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/shooting/teamBuilding">
                                     <i class="menu-small-icon"></i>
@@ -126,7 +126,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li ng-class="{true:'active nav-menu-li',false:'nav-menu-li'}[navMenu == '#/overallPlanning/progressAdmin'|| navMenu == '#/overallPlanning/confirm' || navMenu == '#/overallPlanning/arrangementNotice' || navMenu == '#/overallPlanning/announcementAudit']">
+                    <li class="nav-menu-li">
                         <a href="">
                             <i class="menu-icon menu-icon4"></i>
                             <span class="nav-name">统筹</span>
@@ -134,56 +134,56 @@
                         <ul class="second-menu">
                             <li class="dec-line1"></li>
                             <li class="dec-line"></li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/progressAdmin']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/progressAdmin">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">排程计划</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/confirm']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/confirm">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">排程安排</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/arrangementNotice']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/arrangementNotice">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">排程审批</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">日程安排</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/assignByDay']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/assignByDay">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">日工作安排</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">制片审批</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
                                     <span class="second-menu-name">导演审批</span>
                                 </a>
                             </li>
-                            <li ng-class="{true:'checked',false:''}[navMenu == '#/overallPlanning/announcementAudit']">
+                            <li>
                                 <div class="dec-line2"></div>
                                 <a href="#/overallPlanning/announcementAudit">
                                     <i class="menu-small-icon"></i>
@@ -242,7 +242,7 @@
                 var $this = $(this);
                 if ($this[0].className.indexOf('active') == -1) {
                     $('.second-menu').hide();
-                    navMenu.find('.second-menu').slideDown(100);
+                    navMenu.find('.second-menu').slideDown(100).removeAttr('style');
                 }
             });
 

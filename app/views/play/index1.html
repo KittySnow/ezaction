@@ -64,7 +64,7 @@
 
                     </td>
                     <td class="resetV">
-                        <a class="ezc-font-red" href="">撤回审批</a>
+                        <a class="ezc-font-orange" href="">撤回审批</a>
                     </td>
                 </tr>
                 <tr>
@@ -77,7 +77,7 @@
                         <a class="ezc-font-blue" href="./playLook.html">查看</a>
                     </td>
                     <td class="resetV">
-                        <a class="ezc-font-red" href="">撤回审批</a>
+                        <a class="ezc-font-orange" href="">撤回审批</a>
                     </td>
                 </tr>
                 <tr>
@@ -164,7 +164,7 @@
                         <a class="ezc-font-blue" href="./playLook.html">查看</a>
                     </td>
                     <td class="resetV">
-                        <a class="ezc-font-red" href="">撤回审批</a>
+                        <a class="ezc-font-orange" href="">撤回审批</a>
                     </td>
                 </tr>
                 <tr>
@@ -177,7 +177,7 @@
                         <a class="ezc-font-blue" href="./playLook.html">查看</a>
                     </td>
                     <td class="resetV">
-                        <a class="ezc-font-red" href="">撤回审批</a>
+                        <a class="ezc-font-orange" href="">撤回审批</a>
                     </td>
                 </tr>
                 <tr>
@@ -241,12 +241,12 @@
         // })
 
         $(".resetV a").click(function () {
-            var $this =  $(this);
+            var $this = $(this);
             var dataFont = $this.text();
             var dataBtn = dataFont.substring(0, 4);
             if (dataBtn == "撤回审批") {
-                $this.css("color", "").removeClass("ezc-font-red").addClass("ezc-font-blue").text("编辑");
-            }else{
+                $this.css("color", "").removeClass("ezc-font-orange").addClass("ezc-font-blue").text("编辑");
+            } else {
                 $this.attr("href", "#/play/playEditor")
             }
 
