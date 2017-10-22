@@ -1964,3 +1964,93 @@ div.fancy-select-mine ul.options li.rhref .add-span {
 #new-actor-dialog .sb_dialog_layer_cont li {
     margin-top: 5px;
 }
+
+
+/* actor add */
+
+.actor-add-avatar {
+    text-align: center;
+}
+
+.actor-add-avatar div {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #CCC;
+    text-align: center;
+    color: #FFF;
+}
+
+.actor-add-tabs {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.actor-add-tabs li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.actor-add-tabs li a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.actor-add-tabs li.active a {
+    border-bottom: 1px solid #333;
+    font-weight: 700;
+}
+
+.form-actor-add {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-actor-add ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.form-actor-add li {
+    display: block;
+    margin-top: 5px;
+}
+
+.form-actor-add li .search-bar-label {
+    min-width: 100px;
+    text-align: right;
+}
+
+.form-actor-add li input {
+    background-color: transparent;
+}
+
+.form-actor-add .information {
+    margin-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.form-actor-add .information div {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.form-actor-add .information label,
+.form-actor-add .information textarea {
+    display: block;
+}
+
+.form-actor-add .information textarea {
+    margin-top: 10px;
+    width: 700px;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #333;
+}

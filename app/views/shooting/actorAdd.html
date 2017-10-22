@@ -1,0 +1,168 @@
+<div>
+
+    <div class="pageHeader">
+        <div class="search-bar">
+            <ul class="search-bar-ul cl">
+                <li class="search-bar-li">
+                    <label class="search-bar-label">XXXXXXX艺人 -- 新建</label>
+                </li>
+                <li class="search-bar-li progress-li-fr">
+                    <a href="javascript:void(0)" class="ezc-btn-green search-bar-tips ft16">保存</a>
+                    <a href="javascript:void(0)" class="ezc-btn-orange search-bar-tips ft16">返回</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pageBody">
+        <div class="actor-add-avatar">
+            <div>上传头像</div>
+        </div>
+        <ul class="actor-add-tabs">
+            <li class="active">
+                <a href="javascript:void(0)" class="ft16">基础信息</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="ft16">档期</a>
+            </li>
+        </ul>
+        <form action="" method="post" class="form-actor-add">
+            <ul>
+                <li>
+                    <label class="search-bar-label">艺名：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">中文名：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">英文名：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">地点：</label>
+                    <div class="mr10">
+                        <select name="" class="fancy-select">
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">经纪人：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">手机：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">国籍：</label>
+                    <div class="mr10">
+                        <select name="" class="fancy-select">
+                            <option value="1">中国</option>
+                            <option value="2">外国</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">民族：</label>
+                    <div class="mr10">
+                        <select name="" class="fancy-select">
+                            <option value="1">汉族</option>
+                            <option value="2">少数名族</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">籍贯：</label>
+                    <div class="mr10">
+                        <select name="" class="fancy-select">
+                            <option value="1">北京</option>
+                            <option value="2">上海</option>
+                            <option value="3">广州</option>
+                            <option value="4">深圳</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="cl">
+                    <label class="search-bar-label">出生日期：</label>
+                    <dl class="addProgressAdminBox-date-box cl">
+                        <dt>
+                            <i class="icon-rili"></i>
+                        </dt>
+                        <dd>
+                            <input type="text" class="layui-input addProgressAdmin-dateinput" placeholder="yyyy-MM-dd">
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <label class="search-bar-label">身高：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left" id="txt">
+                            <div>cm</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">体重：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left" id="txt">
+                            <div>kg</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label class="search-bar-label">毕业院校：</label>
+                    <div class="select-down-wrapper">
+                        <div class="select-down-showitem">
+                            <input type="text" class="select-down-left">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="information">
+                <div>
+                    <label class="ft16">个人简介：</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script>
+    $(function () {
+        $('.fancy-select').fancySelect();
+        lay('.layui-input').each(function () {
+            var s = this;
+            laydate.render({
+                elem: s,
+                trigger: 'click'
+            });
+        });
+    })
+</script>
