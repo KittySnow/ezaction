@@ -28,6 +28,12 @@ angular.module('app', [
     }).state('scheduleComparison', {
         url: '/overallPlanning/scheduleComparison',
         templateUrl: 'app/views/overallPlanning/scheduleComparison.html'
+    }).state('progressAssign', {
+        url: '/overallPlanning/progressAssign',
+        templateUrl: 'app/views/overallPlanning/progressAssign.html'
+    }).state('progressAssignAdmin', {
+        url: '/overallPlanning/progressAssignAdmin',
+        templateUrl: 'app/views/overallPlanning/progressAssignAdmin.html'
     }).state('progressAdmin', {
         url: '/overallPlanning/progressAdmin',
         templateUrl: 'app/views/overallPlanning/progressAdmin.html'
@@ -37,9 +43,21 @@ angular.module('app', [
     }).state('assignByDay', {
         url: '/overallPlanning/assignByDay',
         templateUrl: 'app/views/overallPlanning/assignByDay.html'
+    }).state('approveAdmin', {
+        url: '/overallPlanning/approveAdmin',
+        templateUrl: 'app/views/overallPlanning/approveAdmin.html'
     }).state('overallManagement', {
         url: '/overallPlanning/overallManagement',
         templateUrl: 'app/views/overallPlanning/overallManagement.html'
+    }).state('overallSchedule', {
+        url: '/overallPlanning/schedule',
+        templateUrl: 'app/views/overallPlanning/schedule.html'
+    }).state('overallScheduleDetail', {
+        url: '/overallPlanning/scheduleDetail',
+        templateUrl: 'app/views/overallPlanning/scheduleDetail.html'
+    }).state('overallExamination', {
+        url: '/overallPlanning/examination',
+        templateUrl: 'app/views/overallPlanning/examination.html'
     }).state('playIndex', {
         url: '/play/index',
         templateUrl: 'app/views/play/index.html'

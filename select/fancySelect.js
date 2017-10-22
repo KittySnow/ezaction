@@ -53,18 +53,19 @@
       updateTriggerText = function() {
         return trigger.text(sel.find(':selected').text());
       };
-      sel.on('blur', function() {
+      /*sel.on('blur', function() {
         if (trigger.hasClass('open')) {
           return setTimeout(function() {
             return trigger.trigger('close');
           }, 120);
         }
-      });
-      trigger.on('close', function() {
+      });*/
+      /*trigger.on('close', function() {
         trigger.removeClass('open');
         return options.removeClass('open');
-      });
+      });*/
       trigger.on('click', function() {
+        console.log(11111);
         var offParent, parent;
         if (!disabled) {
           trigger.toggleClass('open');
@@ -151,6 +152,7 @@
         }
       });
       options.on('click', 'li', function(e) {
+        console.log('111111',e);
         sel.val($(this).data('value'));
         if (!isiOS) {
           sel.trigger('blur').trigger('focus');
@@ -160,6 +162,7 @@
         return sel.val($(this).data('value')).trigger('change').trigger('blur').trigger('focus');
       });
       options.on('mouseenter', 'li', function() {
+        console.log('1111112',e);
         var hovered, nowHovered;
         nowHovered = $(this);
         hovered = options.find('.hover');
@@ -167,6 +170,7 @@
         return nowHovered.addClass('hover');
       });
       options.on('mouseleave', 'li', function() {
+        console.log('1111113',e);
         return options.find('.hover').removeClass('hover');
       });
       copyOptionsToList = function() {

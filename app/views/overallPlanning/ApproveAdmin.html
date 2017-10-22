@@ -1,0 +1,420 @@
+<div>
+    <div class="pageLeftBoxBar">
+
+        <div class="pageLeftBoxBar-left">
+            <div class="pageHeader">
+                <div class="search-bar">
+                    <ul class="search-bar-ul cl">
+                        <li class="search-bar-li">
+                            <form action="" method="post">
+                                <label class="search-bar-label">剧本：</label>
+                                <select id="playName">
+                                    <option value="">月份</option>
+                                    <option value="一月">一月</option>
+                                    <option value="二月">二月</option>
+                                    <option value="三月">三月</option>
+                                    <option value="四月">四月</option>
+                                    <option value="五月">五月</option>
+                                    <option value="六月">六月</option>
+                                    <option value="七月">七月</option>
+                                    <option value="八月">八月</option>
+                                    <option value="九月">九月</option>
+                                    <option value="十月">十月</option>
+                                    <option value="十一月">十一月</option>
+                                    <option value="十二月">十二月</option>
+                                </select>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pageBody">
+                <table class="eza-table-fixed-header pb5">
+                    <thead>
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="25%">
+                    <tr>
+                        <th>日期</th>
+                        <th>剧本</th>
+                        <th>场景</th>
+                        <th>拍摄地点</th>
+                    </tr>
+                    </thead>
+                </table>
+                <div class="table-body-box">
+                    <table class="eza-table">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <tr>
+                            <td>2017/09/09</td>
+                            <td>故宫</td>
+                            <td>故宫</td>
+                            <td>故宫</td>
+                        </tr>
+                        <tr>
+                            <td>2017/09/09</td>
+                            <td>故宫</td>
+                            <td>故宫</td>
+                            <td>故宫</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="assignright-info-title mb10 cl" >
+            <button type="button" class="ezc-btn-red fr" id="setNoBtn">否决</button>
+            <button type="button" class="ezc-btn-green fr" id="setYesBtn">通过</button>
+            <a href="" class="ezc-btn-blue fr">预览</a>
+        </div>
+        <table class="assignright-info-table">
+            <col width="20%">
+            <col width="20%">
+            <col width="40%">
+            <col width="20%">
+            <tr>
+                <td>天空状况：晴</td>
+                <td>天气状况：小雨</td>
+                <td>降水等级：大到暴雨</td>
+                <td>日出：06：00</td>
+            </tr>
+            <tr>
+                <td>气温：2-15℃</td>
+                <td>风力：2-3级</td>
+                <td>风向：北风</td>
+                <td>日落：19：00</td>
+            </tr>
+            <tr>
+                <td colspan="4">备注：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+            </tr>
+        </table>
+
+        <div class="eza-tab">
+            <!-- Nav tabs -->
+            <ul class="eza-nav eza-nav-tabs cl" id="tabList">
+                <li class="active">
+                    <a>艺人</a>
+                </li>
+                <li>
+                    <a>场景</a>
+                </li>
+                <li>
+                    <a>职员</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="eza-tab-content">
+                <div class="eza-tab-pane" style="display: block">
+                    <div ng-include="'app/views/overallPlanning/approveAdminActor.html'"></div>
+                </div>
+                <div class="eza-tab-pane">
+                    <div ng-include="'app/views/overallPlanning/approveAdminScene.html'"></div>
+                </div>
+                <div class="eza-tab-pane">
+                    <div ng-include="'app/views/overallPlanning/approveAdminStaff.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<script type="text/template" id="setWeatherBox">
+    <div class="setWeatherBox">
+        <table class="setWeatherBox-table" height="206">
+            <col width="89">
+            <col width="167">
+            <col width="89">
+            <col width="167">
+            <tr>
+                <th>
+                    计划时间：
+                </th>
+                <td>
+                    <dl class="addProgressAdminBox-date-box cl" id="setWeatherPlaneDate"  style="width:136px">
+                        <dt>
+                            <i class="icon-rili"></i>
+                        </dt>
+                        <dd>
+                            <input type="text" class="layui-inputAgain addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="setWeatherPlaneDateInput">
+                        </dd>
+                    </dl>
+                </td>
+                <th>组别：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="typeSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>天空状况：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="stateSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>天气状况：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="weatherSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>降水等级：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="precipitationGrade" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>气温：</th>
+                <td class="temperature-td">
+                    <input type="text" class="temperature-input">
+                    <span class="temperature-pipe">-</span>
+                    <input type="text" class="temperature-input"><span class="ft14">℃</span>
+                </td>
+            </tr>
+            <tr>
+                <th>风向：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="windDirectionSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>风力：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="windPowerSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>日出：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="sunUpSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>日落：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr height="100">
+                <th class="vt pt10">备注：</th>
+                <td  colspan="3">
+                    <div class="eza-textarea-box  mt10">
+                        <textarea name="" id="" class="eaz-textarea" placeholder="请输入"></textarea>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+
+
+<script type="text/template" id="addProgressAdminBox">
+    <ul class="addProgressAdminUl">
+        <li class="cl">
+            <label class="addProgressAdminBox-label">场景：</label>
+            <input type="text" class="addProgressAdminBox-input1">
+        </li>
+        <li class="cl">
+            <label class="addProgressAdminBox-label">地址：</label>
+            <input type="text" class="addProgressAdminBox-input1">
+        </li>
+        <li class="cl">
+            <label class="addProgressAdminBox-label">时间：</label>
+            <dl class="addProgressAdminBox-date-box cl" id="shootEditDateInputBox1">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput1">
+                </dd>
+            </dl>
+            <span class="addProgressAdminBox-date-dec">至</span>
+            <dl class="addProgressAdminBox-date-box cl" id="shootEditDateInputBox2">
+                <dt>
+                    <i class="icon-rili"></i>
+                </dt>
+                <dd>
+                    <input type="text" class="layui-input addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="shootEditDateInput2">
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</script>
+
+
+<script type="text/template" id="editProgressAdminBox">
+    <ul class="addProgressAdminUl">
+        <li class="cl">
+            <label class="addProgressAdminBox-label">　　主场景：</label>
+            <span class="editProgressAdminBox-noInput">霏霏雪无声呢</span>
+        </li>
+        <li class="cl">
+            <label class="addProgressAdminBox-label">分场景编码：</label>
+            <input type="text" class="editProgressAdminBox-input1">
+        </li>
+        <li class="cl">
+            <label class="addProgressAdminBox-label">分场景名称：</label>
+            <input type="text" class="editProgressAdminBox-input1">
+        </li>
+    </ul>
+</script>
+<script>
+    $(function () {
+        $('#playName').comboSelect({
+            comboClass: 'combo-select pr',
+            inputClass: 'roleName-input'
+        });
+
+        $('.refineScene').on('click',function(){
+            var dialog = new QAQ.Dialog({
+                title: '细化场景',
+                width: 507,
+                content: $('#editProgressAdminBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success: function () {
+                    lay('.layui-input').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+                }
+            });
+        });
+
+        /*tab选项卡*/
+        $('#tabList li').on('click', function () {
+            $('#tabList li').removeClass('active');
+            $(this).addClass('active');
+            var index = $(this).index();
+            $('.eza-tab-pane').hide().eq(index).show();
+        });
+
+        $('.editSecondBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '编辑',
+                width: 507,
+                height:140,
+                content: $('#addProgressAdminBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success: function () {
+                    lay('.layui-input').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+
+                }
+            });
+        });
+
+
+        $('#setWeatherBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '设置天气',
+                width: 690,
+                content: $('#setWeatherBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success: function () {
+                    lay('.layui-inputAgain').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+                    $('.black-select-box16 select').fancySelect();
+                }
+            });
+        });
+
+
+
+
+    })
+</script>

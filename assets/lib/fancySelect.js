@@ -15,6 +15,9 @@
     }, opts);
     isiOS = !!navigator.userAgent.match(/iP(hone|od|ad)/i);
     return this.each(function() {
+
+
+
       var copyOptionsToList, disabled, options, sel, trigger, updateTriggerText, wrapper;
       sel = $(this);
       if (sel.hasClass('fancified') || sel[0].tagName !== 'SELECT') {
@@ -73,6 +76,7 @@
       });
       trigger.on('click', function() {
         var offParent, parent;
+        $('.open').removeClass('open');
         if (!disabled) {
           trigger.toggleClass('open');
           if (isiOS && !settings.forceiOS) {
@@ -165,8 +169,15 @@
         options.find('.selected').removeClass('selected');
         $(e.currentTarget).addClass('selected');
         sel.val($(this).data('value')).trigger('change').trigger('close').trigger('focus');
-        trigger.removeClass('open');
+        $('.fancy-select .options').removeClass('open');
         return sel;
+      });
+      $(document).off('click').on('click', function (e) {
+        if ($(e.target).closest(".fancy-select").length == 0) {
+          if ($('.open').css('display') == 'block') {
+            $('.fancy-select .options').removeClass('open');
+          }
+        }
       });
       options.on('mouseenter', 'li', function() {
         var hovered, nowHovered;
@@ -202,6 +213,8 @@
       });
       return copyOptionsToList();
     });
+
+
   };
 
 }).call(this);

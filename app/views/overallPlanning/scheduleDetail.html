@@ -1,0 +1,278 @@
+<div>
+    <div class="pageBody mt40">
+        <div class="eza-table-caption cl">
+            <span class="big-title">XXXX场景</span>
+            <span class="sub-title">(横店影视城)</span>
+            <span class="tips-title">计划时间：</span>
+            <span class="tips-title">2017/09/08-2017/09/28</span>
+            <div class="fr">
+                <a class="ezc-font-blue mr10 editWeather" id="addWeatherBtn">新增</a>
+                <a class="ezc-font-red" href="#/overallPlanning/schedule">返回</a>
+            </div>
+        </div>
+
+        <table class="eza-table-fixed-header pb5">
+            <thead>
+            <col width="8%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="7%">
+            <col width="5%">
+            <col width="5%">
+            <col width="10%">
+            <tr>
+                <th>计划日期</th>
+                <th>状态</th>
+                <th>组别</th>
+                <th>天空状况</th>
+                <th>天气状况</th>
+                <th>降水等级</th>
+                <th>气温</th>
+                <th>风向</th>
+                <th>风力</th>
+                <th>日出</th>
+                <th>日落</th>
+                <th>备注</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+        </table>
+        <div class="table-body-box">
+            <table class="eza-table">
+                <col width="8%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="7%">
+                <col width="5%">
+                <col width="5%">
+                <col width="10%">
+                <tr>
+                    <td>2017/09/09</td>
+                    <td>驳回</td>
+                    <td>A</td>
+                    <td>小雨</td>
+                    <td>小雨</td>
+                    <td>15-18</td>
+                    <td>15-18℃</td>
+                    <td>东南风</td>
+                    <td>3-4级</td>
+                    <td>5:00</td>
+                    <td>17:00</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <a class="ezc-font-blue mr10 editWeatherBtn small">编辑</a>
+                        <a class="ezc-font-red small">删除</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/template" id="setWeatherBox">
+    <div class="setWeatherBox">
+        <table class="setWeatherBox-table" height="206">
+            <col width="89">
+            <col width="167">
+            <col width="89">
+            <col width="167">
+            <tr>
+                <th>
+                    计划时间：
+                </th>
+                <td>
+                    <dl class="addProgressAdminBox-date-box cl" id="setWeatherPlaneDate"  style="width:136px">
+                        <dt>
+                            <i class="icon-rili"></i>
+                        </dt>
+                        <dd>
+                            <input type="text" class="layui-inputAgain addProgressAdmin-dateinput" placeholder="yyyy-MM-dd" id="setWeatherPlaneDateInput">
+                        </dd>
+                    </dl>
+                </td>
+                <th>组别：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="typeSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>天空状况：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="stateSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>天气状况：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="weatherSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>降水等级：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="precipitationGrade" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>气温：</th>
+                <td class="temperature-td">
+                    <input type="text" class="temperature-input">
+                    <span class="temperature-pipe">-</span>
+                    <input type="text" class="temperature-input"><span class="ft14">℃</span>
+                </td>
+            </tr>
+            <tr>
+                <th>风向：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="windDirectionSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>风力：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="windPowerSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>日出：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" id="sunUpSelect" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+                <th>日落：</th>
+                <td>
+                    <div class="black-select-box16">
+                        <select name="" style="width:167px">
+                            <option value="1">电视剧</option>
+                            <option value="2">网络剧</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr height="100">
+                <th class="vt pt10">备注：</th>
+                <td  colspan="3">
+                    <div class="eza-textarea-box  mt10">
+                        <textarea name="" id="" class="eaz-textarea" placeholder="请输入"></textarea>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+<script>
+    $(function () {
+        $('.table-body-box').height($(window).height() - 260);
+        $(window).resize(function () {
+            $('.table-body-box').height($(window).height() - 260);
+        });
+
+        $('#addWeatherBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '设置天气',
+                width: 690,
+                content: $('#setWeatherBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success: function () {
+                    lay('.layui-inputAgain').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+                    $('.black-select-box16 select').fancySelect();
+                }
+            });
+        });
+
+        $('#editWeatherBtn').click(function () {
+            var dialog = new QAQ.Dialog({
+                title: '设置天气',
+                width: 690,
+                content: $('#setWeatherBox').html(),
+                buttons: [{
+                    name: '确定',
+                    cls: '.btn-primary', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }, {
+                    name: '取消',
+                    cls: '.btn-success', //可选 自定义按钮css类
+                    click: function () {
+                        var dialog = this;
+                        dialog.close();
+                    }
+                }],
+                success: function () {
+                    lay('.layui-inputAgain').each(function () {
+                        var s = this;
+                        laydate.render({
+                            elem: s,
+                            trigger: 'click'
+                        });
+                    });
+                    $('.black-select-box16 select').fancySelect();
+                }
+            });
+        });
+
+    })
+</script>

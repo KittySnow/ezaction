@@ -14,9 +14,10 @@ body{color:#333333;background-color:#fff;font-size:12px;}
 a{color:#333333;cursor:pointer;}
 .fl{float:left;}
 .fr{float:right;}
-.tf{text-align:left}
+.tf,.tl{text-align:left;text-align:left !important;}
 .tc{text-align:center}
 .tr{text-align:right}
 form{margin:0;padding:0;}
 img{border:0;display:block;}
 .pr{position: relative;position: relative !important;}
+.vt{vertical-align: top;vertical-align: top !important;}
