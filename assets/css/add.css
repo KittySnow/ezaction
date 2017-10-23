@@ -559,3 +559,117 @@
     width: 50%;
     font-weight: 800;
 }
+.small-dec{
+    float: right;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.preview-info-ul{
+    display: table;
+    width: 100%;
+    margin-top: -10px;
+}
+.preview-info-ul li{
+    display: table-cell;
+    font-size: 16px;
+
+}
+.preview-info-left{
+    text-indent: 32px;
+    width: 35%;
+}
+.preview-info-center{
+    width: 35%;
+}
+.preview-info-right{
+    width: 30%;
+    text-align: right;
+}
+.preview-table-header,.preview-table-body{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    empty-cells: show;
+    font-family: Simsun;
+}
+.preview-table-header{
+    border-top: 1px solid #b5b5b5;
+    margin-top: 20px;
+}
+.preview-table-header th,.preview-table-header td,.preview-table-body td{
+    border-bottom: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5;
+    text-align: center;
+    padding: 5px 0;
+}
+.preview-table-header tr th:last-child,.preview-table-body  tr td:last-child{
+    border-right:0
+}
+.preview-table-header th.preview-content,.preview-table-tips-table li.preview-content{
+    vertical-align: top;
+    text-align:left;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.preview-table-header th.p0,.preview-table-body td.p0{
+    padding: 0;
+    position: relative;
+}
+.preview-table-tips-table{
+    display: table;
+    width: 100%;
+    height:201px;
+    table-layout: fixed;
+}
+.preview-table-tips-table li{
+    display: table-cell;
+}
+.preview-table-tips-table li.p20{
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #b5b5b5;
+}
+.preview-actor-box{
+    position: absolute;
+    vertical-align: bottom;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.preview-actor-th-box{
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    font-size: 0;
+    table-layout: fixed;
+}
+.preview-actor-th-box li{
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #b5b5b5;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.preview-actor-th-box li:last-child{
+    border-right:0;
+}
+.preview-actor-th-box li p{
+    width: 16px;
+    margin:0 auto;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.preview-actor-th-box li p.time{
+    height:65px;
+    writing-mode: tb-rl;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
