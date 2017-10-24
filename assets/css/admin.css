@@ -600,7 +600,7 @@ body {
 }
 
 .icon-black-find {
-    background-image: url(../image/icon_find.jpg);
+    background-image: url(../image/icon_find.png);
 }
 
 
@@ -2099,4 +2099,679 @@ div.fancy-select-mine ul.options li.rhref .add-span {
     display: inline-block;
     max-width: 600px;
     margin: 0 auto;
+}
+.pt10{
+    padding-top: 10px;
+}
+.eza-textarea-box-loc,.eza-textarea-box{
+    border: 1px solid #333;
+    padding: 10px 13px;
+    margin-bottom: 15px;
+}
+.eza-textarea-box-loc .eaz-textarea,.eza-textarea-box .eaz-textarea,.eza-textarea-box .eza-textarea{
+    width: 100%;
+    display: block;
+    font-size:14px;
+    line-height: 16px;
+    height:48px;
+    background: transparent;
+    resize: none;
+    font-family: microsoft yahei;
+    outline: 0;
+}
+.locationDetail-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.locationDetail-table td{
+    padding: 0;
+}
+.locationDetail-table th{
+    vertical-align: top;
+    font-size: 16px;
+    padding: 0;
+    line-height: 40px;
+}
+.eza-input.loc-name{
+    width: 388px;
+}
+.eza-input.loc-contact{
+    width: 88px;
+}
+
+.upload-box{
+    width: 100%;
+    margin-right: 15px;
+}
+.upload-box li{
+    width:165px;
+    margin-left:18px;
+    float: left;
+    height: 193px;
+    text-align: center;
+    margin-bottom:15px;
+}
+.upload-box li.upload-btn-li .upload-pic-font{
+    font-size: 12px;
+    color:#afafaf;
+}
+.upload-box li.upload-btn-li .upload-pic-font:hover{
+    color:#298ee5;
+}
+.upload-box li.upload-btn-li .upload-pic-btn{
+    margin:20px auto;
+    width: 132px;
+    cursor: pointer;
+}
+.pic-show-box{
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    margin-bottom:5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.gray-txt{
+    line-height: 28px;
+    font-size: 14px;
+    color: #999;
+}
+.locationDetail-table div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+}
+.locationDetail-table .black-select-box{
+    width: 22%;
+}
+.locationDetail-table .black-select-box select{
+    width: 100%;
+}
+.upload-img-wrapper{
+    position: relative;
+    text-align: center;
+    width: 132px;
+    margin: 13px auto 18px;
+}
+.upload-img-box{
+    width: 132px;
+    height: 106px;
+    text-align: center;
+}
+.upload-img-file{
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 132px;
+    height: 134px;
+    display: block;
+    outline: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+.upload-date-wrapper{
+    width: 260px;
+    margin: 0 auto;
+}
+.upload-date-wrapper .shootEdit-dateinput.ft16{
+    text-indent:15px;
+}
+.locationDetail-table div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+}
+.black-select-box,.black-selcet-box,.black-selcet-box16,.black-select-box16{
+    float: left;
+}
+.black-selcet-box div.fancy-select div.trigger,.black-select-box div.fancy-select div.trigger,.black-select-box16 div.fancy-select div.trigger{
+    font-size: 14px !important;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+}
+.black-select-box16 div.fancy-select div.trigger{
+    font-size: 16px !important;
+}
+.gray-selcet-box,.gray-select-box{
+    float: left;
+}
+.gray-selcet-box div.fancy-select div.trigger,.gray-select-box div.fancy-select div.trigger{
+    font-size: 14px;
+    color: #afafaf;
+    text-align: left;
+    text-indent: 4px;
+    cursor: pointer;
+}
+.newTeam-ul{
+    width: 227px;
+    margin: 75px auto 50px;
+}
+.newTeam-ul li{
+    margin-bottom:5px;
+}
+.newTeam-label{float: left;font-size: 16px;line-height: 36px;font-weight: 600;}
+.newTeam-input1{border: 0;border-bottom: 1px solid #333;line-height: 33px;height: 33px;width: 126px;padding-left: 10px;padding-right: 10px;font-family: microsoft yahei;font-size: 14px;background: transparent;float: right;outline: 0;}
+
+.progress-schedule-bar{
+    font-size: 0;
+    margin-bottom: 5px;
+    line-height: 37px;
+}
+.progress-schedule-bar-date {
+    vertical-align: top;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #333;
+}
+
+.progress-schedule-bar-line {
+    font-size: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+    vertical-align: top;
+}
+
+.progress-schedule-bar-label {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.addProgressAdminUl {
+    padding: 30px 50px;
+}
+.editProgressAdminUl {
+    padding: 35px 50px;
+}
+.addProgressAdminBox-label {
+    float: left;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.addProgressAdminBox-input1,.editProgressAdminBox-input1{
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 326px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.editProgressAdminBox-input1{
+    width: 279px;
+}
+.editProgressAdminBox-noInput{
+    border: 0;
+    line-height: 33px;
+    height: 33px;
+    width: 279px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+}
+.icon-rili {
+    width: 22px;
+    height: 20px;
+    background: url(../image/icon_rili.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+    display: block;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.addProgressAdminBox-date-box {
+    padding-right: 30px;
+    float: left;
+    width: 125px;
+    height: 34px;
+    border-bottom: 1px solid #333;
+}
+
+.addProgressAdminBox-date-box dt {
+    float: right;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+.addProgressAdmin-dateinput {
+    border: 0;
+    line-height: 33px;
+    height: 33px;
+    width: 107px;
+    padding-right: 37px;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    background: transparent;
+    float: left;
+    margin-bottom: 14px;
+    padding-left: 12px;
+    outline: none;
+}
+
+.addProgressAdminBox-date-dec {
+    vertical-align: bottom;
+    line-height: 34px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.addProgressAdminUl li.last {
+    padding-left: 26px;
+    margin-top: 5px;
+}
+.assignright-info-title{
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+.assignright-info-title h4{
+    float: left;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 37px;
+    /* margin-bottom: 18px; */
+}
+.assignright-info-table{
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 15px;
+}
+.assignright-info-table td{
+    padding: 3px 0;
+}
+.setWeatherBox{
+    padding: 22px 70px;
+    overflow: hidden;
+}
+.setWeatherBox-table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.setWeatherBox-table th{
+    font-size: 16px;
+    text-align: right;
+}
+.setWeatherBox-table tr{
+    height: 40px;
+}
+.temperature-td{
+    line-height: 36px;
+    height: 36px;
+    font-size:0px;
+}
+.temperature-pipe{
+    margin-left: 8px;
+    margin-right: 8px;
+    border-top: 1px solid #333;
+    padding: 5px 8px 0;
+}
+.temperature-input{
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 36px;
+    height: 36px;
+    width: 55px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    outline: 0;
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: 0;
+    text-align: center;
+}
+.actorEditTemp-role-name{
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 5px;
+    line-height: 37px;
+}
+.actorEditTemp-act-name{
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 5px;
+    line-height: 37px;
+}
+.underline-dec{
+    vertical-align: bottom;
+    border-bottom:1px solid #333;
+    line-height: 36px;
+    float: left;
+    padding: 0 3px 0 8px;
+    font-size: 16px;
+}
+.assignByDayActorEditBox{
+    padding: 35px 138px;
+    position: absolute;
+    margin: 0 auto;
+    top: 41px;
+    right:0;
+    left: 0;
+}
+.assignByDayActorEditBox li{
+    font-size: 0;
+    height: 45px;
+}
+.assignByDayActorEditBox .black-select-box16 div.fancy-select div.trigger{
+    width: 44px;
+    float: left;
+    text-align: center;
+}
+.assignByDayActorEditBox .black-select-box16 div.fancy-select{
+    min-width: 55px;
+}
+.assignByDayActorEditBox .black-select-box16 div.fancy-select li{
+    font-size: 14px;
+}
+.eza-table-fixed-header.scene-table-head{
+
+    margin-top: 11px;
+}
+.eza-table-fixed-header.scene-table-head th {
+    line-height: 16px;
+    padding: 2px 0 0;
+    border: 1px solid #b5b5b5;
+}
+.actor-th{
+    vertical-align: top;
+    padding-bottom: 0;
+}
+.actor-th-box{
+    display: table;
+    width: 100%;
+    height: 65px;
+    vertical-align: bottom;
+    margin-top:2px;
+}
+.actor-th-box li{
+    display: table-cell;
+    padding: 2px 0;
+    vertical-align: middle;
+    border-top: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5;
+}
+.actor-th-box li:first-child{
+    border-left:0;
+}
+.actor-th-box li:last-child{
+    border-right:0;
+}
+.actor-th-box li p{
+    width: 16px;
+    margin:0 auto;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 1.375;
+}
+.eza-table-scene{
+    border-collapse: collapse !important;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+.eza-table-scene td{
+
+    font-size: 14px;
+
+    padding: 8px 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #b5b5b5;
+
+    border-right: 1px solid #b5b5b5;
+}
+.eza-table-scene tr.dashed td{
+    border-bottom: 1px dashed #b5b5b5;
+}
+.eza-table-scene tr td:first-child,.eza-table-fixed-header.scene-table-head tr th:first-child{
+    border-left: 0;
+}
+.eza-table-scene tr td:last-child,.eza-table-fixed-header.scene-table-head tr th:last-child{
+    border-right: 0;
+}
+.eza-table-scene td.actor-th{
+    padding: 0;
+}
+.eza-table-scene td .actor-th-box{
+    margin-top:0
+}
+.eza-table-scene td .actor-th-box li{
+    border-top:0;
+}
+.eza-table-scene .solid-border-bottom{
+    border-bottom: 1px solid #b5b5b5;
+}
+.eza-table-scene td.solid-border-td{
+    text-indent: 4%;
+    text-align: left !important;
+    border-bottom:0;
+    border-right: 0;
+}
+.solid-border-td{
+    text-indent: 4%;
+    text-align: left !important;
+}
+.eza-table-scene td.solid-border-none{
+    border: 0 !important;
+}
+.assignByDaySceneEditBox{
+    padding:10px 80px 0;
+}
+.assignByDaySceneEditBox .eza-textarea-box-loc{
+    margin-left: 100px;
+}
+.assignByDaySceneEditBox label{
+    float: left;
+    font-size: 16px;
+    margin-left: -119px;
+    vertical-align: top;
+    text-align: right;
+    width: 100px;
+    margin-top: -5px;
+}
+.assignByDaySceneEditBox .info-li{
+    margin-bottom: 18px;
+    padding-left: 47px;
+    font-size: 16px;
+}
+.import-btn{
+    position: relative;
+    display: inline-block;
+}
+.upload-import-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 114px;
+    height: 35px;
+    display: block;
+    outline: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+.overallManagement-btns.scene-overallManagement-btns{
+    top:-48px;
+}
+
+.assignByDayStaffEditBox{
+    padding: 30px 80px;
+}
+.staffName-input{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 141px;
+    color: #333;
+    padding-left: 12px;
+    padding-right: 13px;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    background: transparent;
+    float: left;
+}
+.playName-input{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    width: 165px;
+    color: #333;
+    padding-left: 12px;
+    padding-right: 13px;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    background: transparent;
+    float: left;
+}
+.all-check-dec .fl{
+    width: 50%;
+    text-align: right;
+    line-height: 31px;
+}
+.all-check-dec .fr{
+    text-align: left;
+    width: 50%;
+    font-weight: 800;
+}
+.small-dec{
+    float: right;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.preview-info-ul{
+    display: table;
+    width: 100%;
+    margin-top: -10px;
+}
+.preview-info-ul li{
+    display: table-cell;
+    font-size: 16px;
+
+}
+.preview-info-left{
+    text-indent: 32px;
+    width: 35%;
+}
+.preview-info-center{
+    width: 35%;
+}
+.preview-info-right{
+    width: 30%;
+    text-align: right;
+}
+.preview-table-header,.preview-table-body{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    empty-cells: show;
+    font-family: Simsun;
+}
+.preview-table-header{
+    border-top: 1px solid #b5b5b5;
+    margin-top: 20px;
+}
+.preview-table-header th,.preview-table-header td,.preview-table-body td{
+    border-bottom: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5;
+    text-align: center;
+    padding: 5px 0;
+}
+.preview-table-header tr th:last-child,.preview-table-body  tr td:last-child{
+    border-right:0
+}
+.preview-table-header th.preview-content,.preview-table-tips-table li.preview-content{
+    vertical-align: top;
+    text-align:left;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.preview-table-header th.p0,.preview-table-body td.p0{
+    padding: 0;
+    position: relative;
+}
+.preview-table-tips-table{
+    display: table;
+    width: 100%;
+    height:201px;
+    table-layout: fixed;
+}
+.preview-table-tips-table li{
+    display: table-cell;
+}
+.preview-table-tips-table li.p20{
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #b5b5b5;
+}
+.preview-actor-box{
+    position: absolute;
+    vertical-align: bottom;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.preview-actor-th-box{
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    font-size: 0;
+    table-layout: fixed;
+}
+.preview-actor-th-box li{
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #b5b5b5;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.preview-actor-th-box li:last-child{
+    border-right:0;
+}
+.preview-actor-th-box li p{
+    width: 16px;
+    margin:0 auto;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.preview-actor-th-box li p.time{
+    height:65px;
+    writing-mode: tb-rl;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    vertical-align: middle;
 }
