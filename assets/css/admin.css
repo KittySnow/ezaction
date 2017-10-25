@@ -2775,3 +2775,99 @@ div.fancy-select-mine ul.options li.rhref .add-span {
     margin: 0 auto;
     vertical-align: middle;
 }
+
+.main-container .container-box .container-no-side-box {
+    margin-left: -251px;
+    height: 100%;
+    overflow: auto;
+}
+.playLook-table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 13px;
+    margin-bottom:18px;
+}
+.playLook-table td{
+    padding: 5px 0 ;
+    text-align: center;
+    font-size: 16px;
+}
+.playLook-table td.fwp{
+    font-weight:600;
+    font-size: 18px;
+}
+.playLook-table th{
+    font-family: Simsun;
+    text-align: center;
+    font-size: 12px;
+}
+.playLook-book-title{
+    font-size: 16px;
+    font-weight:600;
+    margin-bottom:8px;
+    line-height: 22px;
+}
+.playLook-book-text{
+    font-size: 14px;
+    line-height: 22px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom:15px;
+}
+.playLook-help-bar{
+    text-align: center;
+    margin-bottom:13px;
+}
+.playLook-ul{
+    position: relative;
+}
+.playLook-ul li{
+    margin-bottom: 10px;;
+}
+.playLook-ul li.play-input-box{
+    padding-left: 50px
+}
+.playLook-ul li.play-input-box .form-bar-label{
+    float: left;
+    margin-left: -50px;
+}
+.playLook-ul li.play-search-box{
+    position: absolute;
+    bottom: 0;
+    right:-106px;
+}
+.eza-input-wrap{
+    border: 0;
+    border-bottom: 1px solid #333;
+    line-height: 33px;
+    height: 33px;
+    text-indent: 10px;;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    background: transparent;
+    display: block;
+    width: 100%;
+    outline: 0;
+}
+.play-toggle-search-btn{
+    font-family: microsoft yahei;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: 0;
+    color: #298ee5;
+    cursor: pointer;
+    line-height: 36px;
+}
+.play-toggle-search-btn b{
+    display: inline-block;
+    background: url(../image/select_bg_down.png) -9px 50% no-repeat transparent;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    width: 32px;
+    vertical-align: middle;
+}
+.play-toggle-search-btn.up b{
+    background-image: url(../image/select_bg_up.png)
+}
