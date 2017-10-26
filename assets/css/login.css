@@ -73,6 +73,7 @@ body {
     line-height: 40px;
     text-indent: 5px;
     font-size: 16px;
+    border: 0;
     color: #666;
     background-color: transparent;
 }
@@ -94,6 +95,7 @@ body {
 .ez-input-linkBtn {
     font-size: 18px;
     color: #179eff;
+    text-decoration: none;
 }
 
 .ez-input-group.ez-button-group {
@@ -104,6 +106,7 @@ body {
 .ez-input-group.ez-button-group button {
     margin: 0 15px;
     font-size: 24px;
+    border: 0;
     background-color: transparent;
     cursor: pointer;
 }
