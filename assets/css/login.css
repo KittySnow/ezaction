@@ -1,0 +1,129 @@
+html,
+body {
+    display: block;
+    height: 100%;
+}
+
+.ez-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: url(../image/admin_body.jpg) center center no-repeat;
+}
+
+
+/* .ez-logo {} */
+
+.ez-warning {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fc0000;
+    text-align: center;
+}
+
+.ez-input-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 15px;
+}
+
+.ez-input-group>*:not(button) {
+    max-width: 100%;
+    height: 55px;
+}
+
+.ez-input-icon {
+    flex: 0 0 auto;
+    width: 55px;
+    border-bottom: 1px solid #999;
+}
+
+.ez-input-icon.user {
+    background: url(../image/login/login_icon_user.png) center center no-repeat;
+}
+
+.ez-input-icon.validate {
+    background: url(../image/login/login_icon_validate.png) center center no-repeat;
+}
+
+.ez-input-icon.phone_password {
+    background: url(../image/login/login_icon_phone_password.png) center center no-repeat;
+}
+
+.ez-input-icon.password {
+    background: url(../image/login/login_icon_password.png) center center no-repeat;
+}
+
+.ez-input-text {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1;
+    border-bottom: 1px solid #999;
+}
+
+.ez-input-text input {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 5px;
+    font-size: 16px;
+    color: #666;
+    background-color: transparent;
+}
+
+.ez-input-addon {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+}
+
+.ez-input-text+.ez-input-addon {
+    flex: 0 0 auto;
+    width: 150px;
+    padding-left: 10px;
+}
+
+.ez-input-linkBtn {
+    font-size: 18px;
+    color: #179eff;
+}
+
+.ez-input-group.ez-button-group {
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.ez-input-group.ez-button-group button {
+    margin: 0 15px;
+    font-size: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ez-input-group.ez-button-group button[type=submit] {
+    color: #39cc76;
+}
+
+.ez-input-group.ez-button-group button[type=button] {
+    color: #ff5710;
+}
+
+.ez-company {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 30px;
+    color: #666;
+    text-align: center;
+}

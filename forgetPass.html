@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>忘记密码</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/wenwen.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
+
 <body>
-<div class="wrap">
-    <!--begin-->
-    <div class="content1">
-        <p class="reverseTo"><a href="login.html">返回</a></p>
-        <div class="content-header" style="width:380px;">
-            <img src="assets/image/login/eyeLogo.png" alt="" title="" class="img-l" style="top:-6px;">
-            <img src="assets/image/login/EZ.png" alt="" title="" class="img-c" style="top:10px;width:60px;">
-            <img src="assets/image/login/action.png" alt="" title="" class="img-r" style="left:135px;width:142px;top:13px;">
+    <div class="ez-content">
+
+        <img src="assets/image/login/big_logo_593.png">
+
+        <form action="">
+            <div class="ez-warning">
+                您输入的用户名或密码不正确，请重新输入
+            </div>
+            <div class="ez-input-group">
+                <div class="ez-input-icon user"></div>
+                <div class="ez-input-text">
+                    <input type="text" placeholder="请输入用户名">
+                </div>
+            </div>
+            <div class="ez-input-group">
+                <div class="ez-input-icon validate"></div>
+                <div class="ez-input-text">
+                    <input type="text" placeholder="请输入验证码">
+                </div>
+                <div class="ez-input-addon">
+                    <a href="javascript:void(0)">
+                        <img src="assets/image/login/img-yz.png">
+                    </a>
+                </div>
+            </div>
+            <div class="ez-input-group">
+                <div class="ez-input-icon phone_password"></div>
+                <div class="ez-input-text">
+                    <input type="text" placeholder="请输入验证码">
+                </div>
+                <div class="ez-input-addon">
+                    <a class="ez-input-linkBtn" href="javascript:void(0)">获取手机验证码</a>
+                </div>
+            </div>
+            <div class="ez-input-group">
+                <div class="ez-input-icon password"></div>
+                <div class="ez-input-text">
+                    <input type="text" placeholder="请输入新密码">
+                </div>
+            </div>
+            <div class="ez-input-group">
+                <div class="ez-input-icon password"></div>
+                <div class="ez-input-text">
+                    <input type="text" placeholder="请再次输入新密码">
+                </div>
+            </div>
+            <div class="ez-input-group ez-button-group">
+                <button type="submit">保存</button>
+                <button type="button">取消</button>
+            </div>
+        </form>
+
+        <div class="ez-company">
+            东方浩星（北京）传媒科技有限公司版权所有 &copy;2017 京ICP备12009034号
         </div>
-        <div class="content-main1">
-            <form id="login-alls" method="post">
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_user.png" class="forgetIcon"></i><p class="firstLine"><input type="text" id="phoneNumber" placeholder="请输入用户名" required="required"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_vld.png" class="forgetIcon"></i><p class="firstLine2"><input type="text" id="number" placeholder="请输入验证码" required="required"><img class="img-ro" src="assets/image/login/img-yz.png"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/icon-message.png" class="forgetIcon1"></i><p class="firstLine2"><input type="text" id="sendNumber" placeholder="请输入验证码" required="required"><span class="showN" id="messageSend">获取手机验证码</span></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="newPass" placeholder="请输入新密码" required="required"></p></div>
-                <div class="lineL"><i class="iconfont2"><img src="assets/image/login/login_icon_pwd.png" class="forgetIcon"></i><p class="firstLine1"><input type="text" id="againPass" placeholder="请再次输入新密码" required="required"></p>
-                    <div class="content-foot1"><i class="iconfont4" id="saveBtno"><a href="login.html"> <img src="assets/image/login/img-right.png" class="saveImg"></a></i>
-                        <i class="iconfont5" id="saveBtnk"><a href="#"><img src="assets/image/login/right-green.png" class="saveImg"></a> </i>  </div></div>
-            </form>
-        </div>
-
-
-
 
     </div>
-    <!--end-->
-</div>
-<script src="assets/lib/jquery-1.8.3.min.js"></script>
-<script src="assets/lib/jquery-html5Validate.js"></script>
-<script>
-    $(function(){
-        $("#saveBtnk").click(function(){
-            if ($.html5Validate.isAllpass($("#login-alls"))) {
-                alert("success");
-                window.location.href="login.html";
-            }
-        })
-    })
-</script>
 </body>
+
 </html>
