@@ -85,7 +85,9 @@ body {
     justify-content: end;
     flex: 1;
 }
-
+.ez-input-addon.ez-input-forgetPassword{
+    justify-content: flex-end;
+}
 .ez-input-text+.ez-input-addon {
     flex: 0 0 auto;
     width: 150px;
